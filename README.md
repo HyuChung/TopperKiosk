@@ -1,8 +1,14 @@
 # TopperKiosk
 
+This is for Topper Kiosk System Project (TongMyoung Uni.)
 
-토퍼 키오스크를 만들기 위한 깃 허브 입니다.
+UI : WindowForm
+System : C++
+IDE : Visual Studio 2017
 
-UI 단은 윈도우 폼으로 작업하고 시스탬 내부 설계는 c++로 만들것입니다.
 
-비주얼 스튜디오 2017 버전을 사용합니다
+토퍼 키오스크 프로젝트 (동명대학교)
+
+UI: 윈도우 폼
+시스탬: c+
+IDE : 비주얼 스튜디오 2017
