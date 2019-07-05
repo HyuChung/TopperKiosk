@@ -6,3 +6,15 @@ C:\Users\My\Documents\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKio
 C:\Users\My\Documents\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csproj.CoreCompileInputs.cache
 C:\Users\My\Documents\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.exe
 C:\Users\My\Documents\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.pdb
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\bin\Debug\Demo.exe.config
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\bin\Debug\Demo.exe
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\bin\Debug\Demo.pdb
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csprojAssemblyReference.cache
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.DetailSetting.resources
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.ToperKiosk_Sys.resources
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.Properties.Resources.resources
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.TopperList.resources
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csproj.GenerateResource.cache
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csproj.CoreCompileInputs.cache
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.exe
+D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.pdb

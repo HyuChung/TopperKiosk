@@ -106,7 +106,6 @@
             this.Main_lbl.TabIndex = 5;
             this.Main_lbl.Text = "Topper KIOSK";
             this.Main_lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Main_lbl.Click += new System.EventHandler(this.label5_Click);
             // 
             // translate_paneKo
             // 
@@ -158,7 +157,6 @@
             this.translate_paneEN.Name = "translate_paneEN";
             this.translate_paneEN.Size = new System.Drawing.Size(86, 50);
             this.translate_paneEN.TabIndex = 9;
-            this.translate_paneEN.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             this.translate_paneEN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
             // 
             // ManInfo_lbl
