@@ -18,3 +18,6 @@ D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csproj.GenerateR
 D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\TopperKiosk.csproj.CoreCompileInputs.cache
 D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.exe
 D:\GitHub\TopperKiosk\TopperKiosk_pj\Demo\obj\Debug\Demo.pdb
+C:\Users\동220-02(김준곤)\Desktop\TopperKiosk_UI\TopperKiosk_pj\Demo\bin\Debug\Demo.exe.config
+C:\Users\동220-02(김준곤)\Desktop\TopperKiosk_UI\TopperKiosk_pj\Demo\obj\Debug\Demo.exe
+C:\Users\동220-02(김준곤)\Desktop\TopperKiosk_UI\TopperKiosk_pj\Demo\obj\Debug\Demo.pdb
