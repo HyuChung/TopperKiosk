@@ -40,28 +40,28 @@ namespace Demo
         private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            TopperList newKoForm = new TopperList();
+            TopperList newKoForm = new TopperList(4);
             newKoForm.ShowDialog();
         }
 
         private void translate_paneCH_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            TopperList newCHForm = new TopperList();
+            TopperList newCHForm = new TopperList(1);
             newCHForm.ShowDialog();
         }
 
         private void translate_paneJP_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            TopperList newJPForm = new TopperList();
+            TopperList newJPForm = new TopperList(2);
             newJPForm.ShowDialog();
         }
 
         private void translate_paneEN_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            TopperList newENForm = new TopperList();
+            TopperList newENForm = new TopperList(3);
             newENForm.ShowDialog();
         }
 

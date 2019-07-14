@@ -19,6 +19,7 @@ namespace Demo
             this.usertext = usertext;
             this.image_name = imagename;
             InitializeComponent();
+            this.showingDesign2.Left = (this.ClientSize.Width - showingDesign2.Width) / 2;  //중앙정렬
         }
 
         private void exit_pane_Click(object sender, EventArgs e)

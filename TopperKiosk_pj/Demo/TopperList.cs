@@ -7,18 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace Demo
 {
     public partial class TopperList : Form
     {
         int valPage = 1, numpage = 1;
+        int[,] initimage = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} };
         string selected_image ="None";
         
-
-        public TopperList()
+ 
+        public TopperList(int lenguage)
         {
+
+            
+            if (lenguage == 1) //다국어 처리
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh");
+            }
+            else if(lenguage == 2)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
+            }
+            else if(lenguage == 3)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ko");
+            }
             InitializeComponent();
+            
         }
 
         private void TopperList_Load(object sender, EventArgs e)
@@ -36,13 +58,13 @@ namespace Demo
 
         private void next_pane_Click(object sender, EventArgs e)
         {
-            if (selected_image.Equals("None")) //이미지 선택 x
+            if (selected_image.Equals("None")) //이미지 선택 확인
             {
                 this.Visible = false;
                 SettingPage newsettingPage = new SettingPage(selected_image);
                 newsettingPage.ShowDialog();
             }
-            else // 이미지 선택 o
+            else 
             {
                 
             }
@@ -90,6 +112,67 @@ namespace Demo
             this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menu3_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+        }
+
+        private void pic_1_1_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_1_1.Tag == null) { pic_1_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_1_1.ClientRectangle, (Color)pic_1_1.Tag, ButtonBorderStyle.Solid);
+        }
+        
+        private void pic_1_2_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_1_2.Tag == null) { pic_1_2.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_1_2.ClientRectangle, (Color)pic_1_2.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_1_3_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_1_3.Tag == null) { pic_1_3.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_1_3.ClientRectangle, (Color)pic_1_3.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_2_1_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_2_1.Tag == null) { pic_2_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_2_1.ClientRectangle, (Color)pic_2_1.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_2_2_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_2_2.Tag == null) { pic_2_2.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_2_2.ClientRectangle, (Color)pic_2_2.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_2_3_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_2_3.Tag == null) { pic_2_3.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_2_3.ClientRectangle, (Color)pic_2_3.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_3_1_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_3_1.Tag == null) { pic_3_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_3_1.ClientRectangle, (Color)pic_3_1.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_3_2_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_3_2.Tag == null) { pic_3_2.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_3_2.ClientRectangle, (Color)pic_3_2.Tag, ButtonBorderStyle.Solid);
+        }
+
+        private void pic_3_3_Paint(object sender, PaintEventArgs e)
+        {
+            if (pic_3_3.Tag == null) { pic_3_3.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
+            ControlPaint.DrawBorder(e.Graphics, pic_3_3.ClientRectangle, (Color)pic_3_3.Tag, ButtonBorderStyle.Solid);
+        }
+
+
+        private void pic_1_1_Click(object sender, EventArgs e)
+        {
+            if ((Color)pic_1_1.Tag == SystemColors.GradientInactiveCaption) { pic_1_1.Tag = Color.Red; }
+            pic_1_1.Refresh();
         }
 
         

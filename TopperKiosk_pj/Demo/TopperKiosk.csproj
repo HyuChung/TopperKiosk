@@ -97,7 +97,16 @@
     <EmbeddedResource Include="SettingPage.resx">
       <DependentUpon>SettingPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.en.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.ja-JP.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopperList.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.zh.resx">
       <DependentUpon>TopperList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WatingPage.resx">

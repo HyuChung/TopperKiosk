@@ -28,85 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.next_pane = new System.Windows.Forms.Panel();
-            this.exit_pane = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingPage));
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane = new System.Windows.Forms.Panel();
             this.showingDesign = new System.Windows.Forms.PictureBox();
+            this.next_pane = new System.Windows.Forms.Panel();
+            this.exit_pane = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
             // 
+            // tooltip_lbl
+            // 
+            resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
+            this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.tooltip_lbl.Name = "tooltip_lbl";
+            // 
+            // tooltip_pane
+            // 
+            resources.ApplyResources(this.tooltip_pane, "tooltip_pane");
+            this.tooltip_pane.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tooltip_pane.Controls.Add(this.tooltip_lbl);
+            this.tooltip_pane.Name = "tooltip_pane";
+            // 
+            // showingDesign
+            // 
+            resources.ApplyResources(this.showingDesign, "showingDesign");
+            this.showingDesign.Image = global::Demo.Properties.Resources._9321_shop1_297733;
+            this.showingDesign.Name = "showingDesign";
+            this.showingDesign.TabStop = false;
+            // 
             // next_pane
             // 
-            this.next_pane.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.next_pane, "next_pane");
             this.next_pane.BackgroundImage = global::Demo.Properties.Resources.next;
-            this.next_pane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.next_pane.Location = new System.Drawing.Point(385, 847);
             this.next_pane.Name = "next_pane";
-            this.next_pane.Size = new System.Drawing.Size(83, 82);
-            this.next_pane.TabIndex = 5;
             this.next_pane.Click += new System.EventHandler(this.next_pane_Click);
             // 
             // exit_pane
             // 
-            this.exit_pane.Anchor = System.Windows.Forms.AnchorStyles.None;
+            resources.ApplyResources(this.exit_pane, "exit_pane");
             this.exit_pane.BackgroundImage = global::Demo.Properties.Resources.cancel;
-            this.exit_pane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.exit_pane.Location = new System.Drawing.Point(59, 847);
             this.exit_pane.Name = "exit_pane";
-            this.exit_pane.Size = new System.Drawing.Size(83, 82);
-            this.exit_pane.TabIndex = 4;
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
-            // tooltip_lbl
+            // textBox1
             // 
-            this.tooltip_lbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tooltip_lbl.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.tooltip_lbl.Location = new System.Drawing.Point(0, 0);
-            this.tooltip_lbl.Name = "tooltip_lbl";
-            this.tooltip_lbl.Size = new System.Drawing.Size(525, 41);
-            this.tooltip_lbl.TabIndex = 0;
-            this.tooltip_lbl.Text = "디자인에 들어갈 문구를 넣어주세요";
-            this.tooltip_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tooltip_pane
-            // 
-            this.tooltip_pane.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tooltip_pane.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tooltip_pane.Controls.Add(this.tooltip_lbl);
-            this.tooltip_pane.Location = new System.Drawing.Point(0, 0);
-            this.tooltip_pane.Name = "tooltip_pane";
-            this.tooltip_pane.Size = new System.Drawing.Size(525, 41);
-            this.tooltip_pane.TabIndex = 6;
-            // 
-            // showingDesign
-            // 
-            this.showingDesign.Image = global::Demo.Properties.Resources._9321_shop1_297733;
-            this.showingDesign.Location = new System.Drawing.Point(154, 47);
-            this.showingDesign.Name = "showingDesign";
-            this.showingDesign.Size = new System.Drawing.Size(205, 226);
-            this.showingDesign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.showingDesign.TabIndex = 7;
-            this.showingDesign.TabStop = false;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // SettingPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(524, 941);
             this.ControlBox = false;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
             this.Name = "SettingPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,5 +104,6 @@
         private System.Windows.Forms.Label tooltip_lbl;
         private System.Windows.Forms.Panel tooltip_pane;
         private System.Windows.Forms.PictureBox showingDesign;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
