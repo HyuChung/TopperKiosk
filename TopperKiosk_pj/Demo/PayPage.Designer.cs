@@ -37,13 +37,13 @@
             this.disUserText_lbl = new System.Windows.Forms.Label();
             this.chargeMoney_lbl = new System.Windows.Forms.Label();
             this.dismoney_lbl = new System.Windows.Forms.Label();
+            this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
             this.showingDesign2 = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
-            this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
             this.tooltip_pane.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).BeginInit();
             this.disInfo_pane.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).BeginInit();
             this.SuspendLayout();
             // 
             // tooltip_lbl
@@ -89,6 +89,17 @@
             resources.ApplyResources(this.dismoney_lbl, "dismoney_lbl");
             this.dismoney_lbl.Name = "dismoney_lbl";
             // 
+            // disInfo_pane
+            // 
+            resources.ApplyResources(this.disInfo_pane, "disInfo_pane");
+            this.disInfo_pane.Controls.Add(this.designName_lbl, 0, 0);
+            this.disInfo_pane.Controls.Add(this.dismoney_lbl, 1, 2);
+            this.disInfo_pane.Controls.Add(this.userTextName_lbl, 0, 1);
+            this.disInfo_pane.Controls.Add(this.disUserText_lbl, 1, 1);
+            this.disInfo_pane.Controls.Add(this.chargeMoney_lbl, 0, 2);
+            this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
+            this.disInfo_pane.Name = "disInfo_pane";
+            // 
             // showingDesign2
             // 
             resources.ApplyResources(this.showingDesign2, "showingDesign2");
@@ -109,17 +120,6 @@
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
-            // disInfo_pane
-            // 
-            resources.ApplyResources(this.disInfo_pane, "disInfo_pane");
-            this.disInfo_pane.Controls.Add(this.designName_lbl, 0, 0);
-            this.disInfo_pane.Controls.Add(this.dismoney_lbl, 1, 2);
-            this.disInfo_pane.Controls.Add(this.userTextName_lbl, 0, 1);
-            this.disInfo_pane.Controls.Add(this.disUserText_lbl, 1, 1);
-            this.disInfo_pane.Controls.Add(this.chargeMoney_lbl, 0, 2);
-            this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
-            this.disInfo_pane.Name = "disInfo_pane";
-            // 
             // PayPage
             // 
             resources.ApplyResources(this, "$this");
@@ -133,8 +133,8 @@
             this.Controls.Add(this.exit_pane);
             this.Name = "PayPage";
             this.tooltip_pane.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).EndInit();
             this.disInfo_pane.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).EndInit();
             this.ResumeLayout(false);
 
         }

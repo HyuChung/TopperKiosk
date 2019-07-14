@@ -43,10 +43,6 @@ namespace Demo
             
         }
 
-        private void TopperList_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void exit_pane_MouseClick(object sender, MouseEventArgs e)
         {
@@ -86,6 +82,8 @@ namespace Demo
             this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+
+            this.valPage = 1;
         }
 
         private void menu2_pane_MouseClick(object sender, MouseEventArgs e)
@@ -99,6 +97,8 @@ namespace Demo
             this.menu2_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+
+            this.valPage = 2;
         }
 
         private void menu3_pane_MouseClick(object sender, MouseEventArgs e)
@@ -112,7 +112,25 @@ namespace Demo
             this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.menu3_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+
+            this.valPage = 3;
         }
+
+        private void menu4_pane_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
+
+            this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.menu4_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+
+            this.valPage = 4;
+        }
+
 
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
@@ -177,17 +195,6 @@ namespace Demo
 
         
 
-        private void menu4_pane_MouseClick(object sender, MouseEventArgs e)
-        {
-            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-
-            this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu4_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-        }
+        
     }
 }

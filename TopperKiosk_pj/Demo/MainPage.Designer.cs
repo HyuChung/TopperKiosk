@@ -81,6 +81,7 @@
             this.lbl_JP.TabIndex = 3;
             this.lbl_JP.Text = "日本語";
             this.lbl_JP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneJP_MouseClick);
+            this.lbl_JP.MouseEnter += new System.EventHandler(this.lbl_JP_MouseEnter);
             // 
             // lbl_EN
             // 
@@ -106,7 +107,6 @@
             this.Main_lbl.TabIndex = 5;
             this.Main_lbl.Text = "Topper KIOSK";
             this.Main_lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Main_lbl.Click += new System.EventHandler(this.label5_Click);
             // 
             // translate_paneKo
             // 
@@ -120,6 +120,7 @@
             this.translate_paneKo.Size = new System.Drawing.Size(86, 50);
             this.translate_paneKo.TabIndex = 6;
             this.translate_paneKo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneKO_MouseClick);
+            this.translate_paneKo.MouseEnter += new System.EventHandler(this.translate_paneKo_MouseEnter);
             // 
             // translate_paneCH
             // 
@@ -133,6 +134,7 @@
             this.translate_paneCH.Size = new System.Drawing.Size(86, 50);
             this.translate_paneCH.TabIndex = 7;
             this.translate_paneCH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneCH_MouseClick);
+            this.translate_paneCH.MouseEnter += new System.EventHandler(this.translate_paneCH_MouseEnter);
             // 
             // translate_paneJP
             // 
@@ -159,11 +161,11 @@
             this.translate_paneEN.Size = new System.Drawing.Size(86, 50);
             this.translate_paneEN.TabIndex = 9;
             this.translate_paneEN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
+            this.translate_paneEN.MouseEnter += new System.EventHandler(this.translate_paneEN_MouseEnter);
             // 
             // ManInfo_lbl
             // 
             this.ManInfo_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ManInfo_lbl.AutoSize = true;
             this.ManInfo_lbl.BackColor = System.Drawing.Color.Transparent;
             this.ManInfo_lbl.Font = new System.Drawing.Font("나눔고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ManInfo_lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -172,6 +174,7 @@
             this.ManInfo_lbl.Size = new System.Drawing.Size(328, 24);
             this.ManInfo_lbl.TabIndex = 10;
             this.ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
+            this.ManInfo_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainPage
             // 
@@ -192,7 +195,6 @@
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.ToperKiosk_Sys_Load);
             this.translate_paneKo.ResumeLayout(false);
             this.translate_paneKo.PerformLayout();
             this.translate_paneCH.ResumeLayout(false);

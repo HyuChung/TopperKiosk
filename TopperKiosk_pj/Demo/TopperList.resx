@@ -117,116 +117,212 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pic_3_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 158</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="picture_layout_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="manu_layout_pane.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pic_2_2.Name" xml:space="preserve">
-    <value>pic_2_2</value>
-  </data>
-  <data name="pic_2_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="manu4_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pic_2_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="&gt;&gt;manu2_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;manu1_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>디자인을 선택해 주세요</value>
-  </data>
-  <data name="&gt;&gt;pic_1_2.Name" xml:space="preserve">
-    <value>pic_1_2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pic_1_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="menu2_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 0</value>
-  </data>
-  <data name="&gt;&gt;menu3_pane.Parent" xml:space="preserve">
-    <value>manu_layout_pane</value>
-  </data>
-  <data name="picture_layout_pane.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="manu3_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;manu2_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="picture_layout_pane.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="manu2_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="pic_3_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="manu3_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pic_3_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 329</value>
+  </data>
+  <data name="pic_3_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 158</value>
   </data>
   <data name="pic_3_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
+  <data name="pic_3_3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pic_3_3.Name" xml:space="preserve">
+    <value>pic_3_3</value>
+  </data>
+  <data name="&gt;&gt;pic_3_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_3_3.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_3_3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pic_3_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_3_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 329</value>
+  </data>
+  <data name="pic_3_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 158</value>
+  </data>
+  <data name="pic_3_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_3_2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pic_3_2.Name" xml:space="preserve">
+    <value>pic_3_2</value>
+  </data>
+  <data name="&gt;&gt;pic_3_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_3_2.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_3_2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pic_3_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_3_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 329</value>
+  </data>
+  <data name="pic_3_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 158</value>
+  </data>
+  <data name="pic_3_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_3_1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pic_3_1.Name" xml:space="preserve">
+    <value>pic_3_1</value>
+  </data>
+  <data name="&gt;&gt;pic_3_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_3_1.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_3_1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pic_2_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_2_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 166</value>
+  </data>
+  <data name="pic_2_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
+  </data>
+  <data name="pic_2_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_2_3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pic_2_3.Name" xml:space="preserve">
+    <value>pic_2_3</value>
+  </data>
+  <data name="&gt;&gt;pic_2_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_2_3.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_2_3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pic_2_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_2_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 166</value>
+  </data>
+  <data name="pic_2_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
+  </data>
+  <data name="pic_2_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_2_2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Name" xml:space="preserve">
+    <value>pic_2_2</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pic_2_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_2_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 166</value>
+  </data>
+  <data name="pic_2_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
+  </data>
+  <data name="pic_2_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_2_1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pic_2_1.Name" xml:space="preserve">
+    <value>pic_2_1</value>
+  </data>
+  <data name="&gt;&gt;pic_2_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_2_1.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_2_1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pic_1_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pic_1_3.Location" type="System.Drawing.Point, System.Drawing">
     <value>277, 3</value>
   </data>
-  <data name="pic_1_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="pic_1_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
   </data>
-  <data name="&gt;&gt;manu_layout_pane.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="pic_1_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
-  <data name="&gt;&gt;menu4_pane.Name" xml:space="preserve">
-    <value>menu4_pane</value>
+  <data name="pic_1_3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="manu3_lbl.Text" xml:space="preserve">
-    <value>기 념</value>
+  <data name="&gt;&gt;pic_1_3.Name" xml:space="preserve">
+    <value>pic_1_3</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>524, 941</value>
+  <data name="&gt;&gt;pic_1_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="manu4_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;menu2_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;exit_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="picture_layout_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="pic_1_1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="exit_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;menu3_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="manu1_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pic_1_2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pic_1_3.Parent" xml:space="preserve">
     <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_1_3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pic_1_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_1_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 3</value>
+  </data>
+  <data name="pic_1_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
   </data>
   <data name="pic_1_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -234,35 +330,560 @@
   <data name="pic_1_2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="menu1_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 1, 0</value>
+  <data name="&gt;&gt;pic_1_2.Name" xml:space="preserve">
+    <value>pic_1_2</value>
   </data>
-  <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;pic_1_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menu4_pane.Parent" xml:space="preserve">
-    <value>manu_layout_pane</value>
+  <data name="&gt;&gt;pic_1_2.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pic_1_2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pic_1_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_1_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="pic_1_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 157</value>
+  </data>
+  <data name="pic_1_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_1_1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pic_1_1.Name" xml:space="preserve">
+    <value>pic_1_1</value>
   </data>
   <data name="&gt;&gt;pic_1_1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="manu_layout_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;pic_1_1.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;pic_1_1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="picture_layout_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 197</value>
+  </data>
+  <data name="picture_layout_pane.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="picture_layout_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 490</value>
+  </data>
+  <data name="picture_layout_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;picture_layout_pane.Name" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;picture_layout_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture_layout_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;picture_layout_pane.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="picture_layout_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pic_3_3" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_3_2" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_3_1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="manu_layout_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="manu_layout_pane.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="menu1_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="manu1_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="manu1_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 15.75pt</value>
+  </data>
+  <data name="manu1_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="manu1_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="manu1_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="manu1_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="manu1_lbl.Text" xml:space="preserve">
+    <value>관 광</value>
+  </data>
+  <data name="manu1_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;manu1_lbl.Name" xml:space="preserve">
+    <value>manu1_lbl</value>
+  </data>
+  <data name="&gt;&gt;manu1_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manu1_lbl.Parent" xml:space="preserve">
+    <value>menu1_pane</value>
+  </data>
+  <data name="&gt;&gt;manu1_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menu1_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menu1_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 1, 0</value>
+  </data>
+  <data name="menu1_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="menu1_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menu1_pane.Name" xml:space="preserve">
+    <value>menu1_pane</value>
+  </data>
+  <data name="&gt;&gt;menu1_pane.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="travelImagelist.ImageSize" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+  <data name="&gt;&gt;menu1_pane.Parent" xml:space="preserve">
+    <value>manu_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;menu1_pane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menu2_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="manu2_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="manu2_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 15.75pt</value>
+  </data>
+  <data name="manu2_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="manu2_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="manu2_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="manu2_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="manu2_lbl.Text" xml:space="preserve">
+    <value>음 식</value>
+  </data>
+  <data name="manu2_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;manu2_lbl.Name" xml:space="preserve">
+    <value>manu2_lbl</value>
+  </data>
+  <data name="&gt;&gt;manu2_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manu2_lbl.Parent" xml:space="preserve">
+    <value>menu2_pane</value>
+  </data>
+  <data name="&gt;&gt;manu2_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menu2_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 0</value>
+  </data>
+  <data name="menu2_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 1, 0</value>
+  </data>
+  <data name="menu2_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="menu2_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;menu2_pane.Name" xml:space="preserve">
+    <value>menu2_pane</value>
+  </data>
+  <data name="&gt;&gt;menu2_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu2_pane.Parent" xml:space="preserve">
+    <value>manu_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;menu2_pane.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="menu3_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="manu3_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="manu3_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 15.75pt</value>
+  </data>
+  <data name="manu3_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="manu3_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="manu3_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="manu3_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="manu3_lbl.Text" xml:space="preserve">
+    <value>기 념</value>
+  </data>
+  <data name="manu3_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;manu3_lbl.Name" xml:space="preserve">
     <value>manu3_lbl</value>
   </data>
-  <data name="manu2_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="&gt;&gt;manu3_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manu3_lbl.Parent" xml:space="preserve">
+    <value>menu3_pane</value>
+  </data>
+  <data name="&gt;&gt;manu3_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menu3_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 0</value>
+  </data>
+  <data name="menu3_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 1, 0</value>
+  </data>
+  <data name="menu3_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 41</value>
+  </data>
+  <data name="menu3_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;menu3_pane.Name" xml:space="preserve">
+    <value>menu3_pane</value>
+  </data>
+  <data name="&gt;&gt;menu3_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu3_pane.Parent" xml:space="preserve">
+    <value>manu_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;menu3_pane.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="menu4_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="manu4_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="manu4_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 15.75pt</value>
+  </data>
+  <data name="manu4_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="manu4_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="manu4_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 41</value>
+  </data>
+  <data name="manu4_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="manu4_lbl.Text" xml:space="preserve">
+    <value>추천 토퍼</value>
+  </data>
+  <data name="manu4_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;manu4_lbl.Name" xml:space="preserve">
+    <value>manu4_lbl</value>
+  </data>
+  <data name="&gt;&gt;manu4_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manu4_lbl.Parent" xml:space="preserve">
+    <value>menu4_pane</value>
+  </data>
+  <data name="&gt;&gt;manu4_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menu4_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 0</value>
+  </data>
+  <data name="menu4_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="menu4_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 41</value>
+  </data>
+  <data name="menu4_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;menu4_pane.Name" xml:space="preserve">
+    <value>menu4_pane</value>
+  </data>
+  <data name="&gt;&gt;menu4_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu4_pane.Parent" xml:space="preserve">
+    <value>manu_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;menu4_pane.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="manu_layout_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="manu_layout_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="manu_layout_pane.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="manu_layout_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 41</value>
+  </data>
+  <data name="manu_layout_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;manu_layout_pane.Name" xml:space="preserve">
+    <value>manu_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;manu_layout_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;manu_layout_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;manu_layout_pane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="manu_layout_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="menu1_pane" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="menu2_pane" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="menu3_pane" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="menu4_pane" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,41" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tooltip_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 15.75pt, style=Bold</value>
+  </data>
+  <data name="tooltip_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tooltip_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 41</value>
+  </data>
+  <data name="tooltip_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tooltip_lbl.Text" xml:space="preserve">
+    <value>디자인을 선택해 주세요</value>
+  </data>
+  <data name="tooltip_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;tooltip_lbl.Name" xml:space="preserve">
+    <value>tooltip_lbl</value>
+  </data>
+  <data name="&gt;&gt;tooltip_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tooltip_lbl.Parent" xml:space="preserve">
+    <value>tooltip_pane</value>
+  </data>
+  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 41</value>
+  </data>
+  <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tooltip_pane.Name" xml:space="preserve">
+    <value>tooltip_pane</value>
+  </data>
+  <data name="&gt;&gt;tooltip_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tooltip_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="TourImagelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="TourImagelist.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <metadata name="FoodImagelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>150, 17</value>
+  </metadata>
+  <data name="FoodImagelist.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="next_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 847</value>
+  </data>
+  <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 82</value>
+  </data>
+  <data name="next_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Name" xml:space="preserve">
+    <value>next_pane</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;next_pane.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="exit_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="exit_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="exit_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 847</value>
+  </data>
+  <data name="exit_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 82</value>
+  </data>
+  <data name="exit_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;exit_pane.Name" xml:space="preserve">
+    <value>exit_pane</value>
+  </data>
+  <data name="&gt;&gt;exit_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exit_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="panel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 382</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 91</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 382</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 91</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="MemorialImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>280, 17</value>
+  </metadata>
+  <data name="MemorialImageList.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <metadata name="RecommendImagelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>430, 16</value>
+  </metadata>
+  <data name="RecommendImagelist.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>524, 941</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -340,592 +961,40 @@
         A///gAP//4AH///AB///8Af///wP///+D/8=
 </value>
   </data>
-  <data name="pic_3_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pic_2_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pic_1_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="&gt;&gt;picture_layout_pane.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pic_2_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_1_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="&gt;&gt;manu4_lbl.Name" xml:space="preserve">
-    <value>manu4_lbl</value>
-  </data>
-  <data name="&gt;&gt;pic_3_1.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="&gt;&gt;pic_2_3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;manu4_lbl.Parent" xml:space="preserve">
-    <value>menu4_pane</value>
-  </data>
-  <data name="menu4_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
-  </data>
-  <data name="&gt;&gt;pic_2_1.Name" xml:space="preserve">
-    <value>pic_2_1</value>
-  </data>
-  <data name="&gt;&gt;manu3_lbl.Parent" xml:space="preserve">
-    <value>menu3_pane</value>
-  </data>
-  <data name="manu_layout_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Name" xml:space="preserve">
-    <value>next_pane</value>
-  </data>
-  <data name="tooltip_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="pic_3_3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="menu2_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="pic_2_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="manu2_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;picture_layout_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="manu_layout_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;pic_2_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menu2_pane.Name" xml:space="preserve">
-    <value>menu2_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_lbl.Parent" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="manu1_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tooltip_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;pic_2_2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="menu3_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;menu4_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_1_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 3</value>
-  </data>
-  <data name="menu1_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="pic_2_3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;pic_1_3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pic_2_3.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="picture_layout_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 490</value>
-  </data>
-  <data name="manu3_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 15.75pt</value>
-  </data>
-  <data name="menu4_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 0</value>
-  </data>
-  <data name="pic_2_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 166</value>
-  </data>
-  <data name="pic_2_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 166</value>
-  </data>
-  <data name="exit_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 847</value>
-  </data>
-  <data name="&gt;&gt;pic_3_3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TopperList</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="pic_2_2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pic_1_1.Name" xml:space="preserve">
-    <value>pic_1_1</value>
-  </data>
-  <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="manu1_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="pic_3_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 158</value>
-  </data>
-  <data name="manu_layout_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="menu1_pane" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="menu2_pane" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="menu3_pane" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="menu4_pane" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100,Absolute,41" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="manu_layout_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
-  </data>
-  <data name="&gt;&gt;pic_3_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;manu1_lbl.Name" xml:space="preserve">
-    <value>manu1_lbl</value>
-  </data>
-  <data name="&gt;&gt;next_pane.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pic_1_2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 15.75pt, style=Bold</value>
-  </data>
-  <data name="pic_2_1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pic_3_2.Name" xml:space="preserve">
-    <value>pic_3_2</value>
-  </data>
-  <data name="manu4_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;foodimagelist.Name" xml:space="preserve">
-    <value>foodimagelist</value>
-  </data>
-  <data name="&gt;&gt;travelImagelist.Name" xml:space="preserve">
-    <value>travelImagelist</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;pic_3_2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;TourImagelist.Name" xml:space="preserve">
+    <value>TourImagelist</value>
   </data>
-  <data name="manu2_lbl.Text" xml:space="preserve">
-    <value>음 식</value>
-  </data>
-  <data name="menu4_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="manu4_lbl.Text" xml:space="preserve">
-    <value>추천 토퍼</value>
-  </data>
-  <data name="&gt;&gt;pic_3_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_3_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 158</value>
-  </data>
-  <data name="menu2_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 1, 0</value>
-  </data>
-  <data name="&gt;&gt;pic_1_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_1_3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="exit_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 82</value>
-  </data>
-  <data name="manu3_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 91</value>
-  </data>
-  <data name="menu3_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 0</value>
-  </data>
-  <data name="menu3_pane.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 1, 0</value>
-  </data>
-  <data name="&gt;&gt;picture_layout_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="next_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pic_3_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 329</value>
-  </data>
-  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;foodimagelist.Type" xml:space="preserve">
+  <data name="&gt;&gt;TourImagelist.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menu3_pane.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;FoodImagelist.Name" xml:space="preserve">
+    <value>FoodImagelist</value>
   </data>
-  <data name="&gt;&gt;menu2_pane.Parent" xml:space="preserve">
-    <value>manu_layout_pane</value>
-  </data>
-  <data name="menu1_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;manu3_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="manu1_lbl.Text" xml:space="preserve">
-    <value>관 광</value>
-  </data>
-  <data name="&gt;&gt;menu2_pane.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="manu2_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;travelImagelist.Type" xml:space="preserve">
+  <data name="&gt;&gt;FoodImagelist.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pic_1_3.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
+  <data name="&gt;&gt;MemorialImageList.Name" xml:space="preserve">
+    <value>MemorialImageList</value>
   </data>
-  <data name="&gt;&gt;pic_2_2.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
+  <data name="&gt;&gt;MemorialImageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="foodimagelist.ImageSize" type="System.Drawing.Size, System.Drawing">
-    <value>16, 16</value>
+  <data name="&gt;&gt;RecommendImagelist.Name" xml:space="preserve">
+    <value>RecommendImagelist</value>
   </data>
-  <data name="&gt;&gt;tooltip_lbl.Name" xml:space="preserve">
-    <value>tooltip_lbl</value>
+  <data name="&gt;&gt;RecommendImagelist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;manu4_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="manu3_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;manu3_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;manu_layout_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pic_3_3.Name" xml:space="preserve">
-    <value>pic_3_3</value>
-  </data>
-  <data name="panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pic_2_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 82</value>
-  </data>
-  <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
-  </data>
-  <data name="manu_layout_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TopperList</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="picture_layout_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pic_3_3" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_3_2" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_3_1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_2" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="manu2_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 15.75pt</value>
-  </data>
-  <data name="tooltip_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exit_pane.Name" xml:space="preserve">
-    <value>exit_pane</value>
-  </data>
-  <data name="menu2_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 382</value>
-  </data>
-  <data name="&gt;&gt;manu_layout_pane.Name" xml:space="preserve">
-    <value>manu_layout_pane</value>
-  </data>
-  <data name="exit_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pic_1_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="manu4_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 15.75pt</value>
-  </data>
-  <data name="&gt;&gt;manu2_lbl.Parent" xml:space="preserve">
-    <value>menu2_pane</value>
-  </data>
-  <data name="tooltip_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;manu1_lbl.Parent" xml:space="preserve">
-    <value>menu1_pane</value>
-  </data>
-  <data name="&gt;&gt;manu_layout_pane.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Name" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tooltip_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="next_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="menu4_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="picture_layout_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="manu2_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="&gt;&gt;pic_2_1.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="&gt;&gt;pic_3_3.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="&gt;&gt;pic_3_1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;menu1_pane.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menu1_pane.Name" xml:space="preserve">
-    <value>menu1_pane</value>
-  </data>
-  <data name="manu_layout_pane.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pic_2_3.Name" xml:space="preserve">
-    <value>pic_2_3</value>
-  </data>
-  <data name="&gt;&gt;pic_2_1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pic_3_1.Name" xml:space="preserve">
-    <value>pic_3_1</value>
-  </data>
-  <data name="&gt;&gt;pic_1_1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="menu2_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="menu1_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 382</value>
-  </data>
-  <data name="menu3_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="pic_2_3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="pic_2_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 166</value>
-  </data>
-  <data name="menu1_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pic_1_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="exit_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;exit_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pic_3_2.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="pic_3_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 329</value>
-  </data>
-  <data name="pic_3_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 329</value>
-  </data>
-  <data name="menu3_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 41</value>
-  </data>
-  <data name="&gt;&gt;pic_3_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menu4_pane.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="manu1_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="manu1_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 15.75pt</value>
-  </data>
-  <data name="&gt;&gt;picture_layout_pane.Name" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="pic_3_1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pic_1_1.Parent" xml:space="preserve">
-    <value>picture_layout_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="manu4_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 41</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 12</value>
-  </data>
-  <data name="manu1_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="picture_layout_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 197</value>
-  </data>
-  <data name="&gt;&gt;menu3_pane.Name" xml:space="preserve">
-    <value>menu3_pane</value>
-  </data>
-  <data name="pic_3_2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;manu1_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="manu3_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 847</value>
-  </data>
-  <data name="&gt;&gt;menu1_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_1_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;manu2_lbl.Name" xml:space="preserve">
-    <value>manu2_lbl</value>
-  </data>
-  <data name="menu4_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;menu1_pane.Parent" xml:space="preserve">
-    <value>manu_layout_pane</value>
-  </data>
-  <data name="manu4_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pic_1_3.Name" xml:space="preserve">
-    <value>pic_1_3</value>
-  </data>
-  <data name="&gt;&gt;manu4_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pic_2_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 157</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 91</value>
-  </data>
-  <data name="pic_3_1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="foodimagelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>150, 17</value>
-  </metadata>
-  <metadata name="travelImagelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

@@ -15,26 +15,7 @@ namespace Demo
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ToperKiosk_Sys_Load(object sender, EventArgs e)
-        {
-
+            this.ManInfo_lbl.Left = (this.ClientSize.Width - ManInfo_lbl.Width) / 2;  //중앙정렬
         }
 
         private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)
@@ -65,6 +46,26 @@ namespace Demo
             newENForm.ShowDialog();
         }
 
-    
+        private void translate_paneKo_MouseEnter(object sender, EventArgs e)
+        {
+            ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
+        }
+
+        private void translate_paneCH_MouseEnter(object sender, EventArgs e)
+        {
+            ManInfo_lbl.Text = "选择语言向后过渡";
+        }
+
+        private void lbl_JP_MouseEnter(object sender, EventArgs e)
+        {
+            ManInfo_lbl.Text = "語を選んで次に移る";
+        }
+
+        private void translate_paneEN_MouseEnter(object sender, EventArgs e)
+        {
+            ManInfo_lbl.Text = "Select a language to move next page";
+        }
+
+        
     }
 }
