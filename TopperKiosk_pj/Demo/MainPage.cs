@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class ToperKiosk_Sys : Form
+    public partial class MainPage : Form
     {
-        public ToperKiosk_Sys()
+        public MainPage()
         {
             InitializeComponent();
         }
@@ -37,31 +37,30 @@ namespace Demo
 
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)
         {
+            this.Visible = false;
             TopperList newKoForm = new TopperList();
             newKoForm.ShowDialog();
         }
 
         private void translate_paneCH_MouseClick(object sender, MouseEventArgs e)
         {
+            this.Visible = false;
             TopperList newCHForm = new TopperList();
             newCHForm.ShowDialog();
         }
 
         private void translate_paneJP_MouseClick(object sender, MouseEventArgs e)
         {
+            this.Visible = false;
             TopperList newJPForm = new TopperList();
             newJPForm.ShowDialog();
         }
 
         private void translate_paneEN_MouseClick(object sender, MouseEventArgs e)
         {
+            this.Visible = false;
             TopperList newENForm = new TopperList();
             newENForm.ShowDialog();
         }

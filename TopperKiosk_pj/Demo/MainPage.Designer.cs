@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    partial class ToperKiosk_Sys
+    partial class MainPage
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToperKiosk_Sys));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.lbl_KO = new System.Windows.Forms.Label();
             this.lbl_CH = new System.Windows.Forms.Label();
             this.lbl_JP = new System.Windows.Forms.Label();
@@ -158,7 +158,6 @@
             this.translate_paneEN.Name = "translate_paneEN";
             this.translate_paneEN.Size = new System.Drawing.Size(86, 50);
             this.translate_paneEN.TabIndex = 9;
-            this.translate_paneEN.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             this.translate_paneEN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
             // 
             // ManInfo_lbl
@@ -174,7 +173,7 @@
             this.ManInfo_lbl.TabIndex = 10;
             this.ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
             // 
-            // ToperKiosk_Sys
+            // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -182,6 +181,7 @@
             this.BackgroundImage = global::Demo.Properties.Resources.Beauty_Nature_1_Wallpaper_1080x1920_768x1365;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(524, 941);
+            this.ControlBox = false;
             this.Controls.Add(this.ManInfo_lbl);
             this.Controls.Add(this.translate_paneEN);
             this.Controls.Add(this.translate_paneJP);
@@ -190,9 +190,8 @@
             this.Controls.Add(this.Main_lbl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Name = "ToperKiosk_Sys";
+            this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ToperKiosk_SYS";
             this.Load += new System.EventHandler(this.ToperKiosk_Sys_Load);
             this.translate_paneKo.ResumeLayout(false);
             this.translate_paneKo.PerformLayout();

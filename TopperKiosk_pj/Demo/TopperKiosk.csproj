@@ -46,16 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailSetting.cs">
+    <Compile Include="PayPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailSetting.Designer.cs">
-      <DependentUpon>DetailSetting.cs</DependentUpon>
+    <Compile Include="PayPage.Designer.cs">
+      <DependentUpon>PayPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPage.Designer.cs">
+      <DependentUpon>SettingPage.cs</DependentUpon>
     </Compile>
     <Compile Include="TopperList.cs">
       <SubType>Form</SubType>
@@ -71,16 +77,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WatingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WatingPage.Designer.cs">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayPage.resx">
+      <DependentUpon>PayPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopperList.resx">
       <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
