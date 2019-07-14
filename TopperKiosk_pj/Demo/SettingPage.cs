@@ -12,16 +12,18 @@ namespace Demo
 {
     public partial class SettingPage : Form
     {
-        string imageName , userText;
+        string imageName , userText = "None";
+        int price;
 
-        public SettingPage(string imageName) // 이미지 선택 창에서 넘어올때
+        public SettingPage(string imageName, int price) // 이미지 선택 창에서 넘어올때
         {
             this.imageName = imageName;
+            this.price = price;
             InitializeComponent();
             this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;  //중앙정렬
         }
 
-        public SettingPage(string imageName,string userText) // 결재창에서 넘어올때
+        public SettingPage(string imageName,string userText,int price) // 결재창에서 넘어올때
         {
             this.imageName = imageName;
             this.userText = userText;
@@ -39,7 +41,7 @@ namespace Demo
         private void next_pane_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            PayPage newPayPage = new PayPage(imageName, userText);
+            PayPage newPayPage = new PayPage(imageName, userText, price);
             newPayPage.ShowDialog();
         }
     }

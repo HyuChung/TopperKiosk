@@ -17,7 +17,7 @@ namespace Demo
         int valPage = 1, numpage = 1;
         int[,] initimage = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} };
         string selected_image ="None";
-        
+        int price = 0;
  
         public TopperList(int lenguage)
         {
@@ -61,7 +61,7 @@ namespace Demo
             if (selected_image.Equals("None")) //이미지 선택 확인
             {
                 this.Visible = false;
-                SettingPage newsettingPage = new SettingPage(selected_image);
+                SettingPage newsettingPage = new SettingPage(selected_image,price);
                 newsettingPage.ShowDialog();
             }
             else 
