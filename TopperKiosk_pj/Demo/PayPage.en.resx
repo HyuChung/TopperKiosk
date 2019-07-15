@@ -131,4 +131,16 @@
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="chargeMoney_lbl.Text" xml:space="preserve">
+    <value>Price :</value>
+  </data>
+  <data name="designName_lbl.Text" xml:space="preserve">
+    <value>Design :</value>
+  </data>
+  <data name="tooltip_lbl.Text" xml:space="preserve">
+    <value>Please check the fianl results</value>
+  </data>
+  <data name="userTextName_lbl.Text" xml:space="preserve">
+    <value>Text :</value>
+  </data>
 </root>

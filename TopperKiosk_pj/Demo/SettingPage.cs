@@ -65,7 +65,7 @@ namespace Demo
         private void exit_pane_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            TopperList newTopperlist = new TopperList(1);
+            TopperList newTopperlist = new TopperList();
             newTopperlist.ShowDialog();
         }
 
