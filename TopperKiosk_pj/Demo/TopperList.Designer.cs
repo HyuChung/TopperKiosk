@@ -31,6 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopperList));
             this.picture_layout_pane = new System.Windows.Forms.TableLayoutPanel();
+            this.pic_3_3 = new System.Windows.Forms.PictureBox();
+            this.pic_3_2 = new System.Windows.Forms.PictureBox();
+            this.pic_3_1 = new System.Windows.Forms.PictureBox();
+            this.pic_2_3 = new System.Windows.Forms.PictureBox();
+            this.pic_2_2 = new System.Windows.Forms.PictureBox();
+            this.pic_2_1 = new System.Windows.Forms.PictureBox();
+            this.pic_1_3 = new System.Windows.Forms.PictureBox();
+            this.pic_1_2 = new System.Windows.Forms.PictureBox();
+            this.pic_1_1 = new System.Windows.Forms.PictureBox();
             this.manu_layout_pane = new System.Windows.Forms.TableLayoutPanel();
             this.menu1_pane = new System.Windows.Forms.Panel();
             this.manu1_lbl = new System.Windows.Forms.Label();
@@ -44,15 +53,6 @@
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.TourImagelist = new System.Windows.Forms.ImageList(this.components);
             this.FoodImagelist = new System.Windows.Forms.ImageList(this.components);
-            this.pic_3_3 = new System.Windows.Forms.PictureBox();
-            this.pic_3_2 = new System.Windows.Forms.PictureBox();
-            this.pic_3_1 = new System.Windows.Forms.PictureBox();
-            this.pic_2_3 = new System.Windows.Forms.PictureBox();
-            this.pic_2_2 = new System.Windows.Forms.PictureBox();
-            this.pic_2_1 = new System.Windows.Forms.PictureBox();
-            this.pic_1_3 = new System.Windows.Forms.PictureBox();
-            this.pic_1_2 = new System.Windows.Forms.PictureBox();
-            this.pic_1_1 = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,12 +60,6 @@
             this.MemorialImageList = new System.Windows.Forms.ImageList(this.components);
             this.RecommendImagelist = new System.Windows.Forms.ImageList(this.components);
             this.picture_layout_pane.SuspendLayout();
-            this.manu_layout_pane.SuspendLayout();
-            this.menu1_pane.SuspendLayout();
-            this.menu2_pane.SuspendLayout();
-            this.menu3_pane.SuspendLayout();
-            this.menu4_pane.SuspendLayout();
-            this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_1)).BeginInit();
@@ -75,6 +69,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_1)).BeginInit();
+            this.manu_layout_pane.SuspendLayout();
+            this.menu1_pane.SuspendLayout();
+            this.menu2_pane.SuspendLayout();
+            this.menu3_pane.SuspendLayout();
+            this.menu4_pane.SuspendLayout();
+            this.tooltip_pane.SuspendLayout();
             this.SuspendLayout();
             // 
             // picture_layout_pane
@@ -91,6 +91,78 @@
             this.picture_layout_pane.Controls.Add(this.pic_1_1, 0, 0);
             this.picture_layout_pane.Name = "picture_layout_pane";
             this.picture_layout_pane.Click += new System.EventHandler(this.pic_3_1_Click);
+            // 
+            // pic_3_3
+            // 
+            resources.ApplyResources(this.pic_3_3, "pic_3_3");
+            this.pic_3_3.Name = "pic_3_3";
+            this.pic_3_3.TabStop = false;
+            this.pic_3_3.Click += new System.EventHandler(this.pic_3_3_Click);
+            this.pic_3_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_3_Paint);
+            // 
+            // pic_3_2
+            // 
+            resources.ApplyResources(this.pic_3_2, "pic_3_2");
+            this.pic_3_2.Name = "pic_3_2";
+            this.pic_3_2.TabStop = false;
+            this.pic_3_2.Click += new System.EventHandler(this.pic_3_2_Click);
+            this.pic_3_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_2_Paint);
+            // 
+            // pic_3_1
+            // 
+            resources.ApplyResources(this.pic_3_1, "pic_3_1");
+            this.pic_3_1.Name = "pic_3_1";
+            this.pic_3_1.TabStop = false;
+            this.pic_3_1.Click += new System.EventHandler(this.pic_3_1_Click);
+            this.pic_3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_1_Paint);
+            // 
+            // pic_2_3
+            // 
+            resources.ApplyResources(this.pic_2_3, "pic_2_3");
+            this.pic_2_3.Name = "pic_2_3";
+            this.pic_2_3.TabStop = false;
+            this.pic_2_3.Click += new System.EventHandler(this.pic_2_3_Click);
+            this.pic_2_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_3_Paint);
+            // 
+            // pic_2_2
+            // 
+            resources.ApplyResources(this.pic_2_2, "pic_2_2");
+            this.pic_2_2.Name = "pic_2_2";
+            this.pic_2_2.TabStop = false;
+            this.pic_2_2.Click += new System.EventHandler(this.pic_2_2_Click);
+            this.pic_2_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_2_Paint);
+            // 
+            // pic_2_1
+            // 
+            resources.ApplyResources(this.pic_2_1, "pic_2_1");
+            this.pic_2_1.Name = "pic_2_1";
+            this.pic_2_1.TabStop = false;
+            this.pic_2_1.Click += new System.EventHandler(this.pic_2_1_Click);
+            this.pic_2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_1_Paint);
+            // 
+            // pic_1_3
+            // 
+            resources.ApplyResources(this.pic_1_3, "pic_1_3");
+            this.pic_1_3.Name = "pic_1_3";
+            this.pic_1_3.TabStop = false;
+            this.pic_1_3.Click += new System.EventHandler(this.pic_1_3_Click);
+            this.pic_1_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_3_Paint);
+            // 
+            // pic_1_2
+            // 
+            resources.ApplyResources(this.pic_1_2, "pic_1_2");
+            this.pic_1_2.Name = "pic_1_2";
+            this.pic_1_2.TabStop = false;
+            this.pic_1_2.Click += new System.EventHandler(this.pic_1_2_Click);
+            this.pic_1_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_2_Paint);
+            // 
+            // pic_1_1
+            // 
+            resources.ApplyResources(this.pic_1_1, "pic_1_1");
+            this.pic_1_1.Name = "pic_1_1";
+            this.pic_1_1.TabStop = false;
+            this.pic_1_1.Click += new System.EventHandler(this.pic_1_1_Click);
+            this.pic_1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_1_Paint);
             // 
             // manu_layout_pane
             // 
@@ -191,78 +263,6 @@
             this.FoodImagelist.Images.SetKeyName(2, "Love1.jpg");
             this.FoodImagelist.Images.SetKeyName(3, "Mr_Mrs.jpg");
             // 
-            // pic_3_3
-            // 
-            resources.ApplyResources(this.pic_3_3, "pic_3_3");
-            this.pic_3_3.Name = "pic_3_3";
-            this.pic_3_3.TabStop = false;
-            this.pic_3_3.Click += new System.EventHandler(this.pic_3_3_Click);
-            this.pic_3_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_3_Paint);
-            // 
-            // pic_3_2
-            // 
-            resources.ApplyResources(this.pic_3_2, "pic_3_2");
-            this.pic_3_2.Name = "pic_3_2";
-            this.pic_3_2.TabStop = false;
-            this.pic_3_2.Click += new System.EventHandler(this.pic_3_2_Click);
-            this.pic_3_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_2_Paint);
-            // 
-            // pic_3_1
-            // 
-            resources.ApplyResources(this.pic_3_1, "pic_3_1");
-            this.pic_3_1.Name = "pic_3_1";
-            this.pic_3_1.TabStop = false;
-            this.pic_3_1.Click += new System.EventHandler(this.pic_3_1_Click);
-            this.pic_3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_1_Paint);
-            // 
-            // pic_2_3
-            // 
-            resources.ApplyResources(this.pic_2_3, "pic_2_3");
-            this.pic_2_3.Name = "pic_2_3";
-            this.pic_2_3.TabStop = false;
-            this.pic_2_3.Click += new System.EventHandler(this.pic_2_3_Click);
-            this.pic_2_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_3_Paint);
-            // 
-            // pic_2_2
-            // 
-            resources.ApplyResources(this.pic_2_2, "pic_2_2");
-            this.pic_2_2.Name = "pic_2_2";
-            this.pic_2_2.TabStop = false;
-            this.pic_2_2.Click += new System.EventHandler(this.pic_2_2_Click);
-            this.pic_2_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_2_Paint);
-            // 
-            // pic_2_1
-            // 
-            resources.ApplyResources(this.pic_2_1, "pic_2_1");
-            this.pic_2_1.Name = "pic_2_1";
-            this.pic_2_1.TabStop = false;
-            this.pic_2_1.Click += new System.EventHandler(this.pic_2_1_Click);
-            this.pic_2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_1_Paint);
-            // 
-            // pic_1_3
-            // 
-            resources.ApplyResources(this.pic_1_3, "pic_1_3");
-            this.pic_1_3.Name = "pic_1_3";
-            this.pic_1_3.TabStop = false;
-            this.pic_1_3.Click += new System.EventHandler(this.pic_1_3_Click);
-            this.pic_1_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_3_Paint);
-            // 
-            // pic_1_2
-            // 
-            resources.ApplyResources(this.pic_1_2, "pic_1_2");
-            this.pic_1_2.Name = "pic_1_2";
-            this.pic_1_2.TabStop = false;
-            this.pic_1_2.Click += new System.EventHandler(this.pic_1_2_Click);
-            this.pic_1_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_2_Paint);
-            // 
-            // pic_1_1
-            // 
-            resources.ApplyResources(this.pic_1_1, "pic_1_1");
-            this.pic_1_1.Name = "pic_1_1";
-            this.pic_1_1.TabStop = false;
-            this.pic_1_1.Click += new System.EventHandler(this.pic_1_1_Click);
-            this.pic_1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_1_Paint);
-            // 
             // next_pane
             // 
             resources.ApplyResources(this.next_pane, "next_pane");
@@ -298,6 +298,8 @@
             this.MemorialImageList.Images.SetKeyName(2, "Birthday3.jpg");
             this.MemorialImageList.Images.SetKeyName(3, "Birthday4.jpg");
             this.MemorialImageList.Images.SetKeyName(4, "Birthday5.jpg");
+            this.MemorialImageList.Images.SetKeyName(5, "999A4C3359EECFBC25.jpg");
+            this.MemorialImageList.Images.SetKeyName(6, "images.jpg");
             // 
             // RecommendImagelist
             // 
@@ -306,6 +308,8 @@
             this.RecommendImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
             this.RecommendImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
             this.RecommendImagelist.Images.SetKeyName(2, "Birthday1.jpg");
+            this.RecommendImagelist.Images.SetKeyName(3, "Congrats1.jpg");
+            this.RecommendImagelist.Images.SetKeyName(4, "Love1.jpg");
             // 
             // TopperList
             // 
@@ -324,12 +328,6 @@
             this.MinimizeBox = false;
             this.Name = "TopperList";
             this.picture_layout_pane.ResumeLayout(false);
-            this.manu_layout_pane.ResumeLayout(false);
-            this.menu1_pane.ResumeLayout(false);
-            this.menu2_pane.ResumeLayout(false);
-            this.menu3_pane.ResumeLayout(false);
-            this.menu4_pane.ResumeLayout(false);
-            this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_1)).EndInit();
@@ -339,6 +337,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_1)).EndInit();
+            this.manu_layout_pane.ResumeLayout(false);
+            this.menu1_pane.ResumeLayout(false);
+            this.menu2_pane.ResumeLayout(false);
+            this.menu3_pane.ResumeLayout(false);
+            this.menu4_pane.ResumeLayout(false);
+            this.tooltip_pane.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -38,10 +38,11 @@ namespace Demo
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             }
-            else
+            else if(lenguage == 4)
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("ko");
             }
+         
             InitializeComponent();
             insertpic(valPage, numpage); //이미지 초기화
            
@@ -112,7 +113,7 @@ namespace Demo
                 {
                     if(imageMap[i,j] == 2)
                     {
-                        listnum = (i + 1) * (j + 1) - 1;
+                        listnum = i * 3 + j;
                     }
                 }
             }
@@ -850,7 +851,7 @@ namespace Demo
             if (imageMap[1, 2] != 0)
             {
                 changePicColor(23);
-                imageMap[1,2]=2;
+                imageMap[1, 2]=2;
                 allRefrash();
             }
         }
