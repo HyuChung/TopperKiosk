@@ -90,6 +90,7 @@
             this.picture_layout_pane.Controls.Add(this.pic_1_2, 1, 0);
             this.picture_layout_pane.Controls.Add(this.pic_1_1, 0, 0);
             this.picture_layout_pane.Name = "picture_layout_pane";
+            this.picture_layout_pane.Click += new System.EventHandler(this.pic_3_1_Click);
             // 
             // manu_layout_pane
             // 
@@ -175,21 +176,27 @@
             // 
             // TourImagelist
             // 
-            this.TourImagelist.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.TourImagelist, "TourImagelist");
+            this.TourImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("TourImagelist.ImageStream")));
             this.TourImagelist.TransparentColor = System.Drawing.Color.Transparent;
+            this.TourImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
+            this.TourImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
+            this.TourImagelist.Images.SetKeyName(2, "images.jpg");
             // 
             // FoodImagelist
             // 
-            this.FoodImagelist.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.FoodImagelist, "FoodImagelist");
+            this.FoodImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("FoodImagelist.ImageStream")));
             this.FoodImagelist.TransparentColor = System.Drawing.Color.Transparent;
+            this.FoodImagelist.Images.SetKeyName(0, "999A4C3359EECFBC25.jpg");
+            this.FoodImagelist.Images.SetKeyName(1, "Congrats1.jpg");
+            this.FoodImagelist.Images.SetKeyName(2, "Love1.jpg");
+            this.FoodImagelist.Images.SetKeyName(3, "Mr_Mrs.jpg");
             // 
             // pic_3_3
             // 
             resources.ApplyResources(this.pic_3_3, "pic_3_3");
             this.pic_3_3.Name = "pic_3_3";
             this.pic_3_3.TabStop = false;
+            this.pic_3_3.Click += new System.EventHandler(this.pic_3_3_Click);
             this.pic_3_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_3_Paint);
             // 
             // pic_3_2
@@ -197,6 +204,7 @@
             resources.ApplyResources(this.pic_3_2, "pic_3_2");
             this.pic_3_2.Name = "pic_3_2";
             this.pic_3_2.TabStop = false;
+            this.pic_3_2.Click += new System.EventHandler(this.pic_3_2_Click);
             this.pic_3_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_2_Paint);
             // 
             // pic_3_1
@@ -204,6 +212,7 @@
             resources.ApplyResources(this.pic_3_1, "pic_3_1");
             this.pic_3_1.Name = "pic_3_1";
             this.pic_3_1.TabStop = false;
+            this.pic_3_1.Click += new System.EventHandler(this.pic_3_1_Click);
             this.pic_3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_1_Paint);
             // 
             // pic_2_3
@@ -211,6 +220,7 @@
             resources.ApplyResources(this.pic_2_3, "pic_2_3");
             this.pic_2_3.Name = "pic_2_3";
             this.pic_2_3.TabStop = false;
+            this.pic_2_3.Click += new System.EventHandler(this.pic_2_3_Click);
             this.pic_2_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_3_Paint);
             // 
             // pic_2_2
@@ -218,6 +228,7 @@
             resources.ApplyResources(this.pic_2_2, "pic_2_2");
             this.pic_2_2.Name = "pic_2_2";
             this.pic_2_2.TabStop = false;
+            this.pic_2_2.Click += new System.EventHandler(this.pic_2_2_Click);
             this.pic_2_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_2_Paint);
             // 
             // pic_2_1
@@ -225,6 +236,7 @@
             resources.ApplyResources(this.pic_2_1, "pic_2_1");
             this.pic_2_1.Name = "pic_2_1";
             this.pic_2_1.TabStop = false;
+            this.pic_2_1.Click += new System.EventHandler(this.pic_2_1_Click);
             this.pic_2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_1_Paint);
             // 
             // pic_1_3
@@ -232,6 +244,7 @@
             resources.ApplyResources(this.pic_1_3, "pic_1_3");
             this.pic_1_3.Name = "pic_1_3";
             this.pic_1_3.TabStop = false;
+            this.pic_1_3.Click += new System.EventHandler(this.pic_1_3_Click);
             this.pic_1_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_3_Paint);
             // 
             // pic_1_2
@@ -239,6 +252,7 @@
             resources.ApplyResources(this.pic_1_2, "pic_1_2");
             this.pic_1_2.Name = "pic_1_2";
             this.pic_1_2.TabStop = false;
+            this.pic_1_2.Click += new System.EventHandler(this.pic_1_2_Click);
             this.pic_1_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_2_Paint);
             // 
             // pic_1_1
@@ -277,15 +291,21 @@
             // 
             // MemorialImageList
             // 
-            this.MemorialImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.MemorialImageList, "MemorialImageList");
+            this.MemorialImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("MemorialImageList.ImageStream")));
             this.MemorialImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.MemorialImageList.Images.SetKeyName(0, "Birthday1.jpg");
+            this.MemorialImageList.Images.SetKeyName(1, "Birthday2.jpg");
+            this.MemorialImageList.Images.SetKeyName(2, "Birthday3.jpg");
+            this.MemorialImageList.Images.SetKeyName(3, "Birthday4.jpg");
+            this.MemorialImageList.Images.SetKeyName(4, "Birthday5.jpg");
             // 
             // RecommendImagelist
             // 
-            this.RecommendImagelist.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.RecommendImagelist, "RecommendImagelist");
+            this.RecommendImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("RecommendImagelist.ImageStream")));
             this.RecommendImagelist.TransparentColor = System.Drawing.Color.Transparent;
+            this.RecommendImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
+            this.RecommendImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
+            this.RecommendImagelist.Images.SetKeyName(2, "Birthday1.jpg");
             // 
             // TopperList
             // 
@@ -350,9 +370,9 @@
         private System.Windows.Forms.PictureBox pic_1_1;
         private System.Windows.Forms.Panel tooltip_pane;
         private System.Windows.Forms.Label tooltip_lbl;
-        private System.Windows.Forms.ImageList TourImagelist;
-        private System.Windows.Forms.ImageList FoodImagelist;
-        private System.Windows.Forms.ImageList MemorialImageList;
-        private System.Windows.Forms.ImageList RecommendImagelist;
+        public System.Windows.Forms.ImageList TourImagelist;
+        public System.Windows.Forms.ImageList FoodImagelist;
+        public System.Windows.Forms.ImageList MemorialImageList;
+        public System.Windows.Forms.ImageList RecommendImagelist;
     }
 }

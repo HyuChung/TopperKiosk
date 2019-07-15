@@ -38,12 +38,12 @@
             this.chargeMoney_lbl = new System.Windows.Forms.Label();
             this.dismoney_lbl = new System.Windows.Forms.Label();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
-            this.showingDesign2 = new System.Windows.Forms.PictureBox();
+            this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
             this.tooltip_pane.SuspendLayout();
             this.disInfo_pane.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
             // 
             // tooltip_lbl
@@ -100,12 +100,12 @@
             this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
             this.disInfo_pane.Name = "disInfo_pane";
             // 
-            // showingDesign2
+            // showingDesign
             // 
-            resources.ApplyResources(this.showingDesign2, "showingDesign2");
-            this.showingDesign2.Image = global::Demo.Properties.Resources._9321_shop1_297733;
-            this.showingDesign2.Name = "showingDesign2";
-            this.showingDesign2.TabStop = false;
+            resources.ApplyResources(this.showingDesign, "showingDesign");
+            this.showingDesign.Image = global::Demo.Properties.Resources._9321_shop1_297733;
+            this.showingDesign.Name = "showingDesign";
+            this.showingDesign.TabStop = false;
             // 
             // next_pane
             // 
@@ -127,14 +127,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
             this.Controls.Add(this.disInfo_pane);
-            this.Controls.Add(this.showingDesign2);
+            this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
             this.Name = "PayPage";
             this.tooltip_pane.ResumeLayout(false);
             this.disInfo_pane.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.showingDesign2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,7 +145,7 @@
         private System.Windows.Forms.Panel exit_pane;
         private System.Windows.Forms.Label tooltip_lbl;
         private System.Windows.Forms.Panel tooltip_pane;
-        private System.Windows.Forms.PictureBox showingDesign2;
+        private System.Windows.Forms.PictureBox showingDesign;
         private System.Windows.Forms.Label designName_lbl;
         private System.Windows.Forms.Label userTextName_lbl;
         private System.Windows.Forms.Label disDesginName_lbl;
