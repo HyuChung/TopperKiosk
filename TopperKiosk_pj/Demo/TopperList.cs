@@ -796,6 +796,7 @@ namespace Demo
             pic_3_3.Refresh();
         }
 
+
         private void pic_1_1_Click(object sender, EventArgs e)
         {
             if (imageMap[0, 0] !=0) {

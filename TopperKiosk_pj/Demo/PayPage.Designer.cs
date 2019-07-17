@@ -103,7 +103,6 @@
             // showingDesign
             // 
             resources.ApplyResources(this.showingDesign, "showingDesign");
-            this.showingDesign.Image = global::Demo.Properties.Resources._9321_shop1_297733;
             this.showingDesign.Name = "showingDesign";
             this.showingDesign.TabStop = false;
             // 

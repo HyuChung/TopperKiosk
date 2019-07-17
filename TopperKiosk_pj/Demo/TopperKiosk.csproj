@@ -144,21 +144,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\common[5].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\common[10].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1[1].png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\_SAM1098c[1].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\다운로드.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Beauty-Nature-1-Wallpaper-1080x1920-768x1365.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -177,31 +162,7 @@
     <None Include="Resources\next.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\예시 1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\the-button-859346_1280.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\999A4C3359EECFBC25.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6383_shop1_812327.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9321_shop1_297733.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DGtwTZUVoAAJYF7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow %281%291.png" />

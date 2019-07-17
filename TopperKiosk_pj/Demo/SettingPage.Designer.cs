@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingPage));
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane = new System.Windows.Forms.Panel();
+            this.insertUserText = new System.Windows.Forms.TextBox();
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
-            this.insertUserText = new System.Windows.Forms.TextBox();
             this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
@@ -52,10 +52,15 @@
             this.tooltip_pane.Controls.Add(this.tooltip_lbl);
             this.tooltip_pane.Name = "tooltip_pane";
             // 
+            // insertUserText
+            // 
+            resources.ApplyResources(this.insertUserText, "insertUserText");
+            this.insertUserText.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.insertUserText.Name = "insertUserText";
+            // 
             // showingDesign
             // 
             resources.ApplyResources(this.showingDesign, "showingDesign");
-            this.showingDesign.Image = global::Demo.Properties.Resources._9321_shop1_297733;
             this.showingDesign.Name = "showingDesign";
             this.showingDesign.TabStop = false;
             // 
@@ -72,12 +77,6 @@
             this.exit_pane.BackgroundImage = global::Demo.Properties.Resources.cancel;
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
-            // 
-            // insertUserText
-            // 
-            resources.ApplyResources(this.insertUserText, "insertUserText");
-            this.insertUserText.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.insertUserText.Name = "insertUserText";
             // 
             // SettingPage
             // 

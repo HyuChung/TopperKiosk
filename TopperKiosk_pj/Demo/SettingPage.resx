@@ -180,6 +180,36 @@
   <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="insertUserText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="insertUserText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="insertUserText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 342</value>
+  </data>
+  <data name="insertUserText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 29</value>
+  </data>
+  <data name="insertUserText.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="insertUserText.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;insertUserText.Name" xml:space="preserve">
+    <value>insertUserText</value>
+  </data>
+  <data name="&gt;&gt;insertUserText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;insertUserText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;insertUserText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -263,36 +293,6 @@
   </data>
   <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="insertUserText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="insertUserText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>맑은 고딕, 12pt</value>
-  </data>
-  <data name="insertUserText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 342</value>
-  </data>
-  <data name="insertUserText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 29</value>
-  </data>
-  <data name="insertUserText.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="insertUserText.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Name" xml:space="preserve">
-    <value>insertUserText</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
