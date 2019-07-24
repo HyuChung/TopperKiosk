@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>Resources\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +54,18 @@
     </Compile>
     <Compile Include="backgroungMain.Designer.cs">
       <DependentUpon>backgroungMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultCancel.Designer.cs">
+      <DependentUpon>FormResultCancel.cs</DependentUpon>
     </Compile>
     <Compile Include="PayPage.cs">
       <SubType>Form</SubType>
@@ -98,6 +113,12 @@
     </Compile>
     <EmbeddedResource Include="backgroungMain.resx">
       <DependentUpon>backgroungMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultCancel.resx">
+      <DependentUpon>FormResultCancel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>

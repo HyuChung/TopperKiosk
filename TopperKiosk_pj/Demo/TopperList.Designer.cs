@@ -293,10 +293,10 @@
             // 
             this.RecommendImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("RecommendImagelist.ImageStream")));
             this.RecommendImagelist.TransparentColor = System.Drawing.Color.Transparent;
-            this.RecommendImagelist.Images.SetKeyName(0, "Q&A.png");
-            this.RecommendImagelist.Images.SetKeyName(1, "Q&A2.png");
-            this.RecommendImagelist.Images.SetKeyName(2, "서울 역사 여행중.png");
-            this.RecommendImagelist.Images.SetKeyName(3, "세미콜론팀.png");
+            this.RecommendImagelist.Images.SetKeyName(0, "세미콜론팀.JPG");
+            this.RecommendImagelist.Images.SetKeyName(1, "Q&A.png");
+            this.RecommendImagelist.Images.SetKeyName(2, "Q&A2.png");
+            this.RecommendImagelist.Images.SetKeyName(3, "서울 역사 여행중.png");
             this.RecommendImagelist.Images.SetKeyName(4, "여행중.png");
             this.RecommendImagelist.Images.SetKeyName(5, "파리 여행중.png");
             // 

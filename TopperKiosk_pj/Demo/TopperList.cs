@@ -46,6 +46,9 @@ namespace Demo
             }
             
             InitializeComponent();
+
+            left_arrow.Visible = false; //처음 패이지 왼쪽화살표 삭제
+
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             roundPicBox(); //원형 이미지 박스 (tag작동안함)
             menuIconChanger(1);
@@ -608,6 +611,29 @@ namespace Demo
             pic_3_2.Refresh();
             pic_3_3.Refresh();
         }
+
+        private void chagearrow(int valPage) // 화살표 전환
+        {
+            switch (valPage)
+            {
+                case 1:
+                    right_arrow.Visible = true;
+                    left_arrow.Visible = false;
+                    break;
+                case 2:
+                    right_arrow.Visible = true;
+                    left_arrow.Visible = true;
+                    break;
+                case 3:
+                    right_arrow.Visible = true;
+                    left_arrow.Visible = true;
+                    break;
+                case 4:
+                    right_arrow.Visible = false;
+                    left_arrow.Visible = true;
+                    break;
+            }
+        }
         #endregion
 
 
@@ -669,6 +695,7 @@ namespace Demo
             menuColorChager(1);
             this.valPage = 1;
             menuIconChanger(1);
+            chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -677,6 +704,7 @@ namespace Demo
             menuColorChager(2);
             this.valPage = 2;
             menuIconChanger(2);
+            chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -685,6 +713,7 @@ namespace Demo
             menuColorChager(3);
             this.valPage = 3;
             menuIconChanger(3);
+            chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -693,6 +722,7 @@ namespace Demo
             menuColorChager(4);
             this.valPage = 4;
             menuIconChanger(4);
+            chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -731,6 +761,7 @@ namespace Demo
 
 
         #region 'PicTag Setting'
+        /*
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
             if (pic_1_1.Tag == null) { pic_1_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
@@ -901,7 +932,8 @@ namespace Demo
                     break;
             }
         }
-        #endregion
+        */
+        #endregion 
 
 
         #region 'PicClick Setting'
@@ -1048,22 +1080,34 @@ namespace Demo
         {
             if(valPage != 1)
             {
+                right_arrow.Visible = true;
                 valPage--;
                 menuIconChanger(valPage);
                 menuColorChager(valPage);
                 insertpic(valPage, numpage);
+                if (valPage == 1)
+                {
+                    left_arrow.Visible = false;
+                }
             }
+            
         }
 
         private void right_arrow_Click(object sender, EventArgs e)//오른쪽 화살표 동작
         {
-            if(valPage != 4)
+            if (valPage != 4)
             {
+                left_arrow.Visible = true;
                 valPage++;
                 menuIconChanger(valPage);
                 menuColorChager(valPage);
                 insertpic(valPage, numpage);
+                if (valPage == 4)
+                {
+                    right_arrow.Visible = false;
+                }
             }
+        
         }
         #endregion
     }
