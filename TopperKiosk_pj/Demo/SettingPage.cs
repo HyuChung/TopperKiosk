@@ -41,7 +41,12 @@ namespace Demo
             this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;  //중앙정렬
         }
 
-        public void showingimageChage(int pageNum, int imageNum)
+        private void insertUserText_Click(object sender, EventArgs e)//가상 키보드 실행
+        {
+            clsVirtualKB.Open();
+        }
+
+        public void showingimageChage(int pageNum, int imageNum)//보여지는 이미지 가져오기
         {
             TopperList topper = new TopperList();
 
@@ -62,14 +67,15 @@ namespace Demo
             }
         }
 
-        private void exit_pane_Click(object sender, EventArgs e)
+
+        private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
             this.Visible = false;
             TopperList newTopperlist = new TopperList(9);
             newTopperlist.ShowDialog();
         }
 
-        private void next_pane_Click(object sender, EventArgs e)
+        private void next_pane_Click(object sender, EventArgs e)//다음화면
         {
             this.Visible = false;
             PayPage newPayPage = new PayPage(imageName, userText, price, imageNum, pageNum);

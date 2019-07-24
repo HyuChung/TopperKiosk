@@ -15,6 +15,7 @@ namespace Demo
         string image_name ="None", usertext ="None";
         int imageNum , pageNum , price;
 
+       
         public PayPage(string imagename, string usertext, int price, int imageNum, int pageNum)
         {
             this.usertext = usertext;
@@ -23,7 +24,7 @@ namespace Demo
             this.pageNum = pageNum;
 
             InitializeComponent();
-            showingimageChage(pageNum,imageNum);
+            showingimageChage(imageNum ,pageNum);
 
             this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;//중앙정렬
             this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;//중앙정렬
@@ -33,7 +34,7 @@ namespace Demo
             
         }
 
-        public void showingimageChage(int pageNum, int imageNum)
+        public void showingimageChage(int imageNum, int pageNum)//보여지는 이미지 가져오기
         {
             TopperList topper = new TopperList();
 
@@ -58,7 +59,15 @@ namespace Demo
             }
         }
 
-        private void exit_pane_Click(object sender, EventArgs e)
+
+        private void next_pane_Click(object sender, EventArgs e)//다음 화면
+        {
+            this.Visible = false;
+            WatingPage newSettingPage = new WatingPage(imageNum, pageNum);
+            newSettingPage.ShowDialog();
+        }
+
+        private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
             this.Visible = false;
             SettingPage newSettingPage = new SettingPage(image_name, usertext ,price,imageNum, pageNum);

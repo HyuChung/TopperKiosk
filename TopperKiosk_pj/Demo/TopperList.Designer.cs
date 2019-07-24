@@ -53,12 +53,12 @@
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.TourImagelist = new System.Windows.Forms.ImageList(this.components);
             this.FoodImagelist = new System.Windows.Forms.ImageList(this.components);
-            this.next_pane = new System.Windows.Forms.Panel();
-            this.exit_pane = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.MemorialImageList = new System.Windows.Forms.ImageList(this.components);
             this.RecommendImagelist = new System.Windows.Forms.ImageList(this.components);
+            this.next_pane = new System.Windows.Forms.Panel();
+            this.exit_pane = new System.Windows.Forms.Panel();
+            this.right_arrow = new System.Windows.Forms.Panel();
+            this.left_arrow = new System.Windows.Forms.Panel();
             this.picture_layout_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_2)).BeginInit();
@@ -253,6 +253,7 @@
             this.TourImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
             this.TourImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
             this.TourImagelist.Images.SetKeyName(2, "images.jpg");
+            this.TourImagelist.Images.SetKeyName(3, "Love1.jpg");
             // 
             // FoodImagelist
             // 
@@ -262,32 +263,6 @@
             this.FoodImagelist.Images.SetKeyName(1, "Congrats1.jpg");
             this.FoodImagelist.Images.SetKeyName(2, "Love1.jpg");
             this.FoodImagelist.Images.SetKeyName(3, "Mr_Mrs.jpg");
-            // 
-            // next_pane
-            // 
-            resources.ApplyResources(this.next_pane, "next_pane");
-            this.next_pane.BackgroundImage = global::Demo.Properties.Resources.next;
-            this.next_pane.Name = "next_pane";
-            this.next_pane.Click += new System.EventHandler(this.next_pane_Click);
-            // 
-            // exit_pane
-            // 
-            resources.ApplyResources(this.exit_pane, "exit_pane");
-            this.exit_pane.BackgroundImage = global::Demo.Properties.Resources.cancel;
-            this.exit_pane.Name = "exit_pane";
-            this.exit_pane.MouseClick += new System.Windows.Forms.MouseEventHandler(this.exit_pane_MouseClick);
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackgroundImage = global::Demo.Properties.Resources.right_arrow;
-            this.panel2.Name = "panel2";
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackgroundImage = global::Demo.Properties.Resources.left_arrow1;
-            this.panel1.Name = "panel1";
             // 
             // MemorialImageList
             // 
@@ -311,6 +286,34 @@
             this.RecommendImagelist.Images.SetKeyName(3, "Congrats1.jpg");
             this.RecommendImagelist.Images.SetKeyName(4, "Love1.jpg");
             // 
+            // next_pane
+            // 
+            resources.ApplyResources(this.next_pane, "next_pane");
+            this.next_pane.BackgroundImage = global::Demo.Properties.Resources.next;
+            this.next_pane.Name = "next_pane";
+            this.next_pane.Click += new System.EventHandler(this.next_pane_Click);
+            // 
+            // exit_pane
+            // 
+            resources.ApplyResources(this.exit_pane, "exit_pane");
+            this.exit_pane.BackgroundImage = global::Demo.Properties.Resources.cancel;
+            this.exit_pane.Name = "exit_pane";
+            this.exit_pane.MouseClick += new System.Windows.Forms.MouseEventHandler(this.exit_pane_MouseClick);
+            // 
+            // right_arrow
+            // 
+            resources.ApplyResources(this.right_arrow, "right_arrow");
+            this.right_arrow.BackgroundImage = global::Demo.Properties.Resources.right_arrow;
+            this.right_arrow.Name = "right_arrow";
+            this.right_arrow.Click += new System.EventHandler(this.right_arrow_Click);
+            // 
+            // left_arrow
+            // 
+            resources.ApplyResources(this.left_arrow, "left_arrow");
+            this.left_arrow.BackgroundImage = global::Demo.Properties.Resources.left_arrow1;
+            this.left_arrow.Name = "left_arrow";
+            this.left_arrow.Click += new System.EventHandler(this.left_arrow_Click);
+            // 
             // TopperList
             // 
             resources.ApplyResources(this, "$this");
@@ -322,8 +325,8 @@
             this.Controls.Add(this.picture_layout_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.right_arrow);
+            this.Controls.Add(this.left_arrow);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TopperList";
@@ -349,8 +352,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel left_arrow;
+        private System.Windows.Forms.Panel right_arrow;
         private System.Windows.Forms.Panel exit_pane;
         private System.Windows.Forms.Panel next_pane;
         private System.Windows.Forms.TableLayoutPanel picture_layout_pane;

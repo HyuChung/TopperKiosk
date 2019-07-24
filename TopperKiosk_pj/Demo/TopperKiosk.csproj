@@ -57,6 +57,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ScreenKeyBoard.cs" />
     <Compile Include="SettingPage.cs">
       <SubType>Form</SubType>
     </Compile>

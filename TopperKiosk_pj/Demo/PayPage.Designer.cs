@@ -111,6 +111,7 @@
             resources.ApplyResources(this.next_pane, "next_pane");
             this.next_pane.BackgroundImage = global::Demo.Properties.Resources.next;
             this.next_pane.Name = "next_pane";
+            this.next_pane.Click += new System.EventHandler(this.next_pane_Click);
             // 
             // exit_pane
             // 

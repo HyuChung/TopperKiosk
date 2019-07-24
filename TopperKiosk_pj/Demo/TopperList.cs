@@ -15,16 +15,16 @@ namespace Demo
     public partial class TopperList : Form
     {
         int valPage = 1, numpage = 1, listnum = 200;
-        int[,] imageMap = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} };
+        int[,] imageMap = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} }; //이미지 위치 확인용 배열
         string selected_image ="None";
         int price = 0;
 
-        public TopperList()
+        public TopperList()//이미지 리스트 블러오기용 초기화
         {
             InitializeComponent();
         }
 
-        public TopperList(int lenguage)
+        public TopperList(int lenguage)//실제 폼 초기화
         {
             if (lenguage == 1) //다국어 처리
             {
@@ -105,7 +105,8 @@ namespace Demo
             pic_3_3.Tag = SystemColors.GradientInactiveCaption;
         }
 
-        private void selectedImage()
+
+        private void selectedImage()//선택되어있는 이미지 번호 가져오기
         {
             for(int i=0; i < 3; i++)
             {
@@ -119,7 +120,7 @@ namespace Demo
             }
         }
 
-        private void imagelistSerchAndChange(int listnum)
+        private void imagelistSerchAndChange(int listnum)//이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
         {
             int a;
             switch (listnum)
@@ -523,7 +524,7 @@ namespace Demo
         }
 
 
-        private void exit_pane_MouseClick(object sender, MouseEventArgs e)
+        private void exit_pane_MouseClick(object sender, MouseEventArgs e)//이전 화면
         {
             this.Visible = false;
             MainPage newMain = new MainPage();
@@ -531,7 +532,7 @@ namespace Demo
             
         }
 
-        private void next_pane_Click(object sender, EventArgs e)
+        private void next_pane_Click(object sender, EventArgs e)//다음 화면
         {
             selectedImage();
 
@@ -544,72 +545,87 @@ namespace Demo
         }
 
 
+        private void menuColorChager(int menuNum) // 메뉴 색깔 변경
+        {
+            switch (menuNum)
+            {
+                case 1:
+                    this.manu1_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
+                    this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
+
+                    this.menu1_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    break;
+                case 2:
+                    this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu2_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
+                    this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
+
+                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu2_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    break;
+                case 3:
+                    this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu3_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
+                    this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
+
+                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu3_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    break;
+                case 4:
+                    this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
+                    this.manu4_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
+
+                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu4_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    break;
+
+            }
+        }
 
         private void menu1_pane_MouseClick(object sender, MouseEventArgs e)
         {
-            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
-           
-            this.menu1_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-
+            menuColorChager(1);
             this.valPage = 1;
             insertpic(valPage, numpage);
         }
 
         private void menu2_pane_MouseClick(object sender, MouseEventArgs e)
         {
-            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
-
-            this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu2_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-
+            menuColorChager(2);
             this.valPage = 2;
             insertpic(valPage, numpage);
         }
 
         private void menu3_pane_MouseClick(object sender, MouseEventArgs e)
         {
-            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
-
-            this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu3_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-
+            menuColorChager(3);
             this.valPage = 3;
             insertpic(valPage, numpage);
         }
 
         private void menu4_pane_MouseClick(object sender, MouseEventArgs e)
         {
-            this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu2_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.manu4_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-
-            this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.menu4_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-
+            menuColorChager(4);
             this.valPage = 4;
             insertpic(valPage, numpage);
         }
 
-
+        
 
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
@@ -666,7 +682,7 @@ namespace Demo
         }
 
         
-        private void changePicColor(int x)
+        private void changePicColor(int x)//이미지 목록 선택시 색깔 변경
         {
             for(int i=0; i<3; i++)
             {
@@ -783,7 +799,7 @@ namespace Demo
             }
         }
 
-        private void allRefrash()
+        private void allRefrash()//모든 이미지 목록 리프레시
         {
             pic_1_1.Refresh();
             pic_1_2.Refresh();
@@ -876,7 +892,7 @@ namespace Demo
                 allRefrash();
             }
         }
-
+        
         private void pic_3_3_Click(object sender, EventArgs e)
         {
             if (imageMap[2, 2] != 0)
@@ -888,5 +904,24 @@ namespace Demo
         }
 
 
+        private void left_arrow_Click(object sender, EventArgs e)//왼쪽 화살표 동작
+        {
+            if(valPage != 1)
+            {
+                valPage--;
+                menuColorChager(valPage);
+                insertpic(valPage, numpage);
+            }
+        }
+
+        private void right_arrow_Click(object sender, EventArgs e)//오른쪽 화살표 동작
+        {
+            if(valPage != 4)
+            {
+                valPage++;
+                menuColorChager(valPage);
+                insertpic(valPage, numpage);
+            }
+        }
     }
 }

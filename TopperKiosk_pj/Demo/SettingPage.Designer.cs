@@ -57,6 +57,7 @@
             resources.ApplyResources(this.insertUserText, "insertUserText");
             this.insertUserText.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.insertUserText.Name = "insertUserText";
+            this.insertUserText.Click += new System.EventHandler(this.insertUserText_Click);
             // 
             // showingDesign
             // 
