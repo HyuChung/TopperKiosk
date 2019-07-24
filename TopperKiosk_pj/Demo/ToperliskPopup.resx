@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tooltip_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+    <value>Top</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
@@ -132,14 +132,14 @@
     <value>0, 0</value>
   </data>
   <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
+    <value>764, 41</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tooltip_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>결과물을 최종 확인해 주세요</value>
+    <value>디자인 확인</value>
   </data>
   <data name="tooltip_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -151,40 +151,49 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tooltip_lbl.Parent" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
-  </data>
-  <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Name" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 85</value>
+  </data>
+  <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 203</value>
+  </data>
+  <data name="showingDesign.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="showingDesign.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Name" xml:space="preserve">
+    <value>showingDesign</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="disInfo_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="disInfo_pane.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="designName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="designName_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 14.249999pt</value>
+    <value>나눔고딕, 14.25pt</value>
   </data>
   <data name="designName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -193,7 +202,7 @@
     <value>3, 0</value>
   </data>
   <data name="designName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 47</value>
+    <value>104, 51</value>
   </data>
   <data name="designName_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -216,122 +225,53 @@
   <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="userTextName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="dismoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="userTextName_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 14.249999pt</value>
-  </data>
-  <data name="userTextName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="userTextName_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 47</value>
-  </data>
-  <data name="userTextName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 47</value>
-  </data>
-  <data name="userTextName_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="userTextName_lbl.Text" xml:space="preserve">
-    <value>글 씨 :</value>
-  </data>
-  <data name="userTextName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Name" xml:space="preserve">
-    <value>userTextName_lbl</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="disDesginName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="disDesginName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="dismoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>나눔고딕, 11.25pt</value>
   </data>
-  <data name="disDesginName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="dismoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="disDesginName_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 0</value>
+  <data name="dismoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 51</value>
   </data>
-  <data name="disDesginName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 47</value>
+  <data name="dismoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 52</value>
   </data>
-  <data name="disDesginName_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="dismoney_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="disDesginName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="dismoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
-    <value>disDesginName_lbl</value>
+  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
+    <value>dismoney_lbl</value>
   </data>
-  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
+  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
     <value>disInfo_pane</value>
   </data>
-  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="disUserText_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="disUserText_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 11.25pt</value>
-  </data>
-  <data name="disUserText_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="disUserText_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 47</value>
-  </data>
-  <data name="disUserText_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 47</value>
-  </data>
-  <data name="disUserText_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="disUserText_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Name" xml:space="preserve">
-    <value>disUserText_lbl</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chargeMoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="chargeMoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 14.249999pt</value>
+    <value>나눔고딕, 14.25pt</value>
   </data>
   <data name="chargeMoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chargeMoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 94</value>
+    <value>3, 51</value>
   </data>
   <data name="chargeMoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 48</value>
+    <value>104, 52</value>
   </data>
   <data name="chargeMoney_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -352,58 +292,52 @@
     <value>disInfo_pane</value>
   </data>
   <data name="&gt;&gt;chargeMoney_lbl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dismoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dismoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 11.25pt</value>
-  </data>
-  <data name="dismoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="dismoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 94</value>
-  </data>
-  <data name="dismoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 48</value>
-  </data>
-  <data name="dismoney_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="dismoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
-    <value>dismoney_lbl</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="disInfo_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="disInfo_pane.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 572</value>
+  <data name="disDesginName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
+  <data name="disDesginName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 11.25pt</value>
+  </data>
+  <data name="disDesginName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="disDesginName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 0</value>
+  </data>
+  <data name="disDesginName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 51</value>
+  </data>
+  <data name="disDesginName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="disDesginName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
+    <value>disDesginName_lbl</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 311</value>
+  </data>
+  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 142</value>
+    <value>333, 103</value>
   </data>
   <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
     <value>disInfo_pane</value>
@@ -415,67 +349,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dismoney_lbl" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chargeMoney_lbl" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="showingDesign.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 119</value>
-  </data>
-  <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 369</value>
-  </data>
-  <data name="showingDesign.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="showingDesign.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Name" xml:space="preserve">
-    <value>showingDesign</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="next_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 847</value>
-  </data>
-  <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 82</value>
-  </data>
-  <data name="next_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Name" xml:space="preserve">
-    <value>next_pane</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;next_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;next_pane.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dismoney_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chargeMoney_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,49.99999,Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="exit_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -484,13 +361,13 @@
     <value>Zoom</value>
   </data>
   <data name="exit_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 847</value>
+    <value>11, 427</value>
   </data>
   <data name="exit_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 82</value>
   </data>
   <data name="exit_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;exit_pane.Name" xml:space="preserve">
     <value>exit_pane</value>
@@ -502,7 +379,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="next_pane.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 427</value>
+  </data>
+  <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 90</value>
+  </data>
+  <data name="next_pane.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Name" xml:space="preserve">
+    <value>next_pane</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;next_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;next_pane.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -511,16 +415,13 @@
     <value>7, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>524, 941</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>764, 524</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PayPage</value>
+    <value>ToperliskPopup</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

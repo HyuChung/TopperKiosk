@@ -15,6 +15,7 @@ namespace Demo
         public MainPage()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             this.ManInfo_lbl.Left = (this.ClientSize.Width - ManInfo_lbl.Width) / 2;  //중앙정렬
         }
 

@@ -70,6 +70,12 @@
     <Compile Include="SettingPage.Designer.cs">
       <DependentUpon>SettingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ToperliskPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToperliskPopup.Designer.cs">
+      <DependentUpon>ToperliskPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="TopperList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingPage.zh.resx">
       <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToperliskPopup.resx">
+      <DependentUpon>ToperliskPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TopperList.en.resx">
       <DependentUpon>TopperList.cs</DependentUpon>

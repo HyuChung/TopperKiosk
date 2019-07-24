@@ -10,30 +10,29 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class PayPage : Form
+    public partial class ToperliskPopup : Form
     {
-        string image_name ="None", usertext ="None";
-        int imageNum , pageNum , price;
+        string image_name = "None";
+        int imageNum=0, pageNum, price;
 
-       
-        public PayPage(string image_name, string usertext, int price, int imageNum, int pageNum)
+        public ToperliskPopup(string image_name, int imageNum, int pageNum, int price)
         {
-            this.usertext = usertext;
             this.image_name = image_name;
             this.imageNum = imageNum;
             this.pageNum = pageNum;
 
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            showingimageChage(imageNum ,pageNum);
 
-            this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;//중앙정렬
-            this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;//중앙정렬
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
+
+            showingimageChage(this.imageNum, this.pageNum);
+            this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;
+            this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;
+
             this.disDesginName_lbl.Text = image_name;
-            this.disUserText_lbl.Text = usertext;
             this.dismoney_lbl.Text = price.ToString();
-            
         }
+
 
         public void showingimageChage(int imageNum, int pageNum)//보여지는 이미지 가져오기
         {
@@ -61,18 +60,17 @@ namespace Demo
         }
 
 
-        private void next_pane_Click(object sender, EventArgs e)//다음 화면
+        private void next_pane_Click(object sender, EventArgs e)
         {
+            
             this.Visible = false;
-            WatingPage newSettingPage = new WatingPage(imageNum, pageNum);
-            newSettingPage.ShowDialog();
+            SettingPage newsettingPage = new SettingPage(image_name, price, imageNum, pageNum);
+            newsettingPage.ShowDialog();
         }
 
-        private void exit_pane_Click(object sender, EventArgs e)//이전 화면
+        private void exit_pane_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            SettingPage newSettingPage = new SettingPage(image_name, usertext ,price,imageNum, pageNum);
-            newSettingPage.ShowDialog();
+            this.Close();
         }
     }
 }

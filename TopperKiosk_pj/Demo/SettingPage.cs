@@ -24,6 +24,7 @@ namespace Demo
 
             InitializeComponent();
 
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             showingimageChage(pageNum, imageNum);
             this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;  //중앙정렬
         }

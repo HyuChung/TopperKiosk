@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace Demo
         public TopperList()//이미지 리스트 블러오기용 초기화
         {
             InitializeComponent();
+       
         }
 
         public TopperList(int lenguage)//실제 폼 초기화
@@ -42,14 +44,17 @@ namespace Demo
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("ko");
             }
-         
+            
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
+            roundPicBox(); //원형 이미지 박스 (tag작동안함)
             menuIconChanger(1);
             insertpic(valPage, numpage); //이미지 초기화
-           
+            
         }
 
 
+        #region 'Proprtise'
         private void insertpic(int valPage,int numpage) //이미지 박스 이미지 넣기
         {
             switch (valPage)
@@ -106,6 +111,21 @@ namespace Demo
             pic_3_3.Tag = SystemColors.GradientInactiveCaption;
         }
 
+        private void roundPicBox() //이미지 박스 원형 박스변경(태그작동 x)
+        {
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(0, 0, pic_1_1.Width - 3, pic_1_1.Height - 3);
+            Region rg = new Region(gp);
+            pic_1_1.Region = rg;
+            pic_1_2.Region = rg;
+            pic_1_3.Region = rg;
+            pic_2_1.Region = rg;
+            pic_2_2.Region = rg;
+            pic_2_3.Region = rg;
+            pic_3_1.Region = rg;
+            pic_3_2.Region = rg;
+            pic_3_3.Region = rg;
+        }
 
         private void selectedImage()//선택되어있는 이미지 번호 가져오기
         {
@@ -545,7 +565,22 @@ namespace Demo
             }   
         }
 
+        private void allRefrashPic()//모든 이미지 목록 리프레시
+        {
+            pic_1_1.Refresh();
+            pic_1_2.Refresh();
+            pic_1_3.Refresh();
+            pic_2_1.Refresh();
+            pic_2_2.Refresh();
+            pic_2_3.Refresh();
+            pic_3_1.Refresh();
+            pic_3_2.Refresh();
+            pic_3_3.Refresh();
+        }
+        #endregion
 
+
+        #region 'Menu Settting'
         private void menuColorChager(int menuNum) // 메뉴 색깔 변경
         {
             switch (menuNum)
@@ -661,7 +696,10 @@ namespace Demo
 
             }
         }
+        #endregion
 
+
+        #region 'PicTag Setting'
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
             if (pic_1_1.Tag == null) { pic_1_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
@@ -716,7 +754,6 @@ namespace Demo
             ControlPaint.DrawBorder(e.Graphics, pic_3_3.ClientRectangle, (Color)pic_3_3.Tag, ButtonBorderStyle.Solid);
         }
 
-        
         private void changePicColor(int x)//이미지 목록 선택시 색깔 변경
         {
             for(int i=0; i<3; i++)
@@ -833,27 +870,20 @@ namespace Demo
                     break;
             }
         }
-
-        private void allRefrash()//모든 이미지 목록 리프레시
-        {
-            pic_1_1.Refresh();
-            pic_1_2.Refresh();
-            pic_1_3.Refresh();
-            pic_2_1.Refresh();
-            pic_2_2.Refresh();
-            pic_2_3.Refresh();
-            pic_3_1.Refresh();
-            pic_3_2.Refresh();
-            pic_3_3.Refresh();
-        }
+        #endregion
 
 
+        #region 'PicClick Setting'
         private void pic_1_1_Click(object sender, EventArgs e)
-        {
+        { 
             if (imageMap[0, 0] !=0) {
-                changePicColor(11);
+
+                //changePicColor(11);
                 imageMap[0, 0]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 0, valPage, price);
+                popup.ShowDialog();
             }
            
         }
@@ -862,9 +892,12 @@ namespace Demo
         {
             if (imageMap[0, 1] != 0)
             {
-                changePicColor(12);
+                //changePicColor(12);
                 imageMap[0, 1]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 1, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -872,9 +905,12 @@ namespace Demo
         {
             if (imageMap[0, 2] != 0)
             {
-                changePicColor(13);
+               // changePicColor(13);
                 imageMap[0, 2]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 2, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -882,9 +918,12 @@ namespace Demo
         {
             if (imageMap[1, 0] != 0)
             {
-                changePicColor(21);
+                //changePicColor(21);
                 imageMap[1,0]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 3, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -892,9 +931,12 @@ namespace Demo
         {
             if (imageMap[1, 1] != 0)
             {
-                changePicColor(22);
+                //changePicColor(22);
                 imageMap[1,1]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 4, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -902,9 +944,12 @@ namespace Demo
         {
             if (imageMap[1, 2] != 0)
             {
-                changePicColor(23);
+                //changePicColor(23);
                 imageMap[1, 2]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 5, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -912,9 +957,12 @@ namespace Demo
         {
             if (imageMap[2, 0] != 0)
             {
-                changePicColor(31);
+                //changePicColor(31);
                 imageMap[2,0]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 6, valPage, price);
+                popup.ShowDialog();
             }
         }
 
@@ -922,9 +970,12 @@ namespace Demo
         {
             if (imageMap[2, 1] != 0)
             {
-                changePicColor(32);
+                //changePicColor(32);
                 imageMap[2,1]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 7, valPage, price);
+                popup.ShowDialog();
             }
         }
         
@@ -934,16 +985,22 @@ namespace Demo
             {
                 changePicColor(33);
                 imageMap[2,2]=2;
-                allRefrash();
+                allRefrashPic();
+
+                ToperliskPopup popup = new ToperliskPopup(selected_image, 8, valPage, price);
+                popup.ShowDialog();
             }
         }
+        #endregion
 
 
+        #region 'Arrow Setting'
         private void left_arrow_Click(object sender, EventArgs e)//왼쪽 화살표 동작
         {
             if(valPage != 1)
             {
                 valPage--;
+                menuIconChanger(valPage);
                 menuColorChager(valPage);
                 insertpic(valPage, numpage);
             }
@@ -954,9 +1011,11 @@ namespace Demo
             if(valPage != 4)
             {
                 valPage++;
+                menuIconChanger(valPage);
                 menuColorChager(valPage);
                 insertpic(valPage, numpage);
             }
         }
+        #endregion
     }
 }
