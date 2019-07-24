@@ -12,12 +12,23 @@ namespace Demo
 {
     public partial class SettingPage : Form
     {
+
+        #region 'Field'
         string imageName ;
         int imageNum = 0, pageNum = 0, textindex_column_1 =9, textindex_column_2 = 9, price;
 
         string[,] topperText = new string[2, 4] { { "세미콜론팀", "사랑합니다", "감사합니다", "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
 
+        #endregion
+
+
+
+        #region 'init'
+        public SettingPage()//이미지 가져오기용
+        {
+            InitializeComponent();
+        }
 
         public SettingPage(string imageName, int price, int imageNum, int pageNum) // 이미지 선택 창에서 넘어올때
         {
@@ -36,6 +47,7 @@ namespace Demo
 
         public SettingPage(string imageName,int price,int imageNum, int pageNum, int textindex_column_1, int textindex_column_2) // 결재창에서 넘어올때
         {
+            this.price = price;
             this.imageName = imageName;
             this.imageNum = imageNum;
             this.pageNum = pageNum;
@@ -48,8 +60,11 @@ namespace Demo
             showingimageChage(pageNum, imageNum);
             this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;  //중앙정렬
         }
+        #endregion
 
 
+
+        #region 'Propertise'
         private void roundimagebox()
         {
             System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
@@ -80,51 +95,188 @@ namespace Demo
             }
         }
 
-
-        #region 'TextSslectBtn Setting'
-        private void textselect_btn_1_1_Click(object sender, EventArgs e)
+        private void transTextselectBtnColorChanger(int row,int textindex_column)//버튼 클릭시 흰색 고정
         {
-            textindex_column_1 = 0;
+            if (row == 0)
+            {
+                switch (textindex_column)
+                {
+                    case 0:
+                        textselect_btn_1_1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_1_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 1:
+                        textselect_btn_1_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_1_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 2:
+                        textselect_btn_1_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_3.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 3:
+                        textselect_btn_1_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_1_4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        break;
+                }
+            }
+            else
+            {
+                switch (textindex_column)
+                {
+                    case 0:
+                        textselect_btn_2_1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_2_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 1:
+                        textselect_btn_2_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_2_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 2:
+                        textselect_btn_2_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_3.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        textselect_btn_2_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        break;
+                    case 3:
+                        textselect_btn_2_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        textselect_btn_2_4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        break;
+                }
+            }
         }
 
-        private void textselect_btn_1_2_Click(object sender, EventArgs e)
+        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경(임시)
         {
-            textindex_column_1 = 1;
+            if (textindex_column_1 == 0 && textindex_column_2 == 0)
+            {
+                this.showingDesign.Image = makedimage.Images[0];
+            }
+            else if(textindex_column_1 == 1 && textindex_column_2 == 1)
+            {
+                this.showingDesign.Image = makedimage.Images[1];
+            }
+            else if (textindex_column_1 == 1 && textindex_column_2 == 2)
+            {
+                this.showingDesign.Image = makedimage.Images[2];
+            }
+            else if (textindex_column_1 == 2 && textindex_column_2 == 1)
+            {
+                this.showingDesign.Image = makedimage.Images[3];
+            }
+            else if (textindex_column_1 == 2 && textindex_column_2 == 2)
+            {
+                this.showingDesign.Image = makedimage.Images[4];
+            }
+            else if (textindex_column_1 == 3 && textindex_column_2 == 3)
+            {
+                this.showingDesign.Image = makedimage.Images[5];
+            }
         }
 
-        private void textselect_btn_1_3_Click(object sender, EventArgs e)
+        private void initselectedbtn()//선택 초기화
         {
-            textindex_column_1 = 2;
-        }
+            if(textindex_column_1 != 9 && textindex_column_2 != 9)
+            {
+                textselect_btn_1_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_1_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_1_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_2_1.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_2_2.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_2_3.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                textselect_btn_2_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
 
-        private void textselect_btn_1_4_Click(object sender, EventArgs e)
-        {
-            textindex_column_1 = 3;
-        }
-
-        private void textselect_btn_2_1_Click(object sender, EventArgs e)
-        {
-            textindex_column_2 = 0;
-        }
-
-        private void textselect_btn_2_2_Click(object sender, EventArgs e)
-        {
-            textindex_column_2 = 1;
-        }
-
-        private void textselect_btn_2_3_Click(object sender, EventArgs e)
-        {
-            textindex_column_2 = 2;
-        }
-
-        private void textselect_btn_2_4_Click(object sender, EventArgs e)
-        {
-            textindex_column_2 = 3;
+                textindex_column_1 = 9;
+                textindex_column_2 = 9;
+            }
         }
         #endregion
 
 
 
+        #region 'TextSslectBtn Setting'
+        private void textselect_btn_1_1_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_1 = 0;
+            transTextselectBtnColorChanger(0, textindex_column_1);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_1_2_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_1 = 1;
+            transTextselectBtnColorChanger(0, textindex_column_1);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_1_3_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_1 = 2;
+            transTextselectBtnColorChanger(0, textindex_column_1);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_1_4_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_1 = 3;
+            transTextselectBtnColorChanger(0, textindex_column_1);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_2_1_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_2 = 0;
+            transTextselectBtnColorChanger(1, textindex_column_2);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_2_2_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_2 = 1;
+            transTextselectBtnColorChanger(1, textindex_column_2);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_2_3_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_2 = 2;
+            transTextselectBtnColorChanger(1, textindex_column_2);
+            imageDisplayMakeChager();
+        }
+
+        private void textselect_btn_2_4_Click(object sender, EventArgs e)
+        {
+            initselectedbtn();
+            textindex_column_2 = 3;
+            transTextselectBtnColorChanger(1, textindex_column_2);
+            imageDisplayMakeChager();
+        }
+        #endregion
+
+
+
+        #region 'Next/Exit Setting'
         private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
             this.Visible = false;
@@ -141,5 +293,7 @@ namespace Demo
                 newPayPage.ShowDialog();
             }
         }
+        #endregion
+
     }
 }

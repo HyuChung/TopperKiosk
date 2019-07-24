@@ -15,11 +15,17 @@ namespace Demo
 {
     public partial class TopperList : Form
     {
+
+        #region 'Field'
         int valPage = 1, numpage = 1, listnum = 200;
         int[,] imageMap = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} }; //이미지 위치 확인용 배열
         string selected_image ="None";
-        int price = 0;
+        int price = 10000;
+        #endregion
 
+
+
+        #region 'init'
         public TopperList()//이미지 리스트 블러오기용 초기화
         {
             InitializeComponent();
@@ -55,9 +61,11 @@ namespace Demo
             insertpic(valPage, numpage); //이미지 초기화
             
         }
+        #endregion
 
 
-        #region 'Proprtise'
+
+        #region 'Propertise'
         private void insertpic(int valPage,int numpage) //이미지 박스 이미지 넣기
         {
             switch (valPage)
@@ -578,27 +586,6 @@ namespace Demo
             }
         }
 
-
-        private void exit_pane_MouseClick(object sender, MouseEventArgs e)//이전 화면
-        {
-            this.Visible = false;
-            MainPage newMain = new MainPage();
-            newMain.ShowDialog();
-            
-        }
-
-        private void next_pane_Click(object sender, EventArgs e)//다음 화면
-        {
-            selectedImage();
-
-            if (selected_image.Equals("None") && (listnum != 200)) //이미지 선택 확인
-            {
-                this.Visible = false;
-                SettingPage newsettingPage = new SettingPage(selected_image,price, listnum, valPage);
-                newsettingPage.ShowDialog();
-            }   
-        }
-
         private void allRefrashPic()//모든 이미지 목록 리프레시
         {
             pic_1_1.Refresh();
@@ -634,7 +621,15 @@ namespace Demo
                     break;
             }
         }
+
+        private void DieaseUpdateEventMethod(object sender)
+        {
+
+            this.Visible = false;
+
+        }
         #endregion
+
 
 
         #region 'Menu Settting'
@@ -758,6 +753,7 @@ namespace Demo
             }
         }
         #endregion
+
 
 
         #region 'PicTag Setting'
@@ -936,6 +932,7 @@ namespace Demo
         #endregion 
 
 
+
         #region 'PicClick Setting'
         private void pic_1_1_Click(object sender, EventArgs e)
         { 
@@ -947,6 +944,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1075,6 +1073,7 @@ namespace Demo
         #endregion
 
 
+
         #region 'Arrow Setting'
         private void left_arrow_Click(object sender, EventArgs e)//왼쪽 화살표 동작
         {
@@ -1110,5 +1109,30 @@ namespace Demo
         
         }
         #endregion
+
+
+
+        #region 'Next/Exit Setting'
+        private void exit_pane_MouseClick(object sender, MouseEventArgs e)//이전 화면
+        {
+            this.Visible = false;
+            MainPage newMain = new MainPage();
+            newMain.ShowDialog();
+
+        }
+
+        private void next_pane_Click(object sender, EventArgs e)//다음 화면
+        {
+            selectedImage();
+
+            if (selected_image.Equals("None") && (listnum != 200)) //이미지 선택 확인
+            {
+                this.Visible = false;
+                SettingPage newsettingPage = new SettingPage(selected_image, price, listnum, valPage);
+                newsettingPage.ShowDialog();
+            }
+        }
+        #endregion
+
     }
 }

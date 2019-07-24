@@ -12,9 +12,17 @@ namespace Demo
 {
     public partial class TopperlistPopUp : Form
     {
+
+        #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
         string image_name ;
         int imageNum=0, pageNum, price;
+        #endregion
 
+
+
+        #region 'Init'
         public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price)
         {
             this.image_name = image_name;
@@ -32,8 +40,11 @@ namespace Demo
             this.disDesginName_lbl.Text = image_name;
             this.dismoney_lbl.Text = price.ToString();
         }
+        #endregion
 
 
+
+        #region 'Propertise'
         public void showingimageChage(int imageNum, int pageNum)//보여지는 이미지 가져오기
         {
             TopperList topper = new TopperList();
@@ -54,10 +65,14 @@ namespace Demo
                     break;
             }
         }
+        #endregion
 
 
+
+        #region 'Next/Exit Setting'
         private void next_pane_Click(object sender, EventArgs e)
         {
+            this.FormSendEvent(1);
             this.Visible = false;
             SettingPage newsettingPage = new SettingPage(image_name, price, imageNum, pageNum);
             newsettingPage.ShowDialog();
@@ -67,5 +82,7 @@ namespace Demo
         {
             this.Close();
         }
+        #endregion
+
     }
 }

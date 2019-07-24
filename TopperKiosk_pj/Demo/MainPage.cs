@@ -12,13 +12,43 @@ namespace Demo
 {
     public partial class MainPage : Form
     {
+
+        #region 'init'
         public MainPage()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             this.ManInfo_lbl.Left = (this.ClientSize.Width - ManInfo_lbl.Width) / 2;  //중앙정렬
         }
+        #endregion
 
+
+
+        #region 'Propertise'
+        private void translate_paneKo_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(한국어)
+        {
+            ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
+        }
+
+        private void translate_paneCH_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(중국어)
+        {
+            ManInfo_lbl.Text = "选择语言向后过渡";
+        }
+
+        private void lbl_JP_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(일본어)
+        {
+            ManInfo_lbl.Text = "語を選んで次に移る";
+        }
+
+        private void translate_paneEN_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(영어)
+        {
+            ManInfo_lbl.Text = "Select a language to move next page";
+        }
+        #endregion
+
+
+
+        #region 'Next/Exit Setting'
         private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)//한국어 다음 화면
         {
             this.Visible = false;
@@ -46,27 +76,7 @@ namespace Demo
             TopperList newENForm = new TopperList(3);
             newENForm.ShowDialog();
         }
+        #endregion
 
-        private void translate_paneKo_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(한국어)
-        {
-            ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
-        }
-
-        private void translate_paneCH_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(중국어)
-        {
-            ManInfo_lbl.Text = "选择语言向后过渡";
-        }
-
-        private void lbl_JP_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(일본어)
-        {
-            ManInfo_lbl.Text = "語を選んで次に移る";
-        }
-
-        private void translate_paneEN_MouseEnter(object sender, EventArgs e)//팁 텍스트 변환(영어)
-        {
-            ManInfo_lbl.Text = "Select a language to move next page";
-        }
-
-        
     }
 }

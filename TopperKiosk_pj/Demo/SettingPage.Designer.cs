@@ -269,9 +269,14 @@
             // 
             // makedimage
             // 
-            this.makedimage.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.makedimage, "makedimage");
+            this.makedimage.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("makedimage.ImageStream")));
             this.makedimage.TransparentColor = System.Drawing.Color.Transparent;
+            this.makedimage.Images.SetKeyName(0, "11.JPG");
+            this.makedimage.Images.SetKeyName(1, "22.JPG");
+            this.makedimage.Images.SetKeyName(2, "23.JPG");
+            this.makedimage.Images.SetKeyName(3, "32.JPG");
+            this.makedimage.Images.SetKeyName(4, "33.JPG");
+            this.makedimage.Images.SetKeyName(5, "44.png");
             // 
             // SettingPage
             // 
@@ -319,6 +324,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_2_4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ImageList makedimage;
+        public System.Windows.Forms.ImageList makedimage;
     }
 }

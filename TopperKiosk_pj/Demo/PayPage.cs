@@ -13,13 +13,18 @@ namespace Demo
 {
     public partial class PayPage : Form
     {
-        string image_name ="None", usertext ="None";
-        int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price;
+
+        #region 'Field'
+        string image_name ="None";
+        int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price=0;
 
         string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
+        #endregion
 
 
+
+        #region 'Init'
         public PayPage(string image_name, int price, int imageNum, int pageNum, int textindex_column_1, int textindex_column_2)
         {
             this.image_name = image_name;
@@ -30,8 +35,8 @@ namespace Demo
 
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            showingimageChage(imageNum ,pageNum);
 
+            imageDisplayMakeChager();
             this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;//중앙정렬(세로)
             this.disInfo_pane.Top = (this.ClientSize.Height - disInfo_pane.Height) / 2;//중앙정렬(세로)
             this.disDesginName_lbl.Text = image_name;
@@ -39,33 +44,45 @@ namespace Demo
             this.dismoney_lbl.Text = price.ToString();
             
         }
+        #endregion
 
-        public void showingimageChage(int imageNum, int pageNum)//보여지는 이미지 가져오기
+
+
+        #region 'Propertise'
+        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경(임시)
         {
-            TopperList topper = new TopperList();
+            SettingPage sp = new SettingPage();
 
-            switch (pageNum)
+            if (textindex_column_1 == 0 && textindex_column_2 == 0)
             {
-                case 1:
-                    this.showingDesign.Image = topper.TourImagelist.Images[imageNum];
-                    image_name = topper.TourImagelist.Images.Keys[imageNum].ToString();
-                    break;
-                case 2:
-                    this.showingDesign.Image = topper.FoodImagelist.Images[imageNum];
-                    image_name = topper.FoodImagelist.Images.Keys[imageNum].ToString();
-                    break;
-                case 3:
-                    this.showingDesign.Image = topper.MemorialImageList.Images[imageNum];
-                    image_name = topper.MemorialImageList.Images.Keys[imageNum].ToString();
-                    break;
-                case 4:
-                    this.showingDesign.Image = topper.RecommendImagelist.Images[imageNum];
-                    image_name = topper.RecommendImagelist.Images.Keys[imageNum].ToString();
-                    break;
+                this.showingDesign.Image = sp.makedimage.Images[0];
+            }
+            else if (textindex_column_1 == 1 && textindex_column_2 == 1)
+            {
+                this.showingDesign.Image = sp.makedimage.Images[1];
+            }
+            else if (textindex_column_1 == 1 && textindex_column_2 == 2)
+            {
+                this.showingDesign.Image = sp.makedimage.Images[2];
+            }
+            else if (textindex_column_1 == 2 && textindex_column_2 == 1)
+            {
+                this.showingDesign.Image = sp.makedimage.Images[3];
+            }
+            else if (textindex_column_1 == 2 && textindex_column_2 == 2)
+            {
+                this.showingDesign.Image = sp.makedimage.Images[4];
+            }
+            else if (textindex_column_1 == 3 && textindex_column_2 == 3)
+            {
+                this.showingDesign.Image = sp.makedimage.Images[5];
             }
         }
+        #endregion
 
 
+
+        #region 'Next/Exit Setting'
         private void next_pane_Click(object sender, EventArgs e)//다음 화면
         {
             this.Visible = false;
@@ -79,5 +96,7 @@ namespace Demo
             SettingPage newSettingPage = new SettingPage(image_name,price,imageNum, pageNum, textindex_column_1, textindex_column_2);
             newSettingPage.ShowDialog();
         }
+        #endregion
+
     }
 }
