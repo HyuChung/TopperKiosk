@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="backgroungMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backgroungMain.Designer.cs">
+      <DependentUpon>backgroungMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="PayPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="WatingPage.Designer.cs">
       <DependentUpon>WatingPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="backgroungMain.resx">
+      <DependentUpon>backgroungMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\susten-4343542_1920.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

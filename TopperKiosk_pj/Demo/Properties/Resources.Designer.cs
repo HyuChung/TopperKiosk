@@ -153,6 +153,16 @@ namespace Demo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap susten_4343542_1920 {
+            get {
+                object obj = ResourceManager.GetObject("susten-4343542_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap the_button_859346_1280 {
             get {
                 object obj = ResourceManager.GetObject("the-button-859346_1280", resourceCulture);

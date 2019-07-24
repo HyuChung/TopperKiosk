@@ -556,9 +556,9 @@ namespace Demo
                     this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
 
                     this.menu1_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu2_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu3_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu4_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     break;
                 case 2:
                     this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
@@ -566,10 +566,10 @@ namespace Demo
                     this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
                     this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
 
-                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu1_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     this.menu2_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu3_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu4_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     break;
                 case 3:
                     this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
@@ -577,10 +577,10 @@ namespace Demo
                     this.manu3_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
                     this.manu4_lbl.ForeColor = System.Drawing.SystemColors.Control;
 
-                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu1_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu2_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     this.menu3_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                    this.menu4_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu4_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     break;
                 case 4:
                     this.manu1_lbl.ForeColor = System.Drawing.SystemColors.Control;
@@ -588,9 +588,9 @@ namespace Demo
                     this.manu3_lbl.ForeColor = System.Drawing.SystemColors.Control;
                     this.manu4_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
 
-                    this.menu1_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu2_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
-                    this.menu3_pane.BackColor = System.Drawing.SystemColors.AppWorkspace;
+                    this.menu1_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu2_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.menu3_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
                     this.menu4_pane.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
                     break;
 
