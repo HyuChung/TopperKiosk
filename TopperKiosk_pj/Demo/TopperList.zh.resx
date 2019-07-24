@@ -130,7 +130,7 @@
     <value>推 荐</value>
   </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>请选择设计</value>
+    <value>TopperKiosk（精选设计）</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -208,5 +208,8 @@
         Af//8AH///AB///wAf//8AH///AB///wAf//8AH//+AB///gAf//4AH//8AB///AAf//wAH//4AB//+A
         A///gAP//4AH///AB///8Af///wP///+D/8=
 </value>
+  </data>
+  <data name="info_lbl.Text" xml:space="preserve">
+    <value>请选择一个礼帽</value>
   </data>
 </root>

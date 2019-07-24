@@ -60,6 +60,12 @@
             this.menu1_pane = new System.Windows.Forms.Panel();
             this.manu2_lbl = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.menuicon_pic1 = new System.Windows.Forms.PictureBox();
+            this.menuicon_pic2 = new System.Windows.Forms.PictureBox();
+            this.menuicon_pic3 = new System.Windows.Forms.PictureBox();
+            this.menuicon_pic4 = new System.Windows.Forms.PictureBox();
+            this.menuiconlist = new System.Windows.Forms.ImageList(this.components);
+            this.info_lbl = new System.Windows.Forms.Label();
             this.picture_layout_pane.SuspendLayout();
             this.manu_layout_pane.SuspendLayout();
             this.menu4_pane.SuspendLayout();
@@ -76,6 +82,11 @@
             this.menu3_pane.SuspendLayout();
             this.menu2_pane.SuspendLayout();
             this.menu1_pane.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic4)).BeginInit();
             this.SuspendLayout();
             // 
             // picture_layout_pane
@@ -319,7 +330,53 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.menuicon_pic4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.menuicon_pic3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.menuicon_pic1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.menuicon_pic2, 0, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // menuicon_pic1
+            // 
+            resources.ApplyResources(this.menuicon_pic1, "menuicon_pic1");
+            this.menuicon_pic1.Name = "menuicon_pic1";
+            this.menuicon_pic1.TabStop = false;
+            // 
+            // menuicon_pic2
+            // 
+            resources.ApplyResources(this.menuicon_pic2, "menuicon_pic2");
+            this.menuicon_pic2.Name = "menuicon_pic2";
+            this.menuicon_pic2.TabStop = false;
+            // 
+            // menuicon_pic3
+            // 
+            resources.ApplyResources(this.menuicon_pic3, "menuicon_pic3");
+            this.menuicon_pic3.Name = "menuicon_pic3";
+            this.menuicon_pic3.TabStop = false;
+            // 
+            // menuicon_pic4
+            // 
+            resources.ApplyResources(this.menuicon_pic4, "menuicon_pic4");
+            this.menuicon_pic4.Name = "menuicon_pic4";
+            this.menuicon_pic4.TabStop = false;
+            // 
+            // menuiconlist
+            // 
+            this.menuiconlist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("menuiconlist.ImageStream")));
+            this.menuiconlist.TransparentColor = System.Drawing.Color.Transparent;
+            this.menuiconlist.Images.SetKeyName(0, "Tour.png");
+            this.menuiconlist.Images.SetKeyName(1, "TourClick.png");
+            this.menuiconlist.Images.SetKeyName(2, "Food.png");
+            this.menuiconlist.Images.SetKeyName(3, "Food_click.png");
+            this.menuiconlist.Images.SetKeyName(4, "Memorial.png");
+            this.menuiconlist.Images.SetKeyName(5, "Memorial_click.png");
+            this.menuiconlist.Images.SetKeyName(6, "Recommend.png");
+            this.menuiconlist.Images.SetKeyName(7, "Recommend_click.png");
+            // 
+            // info_lbl
+            // 
+            resources.ApplyResources(this.info_lbl, "info_lbl");
+            this.info_lbl.Name = "info_lbl";
             // 
             // TopperList
             // 
@@ -327,6 +384,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
+            this.Controls.Add(this.info_lbl);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.manu_layout_pane);
             this.Controls.Add(this.tooltip_pane);
@@ -354,6 +412,11 @@
             this.menu3_pane.ResumeLayout(false);
             this.menu2_pane.ResumeLayout(false);
             this.menu1_pane.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuicon_pic4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,5 +453,11 @@
         private System.Windows.Forms.Label manu1_lbl;
         private System.Windows.Forms.Panel menu1_pane;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox menuicon_pic4;
+        private System.Windows.Forms.PictureBox menuicon_pic3;
+        private System.Windows.Forms.PictureBox menuicon_pic1;
+        private System.Windows.Forms.PictureBox menuicon_pic2;
+        private System.Windows.Forms.ImageList menuiconlist;
+        private System.Windows.Forms.Label info_lbl;
     }
 }

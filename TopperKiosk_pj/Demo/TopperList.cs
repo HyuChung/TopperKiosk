@@ -44,6 +44,7 @@ namespace Demo
             }
          
             InitializeComponent();
+            menuIconChanger(1);
             insertpic(valPage, numpage); //이미지 초기화
            
         }
@@ -601,6 +602,7 @@ namespace Demo
         {
             menuColorChager(1);
             this.valPage = 1;
+            menuIconChanger(1);
             insertpic(valPage, numpage);
         }
 
@@ -608,6 +610,7 @@ namespace Demo
         {
             menuColorChager(2);
             this.valPage = 2;
+            menuIconChanger(2);
             insertpic(valPage, numpage);
         }
 
@@ -615,6 +618,7 @@ namespace Demo
         {
             menuColorChager(3);
             this.valPage = 3;
+            menuIconChanger(3);
             insertpic(valPage, numpage);
         }
 
@@ -622,10 +626,41 @@ namespace Demo
         {
             menuColorChager(4);
             this.valPage = 4;
+            menuIconChanger(4);
             insertpic(valPage, numpage);
         }
 
-        
+        private void menuIconChanger(int numMenu)
+        {
+            switch (numMenu)
+            {
+                case 1:
+                    menuicon_pic1.Image = menuiconlist.Images[1];
+                    menuicon_pic2.Image = menuiconlist.Images[2];
+                    menuicon_pic3.Image = menuiconlist.Images[4];
+                    menuicon_pic4.Image = menuiconlist.Images[6];
+                    break;
+                case 2:
+                    menuicon_pic1.Image = menuiconlist.Images[0];
+                    menuicon_pic2.Image = menuiconlist.Images[3];
+                    menuicon_pic3.Image = menuiconlist.Images[4];
+                    menuicon_pic4.Image = menuiconlist.Images[6];
+                    break;
+                case 3:
+                    menuicon_pic1.Image = menuiconlist.Images[0];
+                    menuicon_pic2.Image = menuiconlist.Images[2];
+                    menuicon_pic3.Image = menuiconlist.Images[5];
+                    menuicon_pic4.Image = menuiconlist.Images[6];
+                    break;
+                case 4:
+                    menuicon_pic1.Image = menuiconlist.Images[0];
+                    menuicon_pic2.Image = menuiconlist.Images[2];
+                    menuicon_pic3.Image = menuiconlist.Images[4];
+                    menuicon_pic4.Image = menuiconlist.Images[7];
+                    break;
+
+            }
+        }
 
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
