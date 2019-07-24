@@ -129,7 +129,7 @@
     <value>NoControl</value>
   </data>
   <data name="tooltip_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>-16, 0</value>
   </data>
   <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>764, 41</value>
@@ -160,7 +160,7 @@
     <value>None</value>
   </data>
   <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 85</value>
+    <value>233, 85</value>
   </data>
   <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
     <value>266, 203</value>
@@ -328,7 +328,7 @@
     <value>3</value>
   </data>
   <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 311</value>
+    <value>200, 311</value>
   </data>
   <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -361,7 +361,7 @@
     <value>Zoom</value>
   </data>
   <data name="exit_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 427</value>
+    <value>12, 430</value>
   </data>
   <data name="exit_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 82</value>
@@ -388,7 +388,7 @@
     <value>Zoom</value>
   </data>
   <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>670, 427</value>
+    <value>638, 427</value>
   </data>
   <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 90</value>
@@ -415,13 +415,13 @@
     <value>7, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>764, 524</value>
+    <value>732, 524</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ToperliskPopup</value>
+    <value>TopperlistPopUp</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -27,8 +27,8 @@ namespace Demo
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             showingimageChage(imageNum ,pageNum);
 
-            this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;//중앙정렬
-            this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;//중앙정렬
+            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;//중앙정렬(세로)
+            this.disInfo_pane.Top = (this.ClientSize.Height - disInfo_pane.Height) / 2;//중앙정렬(세로)
             this.disDesginName_lbl.Text = image_name;
             this.disUserText_lbl.Text = usertext;
             this.dismoney_lbl.Text = price.ToString();

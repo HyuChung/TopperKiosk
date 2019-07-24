@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="info_lbl.Text" xml:space="preserve">
+    <value>请选择设计中要使用的句子。</value>
+  </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>请放入设计需要的句子</value>
+    <value>TopperKiosk (语句设置)</value>
   </data>
 </root>

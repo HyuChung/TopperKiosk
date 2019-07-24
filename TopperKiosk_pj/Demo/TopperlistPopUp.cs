@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class ToperliskPopup : Form
+    public partial class TopperlistPopUp : Form
     {
-        string image_name = "None";
+        string image_name ;
         int imageNum=0, pageNum, price;
 
-        public ToperliskPopup(string image_name, int imageNum, int pageNum, int price)
+        public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price)
         {
             this.image_name = image_name;
             this.imageNum = imageNum;
@@ -42,19 +42,15 @@ namespace Demo
             {
                 case 1:
                     this.showingDesign.Image = topper.TourImagelist.Images[imageNum];
-                    image_name = topper.TourImagelist.Images.Keys[imageNum].ToString();
                     break;
                 case 2:
                     this.showingDesign.Image = topper.FoodImagelist.Images[imageNum];
-                    image_name = topper.FoodImagelist.Images.Keys[imageNum].ToString();
                     break;
                 case 3:
                     this.showingDesign.Image = topper.MemorialImageList.Images[imageNum];
-                    image_name = topper.MemorialImageList.Images.Keys[imageNum].ToString();
                     break;
                 case 4:
                     this.showingDesign.Image = topper.RecommendImagelist.Images[imageNum];
-                    image_name = topper.RecommendImagelist.Images.Keys[imageNum].ToString();
                     break;
             }
         }
@@ -62,7 +58,6 @@ namespace Demo
 
         private void next_pane_Click(object sender, EventArgs e)
         {
-            
             this.Visible = false;
             SettingPage newsettingPage = new SettingPage(image_name, price, imageNum, pageNum);
             newsettingPage.ShowDialog();

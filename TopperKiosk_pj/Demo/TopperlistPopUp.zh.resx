@@ -123,13 +123,7 @@
   <data name="designName_lbl.Text" xml:space="preserve">
     <value>设计 :</value>
   </data>
-  <data name="info_lbl.Text" xml:space="preserve">
-    <value>请最后确认结果</value>
-  </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>TopperKiosk (确认及结算)</value>
-  </data>
-  <data name="userTextName_lbl.Text" xml:space="preserve">
-    <value>字迹 :</value>
+    <value>设计验证</value>
   </data>
 </root>

@@ -41,6 +41,7 @@
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
+            this.info_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane.SuspendLayout();
             this.disInfo_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
@@ -48,6 +49,7 @@
             // 
             // tooltip_lbl
             // 
+            this.tooltip_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
             this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
             this.tooltip_lbl.Name = "tooltip_lbl";
@@ -120,12 +122,18 @@
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
+            // info_lbl
+            // 
+            resources.ApplyResources(this.info_lbl, "info_lbl");
+            this.info_lbl.Name = "info_lbl";
+            // 
             // PayPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
+            this.Controls.Add(this.info_lbl);
             this.Controls.Add(this.disInfo_pane);
             this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.tooltip_pane);
@@ -153,5 +161,6 @@
         private System.Windows.Forms.Label chargeMoney_lbl;
         private System.Windows.Forms.Label dismoney_lbl;
         private System.Windows.Forms.TableLayoutPanel disInfo_pane;
+        private System.Windows.Forms.Label info_lbl;
     }
 }

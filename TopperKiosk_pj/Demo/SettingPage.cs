@@ -26,7 +26,7 @@ namespace Demo
 
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             showingimageChage(pageNum, imageNum);
-            this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;  //중앙정렬
+            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;  //중앙정렬
         }
 
         public SettingPage(string imageName,string userText,int price,int imageNum, int pageNum) // 결재창에서 넘어올때
@@ -39,7 +39,7 @@ namespace Demo
             InitializeComponent();
 
             showingimageChage(pageNum, imageNum);
-            this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;  //중앙정렬
+            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;  //중앙정렬
         }
 
         private void insertUserText_Click(object sender, EventArgs e)//가상 키보드 실행

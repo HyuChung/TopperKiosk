@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tooltip_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="tooltip_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
@@ -132,17 +132,17 @@
     <value>0, 0</value>
   </data>
   <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
+    <value>1920, 40</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tooltip_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>디자인에 들어갈 문구를 넣어주세요</value>
+    <value>TopperKiosk (문구 설정)</value>
   </data>
   <data name="tooltip_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;tooltip_lbl.Name" xml:space="preserve">
     <value>tooltip_lbl</value>
@@ -163,7 +163,7 @@
     <value>0, 0</value>
   </data>
   <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 41</value>
+    <value>1920, 40</value>
   </data>
   <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -180,36 +180,6 @@
   <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="insertUserText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="insertUserText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>맑은 고딕, 12pt</value>
-  </data>
-  <data name="insertUserText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 342</value>
-  </data>
-  <data name="insertUserText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 29</value>
-  </data>
-  <data name="insertUserText.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="insertUserText.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Name" xml:space="preserve">
-    <value>insertUserText</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;insertUserText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -217,10 +187,10 @@
     <value>NoControl</value>
   </data>
   <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 68</value>
+    <value>333, 341</value>
   </data>
   <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 226</value>
+    <value>300, 300</value>
   </data>
   <data name="showingDesign.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -247,7 +217,7 @@
     <value>Zoom</value>
   </data>
   <data name="next_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 847</value>
+    <value>1809, 970</value>
   </data>
   <data name="next_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 82</value>
@@ -274,7 +244,7 @@
     <value>Zoom</value>
   </data>
   <data name="exit_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 847</value>
+    <value>12, 970</value>
   </data>
   <data name="exit_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 82</value>
@@ -294,6 +264,39 @@
   <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="info_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt</value>
+  </data>
+  <data name="info_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="info_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 145</value>
+  </data>
+  <data name="info_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1907, 70</value>
+  </data>
+  <data name="info_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="info_lbl.Text" xml:space="preserve">
+    <value>디자인에 들어갈 문구를 골라주세요</value>
+  </data>
+  <data name="info_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Name" xml:space="preserve">
+    <value>info_lbl</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -301,7 +304,7 @@
     <value>7, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>524, 941</value>
+    <value>1904, 1064</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

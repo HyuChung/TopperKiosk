@@ -118,18 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="chargeMoney_lbl.Text" xml:space="preserve">
-    <value>价格 :</value>
+    <value>Price :</value>
   </data>
   <data name="designName_lbl.Text" xml:space="preserve">
-    <value>设计 :</value>
-  </data>
-  <data name="info_lbl.Text" xml:space="preserve">
-    <value>请最后确认结果</value>
+    <value>Design :</value>
   </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>TopperKiosk (确认及结算)</value>
-  </data>
-  <data name="userTextName_lbl.Text" xml:space="preserve">
-    <value>字迹 :</value>
+    <value>Design Verification</value>
   </data>
 </root>

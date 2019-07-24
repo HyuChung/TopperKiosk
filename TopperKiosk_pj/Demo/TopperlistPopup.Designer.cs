@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    partial class ToperliskPopup
+    partial class TopperlistPopUp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToperliskPopup));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopperlistPopUp));
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
@@ -98,7 +98,7 @@
             this.next_pane.Name = "next_pane";
             this.next_pane.Click += new System.EventHandler(this.next_pane_Click);
             // 
-            // ToperliskPopup
+            // TopperlistPopUp
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.tooltip_lbl);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ToperliskPopup";
+            this.Name = "TopperlistPopUp";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
             this.disInfo_pane.ResumeLayout(false);

@@ -85,6 +85,20 @@ namespace Demo
             }
         }
 
+        private void initselectimagemap() //이미지 선택 초기화
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (imageMap[i, j] == 2)
+                    {
+                        imageMap[i, j] = 1;
+                    }
+                }
+            }
+        }
+
         private void initimagepic() //이미지 박스 초기화
         {
             pic_1_1.Image = null;
@@ -127,7 +141,7 @@ namespace Demo
             pic_3_3.Region = rg;
         }
 
-        private void selectedImage()//선택되어있는 이미지 번호 가져오기
+        private void selectedImage()//선택되어있는 이미지 번호, 이름 가져오기
         {
             for(int i=0; i < 3; i++)
             {
@@ -136,6 +150,23 @@ namespace Demo
                     if(imageMap[i,j] == 2)
                     {
                         listnum = i * 3 + j;
+                        switch (valPage)
+                        {
+                            case 1:
+                                this.selected_image = TourImagelist.Images.Keys[this.listnum].ToString();
+                                break;
+                            case 2:
+                                this.selected_image = FoodImagelist.Images.Keys[this.listnum].ToString();
+                                break;
+                            case 3:
+                                this.selected_image = MemorialImageList.Images.Keys[this.listnum].ToString();
+                                break;
+                            case 4:
+                                this.selected_image = RecommendImagelist.Images.Keys[this.listnum].ToString();
+                                break;
+                            
+                            
+                        }
                     }
                 }
             }
@@ -882,7 +913,9 @@ namespace Demo
                 imageMap[0, 0]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 0, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
            
@@ -896,7 +929,9 @@ namespace Demo
                 imageMap[0, 1]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 1, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -909,7 +944,9 @@ namespace Demo
                 imageMap[0, 2]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 2, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -922,7 +959,9 @@ namespace Demo
                 imageMap[1,0]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 3, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -935,7 +974,9 @@ namespace Demo
                 imageMap[1,1]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 4, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -948,7 +989,9 @@ namespace Demo
                 imageMap[1, 2]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 5, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -961,7 +1004,9 @@ namespace Demo
                 imageMap[2,0]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 6, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -974,7 +1019,9 @@ namespace Demo
                 imageMap[2,1]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 7, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }
@@ -983,11 +1030,13 @@ namespace Demo
         {
             if (imageMap[2, 2] != 0)
             {
-                changePicColor(33);
+                //changePicColor(33);
                 imageMap[2,2]=2;
                 allRefrashPic();
 
-                ToperliskPopup popup = new ToperliskPopup(selected_image, 8, valPage, price);
+                selectedImage();
+                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                initselectimagemap();
                 popup.ShowDialog();
             }
         }

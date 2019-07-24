@@ -138,9 +138,12 @@
     <value>Design :</value>
   </data>
   <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>Please check the fianl results</value>
+    <value>TopperKiosk (Check and Pay)</value>
   </data>
   <data name="userTextName_lbl.Text" xml:space="preserve">
     <value>Text :</value>
+  </data>
+  <data name="info_lbl.Text" xml:space="preserve">
+    <value>Please check the fianl results</value>
   </data>
 </root>

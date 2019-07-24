@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingPage));
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane = new System.Windows.Forms.Panel();
-            this.insertUserText = new System.Windows.Forms.TextBox();
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
+            this.info_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
@@ -48,16 +48,9 @@
             // tooltip_pane
             // 
             resources.ApplyResources(this.tooltip_pane, "tooltip_pane");
-            this.tooltip_pane.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tooltip_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tooltip_pane.Controls.Add(this.tooltip_lbl);
             this.tooltip_pane.Name = "tooltip_pane";
-            // 
-            // insertUserText
-            // 
-            resources.ApplyResources(this.insertUserText, "insertUserText");
-            this.insertUserText.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.insertUserText.Name = "insertUserText";
-            this.insertUserText.Click += new System.EventHandler(this.insertUserText_Click);
             // 
             // showingDesign
             // 
@@ -79,13 +72,18 @@
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
+            // info_lbl
+            // 
+            resources.ApplyResources(this.info_lbl, "info_lbl");
+            this.info_lbl.Name = "info_lbl";
+            // 
             // SettingPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
-            this.Controls.Add(this.insertUserText);
+            this.Controls.Add(this.info_lbl);
             this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
@@ -94,7 +92,6 @@
             this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -105,6 +102,6 @@
         private System.Windows.Forms.Label tooltip_lbl;
         private System.Windows.Forms.Panel tooltip_pane;
         private System.Windows.Forms.PictureBox showingDesign;
-        private System.Windows.Forms.TextBox insertUserText;
+        private System.Windows.Forms.Label info_lbl;
     }
 }

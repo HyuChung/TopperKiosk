@@ -123,8 +123,11 @@
   <data name="designName_lbl.Text" xml:space="preserve">
     <value>デザイン :</value>
   </data>
-  <data name="tooltip_lbl.Text" xml:space="preserve">
+  <data name="info_lbl.Text" xml:space="preserve">
     <value>結果物を最終確認してください</value>
+  </data>
+  <data name="tooltip_lbl.Text" xml:space="preserve">
+    <value>TopperKiosk (確認及び決済)</value>
   </data>
   <data name="userTextName_lbl.Text" xml:space="preserve">
     <value>字  :</value>
