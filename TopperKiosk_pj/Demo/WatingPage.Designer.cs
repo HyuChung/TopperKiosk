@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WatingPage));
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.tooltip_pane = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tooltip_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.tooltip_pane.SuspendLayout();
             this.SuspendLayout();
@@ -46,14 +46,15 @@
             // 
             resources.ApplyResources(this.tooltip_pane, "tooltip_pane");
             this.tooltip_pane.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tooltip_pane.Controls.Add(this.label1);
+            this.tooltip_pane.Controls.Add(this.tooltip_lbl);
             this.tooltip_pane.Name = "tooltip_pane";
             // 
-            // label1
+            // tooltip_lbl
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Name = "label1";
+            this.tooltip_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
+            resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
+            this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.tooltip_lbl.Name = "tooltip_lbl";
             // 
             // WatingPage
             // 
@@ -74,6 +75,6 @@
 
         private System.Windows.Forms.PictureBox showingDesign;
         private System.Windows.Forms.Panel tooltip_pane;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label tooltip_lbl;
     }
 }

@@ -8,20 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Demo
 {
     public partial class PayPage : Form
     {
         string image_name ="None", usertext ="None";
-        int imageNum , pageNum , price;
+        int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price;
 
-       
-        public PayPage(string image_name, string usertext, int price, int imageNum, int pageNum)
+        string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
+                                                    {"화이팅","선생님","부모님","Team" } };
+
+
+        public PayPage(string image_name, int price, int imageNum, int pageNum, int textindex_column_1, int textindex_column_2)
         {
-            this.usertext = usertext;
             this.image_name = image_name;
             this.imageNum = imageNum;
             this.pageNum = pageNum;
+            this.textindex_column_1 = textindex_column_1;
+            this.textindex_column_2 = textindex_column_2;
 
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
@@ -30,7 +35,7 @@ namespace Demo
             this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;//중앙정렬(세로)
             this.disInfo_pane.Top = (this.ClientSize.Height - disInfo_pane.Height) / 2;//중앙정렬(세로)
             this.disDesginName_lbl.Text = image_name;
-            this.disUserText_lbl.Text = usertext;
+            this.disUserText_lbl.Text = topperText[0,textindex_column_1] +" "+ topperText[1,textindex_column_2];
             this.dismoney_lbl.Text = price.ToString();
             
         }
@@ -71,7 +76,7 @@ namespace Demo
         private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
             this.Visible = false;
-            SettingPage newSettingPage = new SettingPage(image_name, usertext ,price,imageNum, pageNum);
+            SettingPage newSettingPage = new SettingPage(image_name,price,imageNum, pageNum, textindex_column_1, textindex_column_2);
             newSettingPage.ShowDialog();
         }
     }

@@ -109,7 +109,6 @@
             this.pic_3_3.Name = "pic_3_3";
             this.pic_3_3.TabStop = false;
             this.pic_3_3.Click += new System.EventHandler(this.pic_3_3_Click);
-            this.pic_3_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_3_Paint);
             // 
             // pic_3_2
             // 
@@ -117,7 +116,6 @@
             this.pic_3_2.Name = "pic_3_2";
             this.pic_3_2.TabStop = false;
             this.pic_3_2.Click += new System.EventHandler(this.pic_3_2_Click);
-            this.pic_3_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_2_Paint);
             // 
             // pic_3_1
             // 
@@ -125,7 +123,6 @@
             this.pic_3_1.Name = "pic_3_1";
             this.pic_3_1.TabStop = false;
             this.pic_3_1.Click += new System.EventHandler(this.pic_3_1_Click);
-            this.pic_3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_3_1_Paint);
             // 
             // pic_2_3
             // 
@@ -133,7 +130,6 @@
             this.pic_2_3.Name = "pic_2_3";
             this.pic_2_3.TabStop = false;
             this.pic_2_3.Click += new System.EventHandler(this.pic_2_3_Click);
-            this.pic_2_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_3_Paint);
             // 
             // pic_2_2
             // 
@@ -141,7 +137,6 @@
             this.pic_2_2.Name = "pic_2_2";
             this.pic_2_2.TabStop = false;
             this.pic_2_2.Click += new System.EventHandler(this.pic_2_2_Click);
-            this.pic_2_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_2_Paint);
             // 
             // pic_2_1
             // 
@@ -149,7 +144,6 @@
             this.pic_2_1.Name = "pic_2_1";
             this.pic_2_1.TabStop = false;
             this.pic_2_1.Click += new System.EventHandler(this.pic_2_1_Click);
-            this.pic_2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_2_1_Paint);
             // 
             // pic_1_3
             // 
@@ -157,7 +151,6 @@
             this.pic_1_3.Name = "pic_1_3";
             this.pic_1_3.TabStop = false;
             this.pic_1_3.Click += new System.EventHandler(this.pic_1_3_Click);
-            this.pic_1_3.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_3_Paint);
             // 
             // pic_1_2
             // 
@@ -165,7 +158,6 @@
             this.pic_1_2.Name = "pic_1_2";
             this.pic_1_2.TabStop = false;
             this.pic_1_2.Click += new System.EventHandler(this.pic_1_2_Click);
-            this.pic_1_2.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_2_Paint);
             // 
             // pic_1_1
             // 
@@ -173,7 +165,6 @@
             this.pic_1_1.Name = "pic_1_1";
             this.pic_1_1.TabStop = false;
             this.pic_1_1.Click += new System.EventHandler(this.pic_1_1_Click);
-            this.pic_1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_1_1_Paint);
             // 
             // manu_layout_pane
             // 
@@ -262,41 +253,52 @@
             // 
             this.TourImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("TourImagelist.ImageStream")));
             this.TourImagelist.TransparentColor = System.Drawing.Color.Transparent;
-            this.TourImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
-            this.TourImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
-            this.TourImagelist.Images.SetKeyName(2, "images.jpg");
-            this.TourImagelist.Images.SetKeyName(3, "Love1.jpg");
+            this.TourImagelist.Images.SetKeyName(0, "가족 여행.PNG");
+            this.TourImagelist.Images.SetKeyName(1, "괌 여행중.PNG");
+            this.TourImagelist.Images.SetKeyName(2, "괌 여행중2.PNG");
+            this.TourImagelist.Images.SetKeyName(3, "괌 여행중3.PNG");
+            this.TourImagelist.Images.SetKeyName(4, "다낭 여행중.PNG");
+            this.TourImagelist.Images.SetKeyName(5, "다낭 여행중2.PNG");
+            this.TourImagelist.Images.SetKeyName(6, "제주도 여행중.PNG");
+            this.TourImagelist.Images.SetKeyName(7, "하와이 여행.PNG");
+            this.TourImagelist.Images.SetKeyName(8, "해외 여행중.PNG");
             // 
             // FoodImagelist
             // 
             this.FoodImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("FoodImagelist.ImageStream")));
             this.FoodImagelist.TransparentColor = System.Drawing.Color.Transparent;
-            this.FoodImagelist.Images.SetKeyName(0, "999A4C3359EECFBC25.jpg");
-            this.FoodImagelist.Images.SetKeyName(1, "Congrats1.jpg");
-            this.FoodImagelist.Images.SetKeyName(2, "Love1.jpg");
-            this.FoodImagelist.Images.SetKeyName(3, "Mr_Mrs.jpg");
+            this.FoodImagelist.Images.SetKeyName(0, "맛있으면 0칼로리.JPG");
+            this.FoodImagelist.Images.SetKeyName(1, "먹방여행중.JPG");
+            this.FoodImagelist.Images.SetKeyName(2, "면류.JPG");
+            this.FoodImagelist.Images.SetKeyName(3, "술먹방중.JPG");
+            this.FoodImagelist.Images.SetKeyName(4, "오사카 먹방여행.JPG");
+            this.FoodImagelist.Images.SetKeyName(5, "제주도 먹방여행.JPG");
+            this.FoodImagelist.Images.SetKeyName(6, "치맥.JPG");
+            this.FoodImagelist.Images.SetKeyName(7, "후쿠오카 먹방여행.JPG");
             // 
             // MemorialImageList
             // 
             this.MemorialImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("MemorialImageList.ImageStream")));
             this.MemorialImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.MemorialImageList.Images.SetKeyName(0, "Birthday1.jpg");
-            this.MemorialImageList.Images.SetKeyName(1, "Birthday2.jpg");
-            this.MemorialImageList.Images.SetKeyName(2, "Birthday3.jpg");
-            this.MemorialImageList.Images.SetKeyName(3, "Birthday4.jpg");
-            this.MemorialImageList.Images.SetKeyName(4, "Birthday5.jpg");
-            this.MemorialImageList.Images.SetKeyName(5, "999A4C3359EECFBC25.jpg");
-            this.MemorialImageList.Images.SetKeyName(6, "images.jpg");
+            this.MemorialImageList.Images.SetKeyName(0, "아버지 생신 축하.JPG");
+            this.MemorialImageList.Images.SetKeyName(1, "어버이날.JPG");
+            this.MemorialImageList.Images.SetKeyName(2, "연애 1주년 축하.JPG");
+            this.MemorialImageList.Images.SetKeyName(3, "연애 300일 기념.JPG");
+            this.MemorialImageList.Images.SetKeyName(4, "연애 이벤트.JPG");
+            this.MemorialImageList.Images.SetKeyName(5, "연인 생일축하.JPG");
+            this.MemorialImageList.Images.SetKeyName(6, "졸업 축하.JPG");
+            this.MemorialImageList.Images.SetKeyName(7, "좋은날.PNG");
             // 
             // RecommendImagelist
             // 
             this.RecommendImagelist.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("RecommendImagelist.ImageStream")));
             this.RecommendImagelist.TransparentColor = System.Drawing.Color.Transparent;
-            this.RecommendImagelist.Images.SetKeyName(0, "6383_shop1_812327.jpg");
-            this.RecommendImagelist.Images.SetKeyName(1, "9321_shop1_297733.jpg");
-            this.RecommendImagelist.Images.SetKeyName(2, "Birthday1.jpg");
-            this.RecommendImagelist.Images.SetKeyName(3, "Congrats1.jpg");
-            this.RecommendImagelist.Images.SetKeyName(4, "Love1.jpg");
+            this.RecommendImagelist.Images.SetKeyName(0, "Q&A.png");
+            this.RecommendImagelist.Images.SetKeyName(1, "Q&A2.png");
+            this.RecommendImagelist.Images.SetKeyName(2, "서울 역사 여행중.png");
+            this.RecommendImagelist.Images.SetKeyName(3, "세미콜론팀.png");
+            this.RecommendImagelist.Images.SetKeyName(4, "여행중.png");
+            this.RecommendImagelist.Images.SetKeyName(5, "파리 여행중.png");
             // 
             // tableLayoutPanel1
             // 
