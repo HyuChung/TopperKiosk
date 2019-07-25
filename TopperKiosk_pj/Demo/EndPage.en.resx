@@ -117,43 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ageinfo_lbl.Text" xml:space="preserve">
-    <value>AGE</value>
+  <data name="exitinfo_lbl.Text" xml:space="preserve">
+    <value>15 초 후 처음으로 돌아갑니다</value>
   </data>
-  <data name="chargeMoney_lbl.Text" xml:space="preserve">
-    <value>Price :</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>제작 완료</value>
   </data>
-  <data name="designName_lbl.Text" xml:space="preserve">
-    <value>Design :</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>밑에서 완성된 토퍼를 수령해주세요 </value>
   </data>
-  <data name="info_lbl.Text" xml:space="preserve">
-    <value>Now Making a Topper. Just a moment, please.</value>
+  <data name="label_PayTypeInfoText.Text" xml:space="preserve">
+    <value>제작이 완료 되었습니다.</value>
   </data>
-  <data name="lefttime_lbl.Text" xml:space="preserve">
-    <value>The rest of the expected wait time:</value>
-  </data>
-  <data name="outputinfo_lbl.Text" xml:space="preserve">
-    <value>Output information</value>
-  </data>
-  <data name="purpose_lbl.Text" xml:space="preserve">
-    <value>PURPOSE</value>
-  </data>
-  <data name="sexinfo_lbl.Text" xml:space="preserve">
-    <value>SEX</value>
-  </data>
-  <data name="sumit_btn.Text" xml:space="preserve">
-    <value>Submit</value>
-  </data>
-  <data name="surveyInfo_lbl.Text" xml:space="preserve">
-    <value>Topper Customer Survey</value>
-  </data>
-  <data name="thankyou_lbl.Text" xml:space="preserve">
-    <value>Thank you for participating.</value>
-  </data>
-  <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>TopperKiosk (Making)</value>
-  </data>
-  <data name="userTextName_lbl.Text" xml:space="preserve">
-    <value>Text :</value>
+  <data name="label_UserInfoText.Text" xml:space="preserve">
+    <value>토퍼 양쪽 비닐을 제거하시면 더 깔끔합니다.</value>
   </data>
 </root>

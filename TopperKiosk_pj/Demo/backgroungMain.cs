@@ -28,6 +28,10 @@ namespace Demo
             form.Show();
         }
 
-
+        private void backgroungMain_Load(object sender, EventArgs e)
+        {
+            MainPage mp = new MainPage();
+            mp.ShowDialog();
+        }
     }
 }

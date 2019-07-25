@@ -108,7 +108,16 @@
     <EmbeddedResource Include="backgroungMain.resx">
       <DependentUpon>backgroungMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.en.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.ja-JP.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EndPage.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.zh.resx">
       <DependentUpon>EndPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">

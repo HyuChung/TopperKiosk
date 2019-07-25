@@ -12,10 +12,16 @@ namespace Demo
 {
     public partial class EndPage : Form
     {
+
+        #region 'Field'
         System.Windows.Forms.Timer Endtimer = new System.Windows.Forms.Timer();
         int end_time = 15;
-        string endinfo = " 초 후에 처음으로 돌아갑니다";
+        string endinfo = " 초 후 처음으로 돌아갑니다";
+        #endregion
 
+
+
+        #region 'Init'
         public EndPage()
         {
             Endtimer.Tick += new EventHandler(endtimerHandler);
@@ -25,7 +31,11 @@ namespace Demo
             Endtimer.Enabled = true;
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
         }
+        #endregion
 
+
+
+        #region 'Propertise'
         private void countdown()
         {
             exitinfo_lbl.Text = end_time + endinfo;
@@ -43,7 +53,7 @@ namespace Demo
                 mp.ShowDialog();
             }
         }
-
+        #endregion
 
     }
 }
