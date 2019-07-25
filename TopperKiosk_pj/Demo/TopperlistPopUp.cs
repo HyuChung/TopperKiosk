@@ -25,6 +25,7 @@ namespace Demo
         #region 'Init'
         public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price)
         {
+            this.price = price;
             this.image_name = image_name;
             this.imageNum = imageNum;
             this.pageNum = pageNum;

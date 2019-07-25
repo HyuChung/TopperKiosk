@@ -118,41 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 126</value>
-  </data>
-  <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 279</value>
-  </data>
-  <data name="showingDesign.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="showingDesign.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Name" xml:space="preserve">
-    <value>showingDesign</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="tooltip_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>나눔고딕, 15.75pt, style=Bold</value>
   </data>
@@ -165,6 +137,7 @@
   <data name="tooltip_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>1920, 40</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tooltip_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -187,7 +160,7 @@
     <value>0</value>
   </data>
   <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 2</value>
   </data>
   <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>1920, 40</value>
@@ -205,10 +178,1481 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="info_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt</value>
+  </data>
+  <data name="info_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="info_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
+  </data>
+  <data name="info_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1904, 70</value>
+  </data>
+  <data name="info_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="info_lbl.Text" xml:space="preserve">
+    <value>토퍼를 만드는 중입니다 잠시만 기다려 주세요</value>
+  </data>
+  <data name="info_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Name" xml:space="preserve">
+    <value>info_lbl</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;info_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="disInfo_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="disInfo_pane.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Name" xml:space="preserve">
+    <value>designName_lbl</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
+    <value>dismoney_lbl</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Name" xml:space="preserve">
+    <value>userTextName_lbl</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Name" xml:space="preserve">
+    <value>disUserText_lbl</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Name" xml:space="preserve">
+    <value>chargeMoney_lbl</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
+    <value>disDesginName_lbl</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 678</value>
+  </data>
+  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 180</value>
+  </data>
+  <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dismoney_lbl" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chargeMoney_lbl" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="designName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="designName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 20.2499981pt</value>
+  </data>
+  <data name="designName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="designName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="designName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 59</value>
+  </data>
+  <data name="designName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="designName_lbl.Text" xml:space="preserve">
+    <value>디자인 :</value>
+  </data>
+  <data name="designName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Name" xml:space="preserve">
+    <value>designName_lbl</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dismoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dismoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 16.25pt</value>
+  </data>
+  <data name="dismoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dismoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 119</value>
+  </data>
+  <data name="dismoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 61</value>
+  </data>
+  <data name="dismoney_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="dismoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
+    <value>dismoney_lbl</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="userTextName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="userTextName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 20.2499981pt</value>
+  </data>
+  <data name="userTextName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userTextName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 59</value>
+  </data>
+  <data name="userTextName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 60</value>
+  </data>
+  <data name="userTextName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="userTextName_lbl.Text" xml:space="preserve">
+    <value>글 씨 :</value>
+  </data>
+  <data name="userTextName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Name" xml:space="preserve">
+    <value>userTextName_lbl</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;userTextName_lbl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="disUserText_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="disUserText_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 16.25pt</value>
+  </data>
+  <data name="disUserText_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="disUserText_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 59</value>
+  </data>
+  <data name="disUserText_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 60</value>
+  </data>
+  <data name="disUserText_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="disUserText_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Name" xml:space="preserve">
+    <value>disUserText_lbl</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disUserText_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chargeMoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="chargeMoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 20.2499981pt</value>
+  </data>
+  <data name="chargeMoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chargeMoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 119</value>
+  </data>
+  <data name="chargeMoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 61</value>
+  </data>
+  <data name="chargeMoney_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="chargeMoney_lbl.Text" xml:space="preserve">
+    <value>가 격 :</value>
+  </data>
+  <data name="chargeMoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Name" xml:space="preserve">
+    <value>chargeMoney_lbl</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;chargeMoney_lbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="disDesginName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="disDesginName_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕, 16.25pt</value>
+  </data>
+  <data name="disDesginName_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="disDesginName_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 0</value>
+  </data>
+  <data name="disDesginName_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 59</value>
+  </data>
+  <data name="disDesginName_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="disDesginName_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
+    <value>disDesginName_lbl</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="outputinfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="outputinfo_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="outputinfo_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 286</value>
+  </data>
+  <data name="outputinfo_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 35</value>
+  </data>
+  <data name="outputinfo_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="outputinfo_lbl.Text" xml:space="preserve">
+    <value>출력 정보</value>
+  </data>
+  <data name="outputinfo_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;outputinfo_lbl.Name" xml:space="preserve">
+    <value>outputinfo_lbl</value>
+  </data>
+  <data name="&gt;&gt;outputinfo_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;outputinfo_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;outputinfo_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="Icon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Icon.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAA
+        JQAAAk1TRnQBSQFMAgEBAgEAASgBAAEoAQABZAEAAWQBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABkAEBAgABZAMAAQEBAAEIBQABQAGcGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHA
+        AdwBwAEAAfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANC
+        AQADOQEAAYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/
+        ATMDAAFmAwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJm
+        AgABZgGZAgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEz
+        AgABzAFmAgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEA
+        AWYBAAEzAQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/
+        AQABMwFmAgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEA
+        ATMBmQFmAQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEA
+        ATMCzAEAATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEA
+        ATMBAAFmAQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEz
+        AZkBAAFmATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEA
+        AWYBmQFmAQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFm
+        AcwB/wEAAWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEz
+        AZkBAAGZAQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIA
+        AZkBZgEzAQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHM
+        AQACmQH/AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZ
+        Af8BMwEAAZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEA
+        AZkBAAHMAQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFm
+        AgABzAFmATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFm
+        AQABzAKZAQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/
+        AgABzAH/ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEA
+        AZkBAAHMATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEz
+        AQABzAJmAQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEA
+        Af8BmQHMAQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEA
+        Av8BMwEAAcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEA
+        Av8BZgEAASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4
+        AQAB8AH7Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8BAAEHAQ5gAAEO
+        AgcBDmAAAQ4BB8gAAQ5iAAIOYgABDsgAAetiAALrYgAB68gAAf8v8QHqAgAB6i/xAv8v8QHqAgAB6i/x
+        Af/4AAHsAgAB7GAAAewCAAHs/wApAAHsAgAB7GAAAewCAAHs/wApAAHsAgAB7GAAAewCAAHs/wApAAHs
+        AgAB7GAAAewCAAHs/wAGAAH/AvcB/wMAAfMB7QG8Af8CAAH/AbwB7QHzAwAB/wL3Af8DAAHzAe0BvAUA
+        AewCAAHsBQABvAHtAfMDAAH/AvcB/wMAAfMB7QG8Af8CAAH/AbwB7QHzAwAB/wL3Af8aAAH/AvcB/wMA
+        AfMB7QG8Af8CAAH/AbwB7QHzAwAB/wL3Af8DAAHzAe0BvAUAAewCAAHsBQABvAHtAfMDAAH/AvcB/wMA
+        AfMB7QG8Af8CAAH/AbwB7QHzAwAB/wL3Af/iAAH3AgAB9wIAAf8BFQIAAfMCAAHzAgABFQH/AgAB9wIA
+        AfcCAAH/AUMCAAHzBAAB7AIAAewEAAHzAgABQwH/AgAB9wIAAfcCAAH/ARUCAAHzAgAB8wIAARUB/wIA
+        AfcCAAH3GgAB9wIAAfcCAAH/ARUCAAHzAgAB8wIAARUB/wIAAfcCAAH3AgAB/wFDAgAB8wQAAewCAAHs
+        BAAB8wIAAUMB/wIAAfcCAAH3AgAB/wEVAgAB8wIAAfMCAAEVAf8CAAH3AgAB9+IAAfcCAAH3AgAB/wEV
+        AgAB8wIAAfMCAAEVAf8CAAH3AgAB9wIAAf8BQwIAAfMEAAHsAgAB7AQAAfMCAAFDAf8CAAH3AgAB9wIA
+        Af8BFQIAAfMCAAHzAgABFQH/AgAB9wIAAfcaAAH3AgAB9wIAAf8BFQIAAfMCAAHzAgABFQH/AgAB9wIA
+        AfcCAAH/AUMCAAHzBAAB7AIAAewEAAHzAgABQwH/AgAB9wIAAfcCAAH/ARUCAAHzAgAB8wIAARUB/wIA
+        AfcCAAH34gAB/wL3Af8DAAHzAe0BvAH/AgAB/wG8Ae0B8wMAAf8C9wH/AwAB8wHtAbwB/wQAAewCAAHs
+        BAAB/wG8Ae0B8wMAAf8C9wH/AwAB8wHtAbwB/wIAAf8BvAHtAfMDAAH/AvcB/xoAAf8C9wH/AwAB8wHt
+        AbwB/wIAAf8BvAHtAfMDAAH/AvcB/wMAAfMB7QG8Af8EAAHsAgAB7AQAAf8BvAHtAfMDAAH/AvcB/wMA
+        AfMB7QG8Af8CAAH/AbwB7QHzAwAB/wL3Af//AAYAAewCAAHsYAAB7AIAAez/ABwAAfMB7QG8Af8JAAHs
+        AgAB7AkAAf8BvAHtAfNGAAHzAe0BvAH/CQAB7AIAAewJAAH/AbwB7QHz/wAOAAH/ARUCAAHzCQAB7AIA
+        AewJAAHzAgABFQH/RAAB/wEVAgAB8wkAAewCAAHsCQAB8wIAARUB//8ADQAB/wFDAgAB8wkAAewCAAHs
+        CQAB8wIAAUMB/0QAAf8BQwIAAfMJAAHsAgAB7AkAAfMCAAFDAf//AA4AAfMB7QG8Af8JAAHsAgAB7AkA
+        Af8BvAHtAfNGAAHzAe0BvAH/CQAB7AIAAewJAAH/AbwB7QHz/wAbAAHzARACAAEQAfNeAAHyARACAAEQ
+        AfP/ABYAAfMB7QG8Af8MAAH0ARAEAAEQAfQMAAH/AbwB7QHzPAAB8wHtAbwB/wwAAfQBEAQAARAB9AwA
+        Af8BvAHtAfP/AAQAAf8BFQIAAfMLAAH/AW0GAAFtAf8LAAHzAgABFQH/OgAB/wEVAgAB8wsAAf8BbQYA
+        AW0B/wsAAfMCAAEVAf//AAMAAf8BFQIAAfMLAAHvAwAB7QH3AwAB7wsAAfMCAAEVAf86AAH/ARUCAAHz
+        CwAB7wMAAREBQwMAAe8LAAHzAgABFQH//wAEAAHzAe0BvAsAAfEDAAETAv8B6gMAAfELAAG8Ae0B8zwA
+        AfMB7QG8CwAB8QMAAQ4CbQEPAwAB8QsAAbwB7QHz/wASAAH0ARACAAEOAfQCAAH0ARACAAEQAfRWAAH0
+        ARADAAHsAusBbQEOAgABEAH0/wANAAHzAe0BvAH/DQAB/wFtAwABvAQAAfEDAAFtAf8NAAH/AbwB7QHz
+        MgAB8wHtAbwB/w0AAf8BbQMAAW0BkgHtAusBEwMAAW0B/w0AAf8BvAHtAfP6AAFDAgAB8w0AAe8DAAHt
+        Af8FAAGSAwAB7w0AAfMCAAFDMgABQwIAAfMNAAHvAwABFQOSAewC6wERAwAB7w0AAfMCAAFD+gABQwIA
+        AfMMAAHxAwABEwH/BgAB/wESAwAB8QwAAfMCAAFDMgABQwIAAfMMAAHxAwABDwHtBJIB7AHrAW0BDgMA
+        AfEMAAHzAgABQ/oAAfMB7QG8Af8LAAH0ARACAAEOAfQIAAH0AQ8CAAEQAfQLAAH/AbwB7QHzMgAB8wHt
+        AbwB/wsAAfQBEAIAAQ4B7AaSAusB6gMAARAB9AsAAf8BvAHtAfP/AAkAAf8BbQMAAbwKAAHwAwABbQH/
+        TgAB/wFtAwABbQeSAe0C6wETAwABbQH//wAEAAHzAe0BvAH/DwAB7wMAAe0B/wsAAZIDAAHvDwAB/wG8
+        Ae0B8ygAAfMB7QG8Af8PAAHvAwABFQmSAewC6wERAwAB7w8AAf8BvAHtAfPvAAH/ARUCAAHzDgAB8QMA
+        ARMB/wwAAf8BEgMAAfEOAAHzAgABFQH/JgAB/wEVAgAB8w4AAfEDAAEPAe0KkgHsAesBbQEOAwAB8Q4A
+        AfMCAAEVAf/uAAH/ARUCAAHzDQAB9AEQAgABDgH0DgAB9AEPAgABEAH0DQAB8wIAARUB/yYAAf8BFQIA
+        AfMNAAH0ARADAAHsDJIC6wHqAwABEAH0DQAB8wIAARUB/+8AAfMB7QG8Af8MAAH/AW0DAAHwEAAB8AMA
+        AW0B/wwAAf8BvAHtAfMoAAHzAe0BvAH/DAAB/wFtAwABbQ2SAe0C6wETAwABbQH/DAAB/wG8Ae0B8/8A
+        AQAB7wMAAe0B/xAAAf8B7QMAAe9IAAHvAwABFQ+SAewC6wERAwAB7/8AEAAB8QQAAesO7AH3Af8CAAH/
+        ARMDAAHxRgAB8QQAAREOQwEUAe0B7AHrAW0BDgMAAfH/AA4AAf8BFBQAAfcDAAH0AQ4CAAEUAf9EAAH/
+        AREUAAEUAZIB6wFtAeoDAAERAf//AA0AAf8BDhQAAfcEAAEHAgABDgH/RAAB/wEOFAABFAHsARICFAEQ
+        AgABDgH//wANAAH/AQ4CAAHqEOwB9wH/BAAB8QIAAQ4B/0QAAf8BDgIAARAQQwEUAuwBEgIUARECAAEO
+        Af//AA0AAf8BDgIAAfEWAAHxAgABDgH/RAAB/wEOAgAB6hPsARICFAERAgABDgH//wANAAH/AQ4CAAHx
+        FgAB8QIAAQ4B/0QAAf8BDgIAAeoT7AESAhQBEQIAAQ4B//8ADQAB/wEOAgAB8RYAAfECAAEOAf9EAAH/
+        AQ4CAAHqE+wBEgIUARECAAEOAf//AA0AAf8BDgIAAfEWAAHxAgABDgH/RAAB/wEOAgAB6hPsARICFAER
+        AgABDgH//wANAAH/AQ4CAAHxFgAB8QIAAQ4B/0QAAf8BDgIAAeoT7AESAhQBEQIAAQ4B//8ADQAB/wEO
+        AgAB8RYAAfECAAEOAf9EAAH/AQ4CAAHqE+wBEgIUARECAAEOAf//AAH0Ae8M7AMAAeoW7AHqAwAM7AHv
+        AfQqAAH0Ae8M7AMAAQ8TEQEPAw4DAAzsAe8B9PEAAfMBDzgAAQ8B8ygAAfMBDzgAAQ8B8+8AAf8BbToA
+        AW0B/yYAAf8BbToAAW0B/+4AAf8BDwIAAeo07AHqAgABDwH/JgAB/wEPAgABEDFDARACDwEOAgABDwH/
+        7gAB/wEOAgAB8TQAAfECAAEOAf8mAAH/AQ4CAAHqMewBbQLqARQCAAEOAf/uAAH/AQ4CAAHxNAAB8QIA
+        AQ4B/yYAAf8BDgIAAeox7AFtAuoBFAIAAQ4B/+4AAf8BDgIAAfE0AAHxAgABDgH/JgAB/wEOAgAB6jHs
+        AW0C6gEUAgABDgH/7gAB/wEOAgAB8TQAAfECAAEOAf8mAAH/AQ4CAAHqMewBbQLqARQCAAEOAf/uAAH/
+        AQ4CAAH3NPEB9wIAAQ4B/yYAAf8BDgIAARQC6i8SAxQBEQIAAQ4B/+4AAf8BFToAARUB/yYAAf8BFToA
+        ARUB/+8AAQc6AAEHKAABBzoAAQfwAAH/AQcBFQIOAwAsDgMAAg4BFQEHAf8oAAH/AQcBFQIOMgACDgEV
+        AQcB//IAA/8DAAHwKv8B8AMAA/8sAAP/AwABZiqGAWYDAAP/+gAB8SoAAfE4AAFmJ60DhgFm/wABAAHx
+        KgAB8TgAAWYnrQOGAWb/AAEAAfEqAAHxOAABZietA4YBZvoAA/8DAAHwKv8B8AMAA/8sAAP/AwABZiqG
+        AWYDAAP/8gAB/wEHARUCDgMALA4DAAIOARUBBwH/KAAB/wEHARUCDjIAAg4BFQEHAf/wAAEHOgABBygA
+        AQc6AAEH7wAB/wEVOgABFQH/JgAB/wEVOgABFQH/7gAB/wEOAgAB9wTxAeoCAAHqB/EB8AEOAgAB9wzx
+        AfcCAAEOAfAH8QHqAgAB6gTxAfcCAAEOAf8mAAH/AQ4CAAERAhQCFQEOAgABDwgSAwABEgzsARIDAAgS
+        AQ8CAAEOAhUCFAERAgABDgH/7gAB/wEOAgAB8QQAAewCAAHsBwAB/wEOAgAB8QwAAfECAAEOAf8HAAHs
+        AgAB7AQAAfECAAEOAf8mAAH/AQ4CAAEUBOoBDwIAAUMI7AMAAe0M8AHtAwAI7AFDAgABDwTqARQCAAEO
+        Af/uAAH/AQ4CAAHxBAAB7AIAAewHAAH/AQ4CAAHxDAAB8QIAAQ4B/wcAAewCAAHsBAAB8QIAAQ4B/yYA
+        Af8BDgIAARQE6gEPAgABQwjsAwAB7QzwAe0DAAjsAUMCAAEPBOoBFAIAAQ4B/+4AAf8BDgIAAfEEAAHs
+        AgAB7AcAAf8BDgIAAfEMAAHxAgABDgH/BwAB7AIAAewEAAHxAgABDgH/JgAB/wEOAgABFATqAQ8CAAFD
+        COwDAAHtDPAB7QMACOwBQwIAAQ8E6gEUAgABDgH/7gAB/wEOAgAB8QQAAewCAAHsBwAB/wEOAgAB8QwA
+        AfECAAEOAf8HAAHsAgAB7AQAAfECAAEOAf8mAAH/AQ4CAAEUBOoBDwIAAUMI7AMAAe0M8AHtAwAI7AFD
+        AgABDwTqARQCAAEOAf/uAAH/AQ8CAAHqBOwBQwIAAUMI7AMAAeoM7AHqAwAI7AFDAgABQwTsAeoCAAEP
+        Af8mAAH/AQ8CAAEOBA8BDgIAAQ4IEQMAAREMFQERAwAIEQEOAgABDgQPAQ4CAAEPAf/uAAH/AW06AAFt
+        Af8mAAH/AW06AAFtAf/vAAHzAQ84AAEPAfMoAAHzAQ84AAEPAfPxAAH0Ae8C7AMAAeoq7AHqAwAC7AHv
+        AfQqAAH0Ae8C7AMAAQ4nEAEKAg8BDgMAAuwB7wH0+QAB8SoAAfE4AAFmJ60DhgFm/wABAAHxKgAB8TgA
+        AWYnrQOGAWb/AAEAAfEqAAHxOAABZietA4YBZv8AAQAB8SoAAfE4AAFmJ60DhgFm+QAB/wHzAvEDAAH3
+        KvEB9wMAAvEB8wH/KgAB/wHzAvEDAAFDKmYBCgMAAvEB8wH/8AAB/wHvARE4AAEQAe8B/yYAAf8B7wER
+        OAABEAHvAf/tAAH/Aeo8AAHqAf8kAAH/Aeo8AAHqAf/rAAH/ARIEADYOBAABEgH/IgAB/wESPgABEgH/
+        6QAB/wESAwABEgHyNv8B8gESAwABEgH/IAAB/wESAwABDQGsAbIC0zGyAqwBigEOAwABEgH/5wAB/wET
+        AwAB6gH/AgAC8zQAAf8BbQMAARMB/x4AAf8BEwMAAQ0BsgLTArIy0wGyAqwBDQMAARMB/+UAAf8BEwMA
+        AW0B/wEAAf8B7wIAAfA0AAH/AW0DAAETAf8cAAH/ARMDAAENAbIC0wFrAgABijLTAbICrAENAwABEwH/
+        4wAB/wETAwABbQH/AQAB/wHvAwAB7TUAAf8BbQMAARQB/xoAAf8BEwMAAQ0BsgLTAWsDAAFlM9MBsgKs
+        AQ0DAAEUAf/hAAH/ARQDAAFtAf8BAAH/Ae8DAAEOAfM2AAH/AW0DAAEUAf8YAAH/ARQDAAENA9MBawQA
+        AbI00wGyAqwBDQMAARQB/98AAfQBFAMAAW0B/wEAAf8B7wMAAQ4B8jgAAf8BbQMAARQB9BYAAfQBFAMA
+        AQ0D0wFrBAABrDbTAbICrAENAwABFAH03QAB9AEUAwABbQH/AQAB/wHvAwABDgHyOgAB/wHrAwABFAH0
+        FAAB9AEUAwABDQPTAWsEAAGsONMBsgKsAQ0DAAEUAfTbAAH0ARUDAAHrAf8BAAH/Ae8DAAEPAfI8AAH/
+        AesDAAEVAfQSAAH0ARUDAAENA9MBawQAAaw60wGyAqwBDQMAARUB9NkAAfQBFQMAAesB/wEAAf8B7wMA
+        AQ8B8j4AAf8B7AMAARUB9BAAAfQBFQMAAQ0D0wFrBAABrDzTAbICrAENAwABFQH01wAB9AFDAwAB7AH/
+        AgAB7wMAAQ8B8kAAAf8B7AMAAUMB9A4AAfQBQwMAAQ0D0wFrBAABrD7TAbICrAENAwABQwH01QAB9AFD
+        AwAB7AH/AQAB/wHvAwABDgHyQgAB/wHsAwABQwH0DAAB9AFDAwABDQPTAWsEAAGsQNMBsgKsAQ0DAAFD
+        AfTTAAH0AUMDAAHsAf8BAAH/Ae8DAAEOAfJEAAH/AewDAAFDAfQKAAH0AUMDAAENA9MBawQAAaxC0wGy
+        AqwBDQMAAUMB9NEAAfQBQwMAAewB/wIAAbwDAAEPAfNGAAH/AewDAAFDAfQIAAH0AUMDAAFlA9MBigQA
+        AbJE0wGyAqwBDQMAAUMB9M8AAfQBEQMAAewB/wMAAZICAAEOAfNIAAH/AewDAAERAfQGAAH0AREDAAFl
+        BNMBZQMAAbJG0wGyAqwBDQMAAREB9M0AAfQBEQMAAewB/wQAAfQBFAEVAfNKAAH/AewDAAERAfQEAAH0
+        AREDAAFlBdMBsgIOAbJI0wGyAqwBDQMAAREB9MwAAewDAAHsAf8GAAL/TAAB/wHsAwAB7AQAAewDAAFl
+        U9MBsgKsAQ0DAAHszAABFAIAARUB8DTxIvIB8QETAgABFAQAARQCAAEOWIoBDgIAARTMAAFtXgABbQQA
+        AW1eAAFtzAAB8V4AAfEEAAHxXgAB8c0AAfABFFoAARQB8AYAAfABFFoAARQB8MsAAUIBTQE+BwABPgMA
+        ASgDAAGQAQECAAFkAwABAQEAAQEFAAFQARQWAAP/0QAG/wEPC/8B8Ab/GwAG/wEPC/8B8Ab/GwAG/wEP
+        C/8B8Ab/GwAG/wEPC/8B8Ab/GwAB/wH4AXABwwGHAR8BDwGOARwBMAHhA/8BhwEMATgBcQHwAfgB4QHD
+        AQ4BHwH/GwAB/wH4AWABwQGGAg8BBgEYATABYQP/AYYBDAEYAWAC8AFhAYMBBgEfAf8bAAH/AfgBYAHB
+        AYYCDwEGARgBMAFhA/8BhgEMARgBYALwAWEBgwEGAR8B/xsAAf8B+AFwAcMBhwIPAQ4BHAEwAeED/wGH
+        AQwBOAFwAvAB4QHDAQ4BHwH/GwAG/wEPC/8B8Ab/GwAE/wHhAf8BDwH4AX8H/wH+AR8B8AH/AYcE/xsA
+        BP8BwQH/AQ8B+AE/B/8B/AEfAfAB/wGDBP8bAAT/AcEB/wEPAfgBPwf/AfwBHwHwAf8BgwT/GwAE/wHh
+        Af8BDwH4AX8H/wH+AR8B8AH/AYcE/xsABf8B/gEHC/8B4AF/Bf8bAAP/AfwBPwH8AQMB/wHDB/8BwwH/
+        AcABPwH8AT8D/xsAA/8B+AE/AfgBAQH/AcEH/wGDAf8BgAEfAfwBHwP/GwAD/wH4AT8B+AEBAf8BwQf/
+        AYMB/wGAAR8B/AEfA/8bAAP/AfwBfwHwAQAB/wHjB/8BxwH/AQABDwH+AT8D/xsABf8B4AFgAX8J/wH+
+        AQABBwX/GwAD/wGHAf8BwAHwAT8B/gEfBf8B+AF/AfwBAAEDAf8B4QP/GwAD/wGHAf8BwAH4AT8B/gEf
+        Bf8B+AF/AfwBAAEDAf8B4QP/GwAD/wGHAf8BgQH4AR8B/gEfBf8B+AF/AfgBAAEBAf8B4QP/GwAD/wGH
+        Af8BAwH8AQ8B/gEfBf8B+AF/AfACAAH/AeED/xsABP8B/gEHAf4BBwn/AeACAAF/BP8bAAL/AfAB/wH+
+        AQcB/wEHAf8B8AX/AQ8B/wHgAgABfwH/AQ8C/xsAAv8B4AH/AfwBDwH/AQMB/wHwAX8D/wH+AQ8B/wHA
+        AgABPwH/AQcC/xsAAv8B4AH/AfgBHwH/AYEB/wHwAX8D/wH+AQ8B/wGAAgABHwH/AQcC/xsAAv8B8AH/
+        AfABPwH/AcAB/wHwBf8BDwH/AwABDwH/AQ8C/xsABP8B8AE/Af8BwAn/AwABDwT/GwAE/wHgAgABYAF/
+        B/8B/gMAAQcE/xsABP8BwAIAAXABPwf/AfwDAAEDBP8bAAT/AcACAAF4AT8H/wH8AwABAwT/GwAE/wHA
+        AgABeAE/B/8B/AMAAQME/xsABP8BwQL/AfgBPwf/AfwDAAEDBP8bAAT/AcEC/wH4AT8H/wH8AwABAwT/
+        GwAE/wHBAv8B+AE/B/8B/AMAAQME/xsABP8BwQL/AfgBPwf/AfwDAAEDBP8bAAT/AcEC/wH4AT8H/wH8
+        AwABAwT/GwAE/wHBAv8B+AE/B/8B/AMAAQME/xsAAv8B+AYAAQEF/wGABgABHwL/GwAC/wHwBwAF/wcA
+        AQ8C/xsAAv8B4AcAAX8D/wH+BwABBwL/GwAC/wHgBwABfwP/Af4HAAEHAv8bAAL/AeAG/wHwAX8D/wH+
+        BwABBwL/GwAC/wHgBv8B8AF/A/8B/gcAAQcC/xsAAv8B4Ab/AfABfwP/Af4HAAEHAv8bAAL/AeAG/wHw
+        AX8D/wH+BwABBwL/GwAC/wHgBwABfwP/Af4HAAEHAv8bAAL/AeAHAAF/A/8B/gcAAQcC/xsAAv8B8AcA
+        Bf8HAAEPAv8bAAL/AfAHAAX/BwABDwL/GwAC/wH8BgABAwX/AcAGAAE/Av8bAAP/AYcE/wH+AR8F/wH4
+        BQABAQP/GwAD/wGHBP8B/gEfBf8B+AUAAQED/xsAA/8BhwT/Af4BHwX/AfgFAAEBA/8bAAL/AfwGAAED
+        Bf8BwAYAAT8C/xsAAv8B8AcABf8HAAEPAv8bAAL/AfAHAAX/BwABDwL/GwAC/wHgBwABfwP/Af4HAAEH
+        Av8bAAL/AeAHAAF/A/8B/gcAAQcC/xsAAv8B4AHwAf4BDwH/AQcC8AF/A/8B/gcAAQcC/xsAAv8B4AHw
+        Af4BDwH/AQcC8AF/A/8B/gcAAQcC/xsAAv8B4AHwAf4BDwH/AQcC8AF/A/8B/gcAAQcC/xsAAv8B4AHw
+        Af4BDwH/AQcC8AF/A/8B/gcAAQcC/xsAAv8B4AcAAX8D/wH+BwABBwL/GwAC/wHgBwABfwP/Af4HAAEH
+        Av8bAAL/AfAHAAX/BwABDwL/GwAC/wH4BgABAQX/AYAGAAEfAv8bAAP/AYcE/wH+AR8F/wH4BQABAQP/
+        GwAD/wGHBP8B/gEfBf8B+AUAAQED/xsAA/8BhwT/Af4BHwX/AfgFAAEBA/8bAAP/AYcE/wH+AR8F/wH4
+        BQABAQP/GwAC/wH4BgABAQX/AYAGAAEfAv8bAAL/AeAHAAF/A/8B/gcAAQcC/xsAAv8BwAcAAT8D/wH8
+        BwABAwL/GwAC/wGABwABHwP/AfgHAAEBAv8bAAL/CAABDwP/AfAIAAL/GwAB/wH+AQMBPwX/AfwBBwP/
+        AeAIAAF/Af8bAAH/AfwBBAEfBf8B/gEDA/8BwAgAAT8B/xsAAf8B+AEIAR8G/wEBA/8BgAgAAR8B/xsA
+        Af8B8AEQAR8G/wGAA/8JAAEPAf8bAAH/AeABIAE/Bv8BwAF/Af8B/gkAAQcB/xsAAf8BwAFAAX8G/wHg
+        AT8B/wH8CQABAwH/GwAB/wKAB/8B8AEfAf8B+AkAAQEB/xsAAf8CAQf/AfgBDwH/AfAKAAH/GwAB/gID
+        B/8B/AEHAf8B4AoAAX8bAAH8AQQBBwf/Af4BAwH/AcAKAAE/GwAB+AEIAQ8I/wEBAf8BgAoAAR8bAAHw
+        ARgBHwj/AYAB/wsAAQ8bAAHgATgBPwj/AcABfgsAAQcbAAHAAXgBfwj/AeABPAsAAQMbAAHAAfwJ/wHw
+        ATwLAAEDGwABwAsAATwLAAEDGwABwAsAATwLAAEDGwABwAsAATwLAAEDGwAB4AsAAX4LAAEHGwAL
+</value>
+  </data>
+  <data name="lefttime_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lefttime_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="lefttime_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lefttime_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1023, 209</value>
+  </data>
+  <data name="lefttime_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 33</value>
+  </data>
+  <data name="lefttime_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lefttime_lbl.Text" xml:space="preserve">
+    <value>예상 남은 대기시간:</value>
+  </data>
+  <data name="lefttime_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lefttime_lbl.Name" xml:space="preserve">
+    <value>lefttime_lbl</value>
+  </data>
+  <data name="&gt;&gt;lefttime_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lefttime_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lefttime_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="annivercityPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="annivercityPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="annivercityPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>620, 374</value>
+  </data>
+  <data name="annivercityPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="annivercityPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="annivercityPurpose_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;annivercityPurpose_btn.Name" xml:space="preserve">
+    <value>annivercityPurpose_btn</value>
+  </data>
+  <data name="&gt;&gt;annivercityPurpose_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;annivercityPurpose_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;annivercityPurpose_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="collectionPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="collectionPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="collectionPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 374</value>
+  </data>
+  <data name="collectionPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="collectionPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="collectionPurpose_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;collectionPurpose_btn.Name" xml:space="preserve">
+    <value>collectionPurpose_btn</value>
+  </data>
+  <data name="&gt;&gt;collectionPurpose_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;collectionPurpose_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;collectionPurpose_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="curiocityPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="curiocityPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="curiocityPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 374</value>
+  </data>
+  <data name="curiocityPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="curiocityPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="curiocityPurpose_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;curiocityPurpose_btn.Name" xml:space="preserve">
+    <value>curiocityPurpose_btn</value>
+  </data>
+  <data name="&gt;&gt;curiocityPurpose_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;curiocityPurpose_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;curiocityPurpose_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="monumentalPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="monumentalPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="monumentalPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 374</value>
+  </data>
+  <data name="monumentalPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="monumentalPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="monumentalPurpose_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;monumentalPurpose_btn.Name" xml:space="preserve">
+    <value>monumentalPurpose_btn</value>
+  </data>
+  <data name="&gt;&gt;monumentalPurpose_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monumentalPurpose_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;monumentalPurpose_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="certifiPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="certifiPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="certifiPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 374</value>
+  </data>
+  <data name="certifiPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="certifiPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="certifiPurpose_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;certifiPurpose_btn.Name" xml:space="preserve">
+    <value>certifiPurpose_btn</value>
+  </data>
+  <data name="&gt;&gt;certifiPurpose_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;certifiPurpose_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;certifiPurpose_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="purpose_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="purpose_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="purpose_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="purpose_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 314</value>
+  </data>
+  <data name="purpose_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 35</value>
+  </data>
+  <data name="purpose_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="purpose_lbl.Text" xml:space="preserve">
+    <value>목적</value>
+  </data>
+  <data name="purpose_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;purpose_lbl.Name" xml:space="preserve">
+    <value>purpose_lbl</value>
+  </data>
+  <data name="&gt;&gt;purpose_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;purpose_lbl.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;purpose_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="girlsex_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="girlsex_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="girlsex_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12.75pt, style=Bold</value>
+  </data>
+  <data name="girlsex_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 131</value>
+  </data>
+  <data name="girlsex_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="girlsex_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="girlsex_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;girlsex_btn.Name" xml:space="preserve">
+    <value>girlsex_btn</value>
+  </data>
+  <data name="&gt;&gt;girlsex_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;girlsex_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;girlsex_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mansex_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mansex_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="mansex_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12.75pt, style=Bold</value>
+  </data>
+  <data name="mansex_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 131</value>
+  </data>
+  <data name="mansex_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="mansex_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="mansex_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;mansex_btn.Name" xml:space="preserve">
+    <value>mansex_btn</value>
+  </data>
+  <data name="&gt;&gt;mansex_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mansex_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;mansex_btn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="age60_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age60_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age60_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age60_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 252</value>
+  </data>
+  <data name="age60_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age60_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age60_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;age60_btn.Name" xml:space="preserve">
+    <value>age60_btn</value>
+  </data>
+  <data name="&gt;&gt;age60_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age60_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age60_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="age30_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age30_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age30_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age30_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 252</value>
+  </data>
+  <data name="age30_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age30_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age30_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;age30_btn.Name" xml:space="preserve">
+    <value>age30_btn</value>
+  </data>
+  <data name="&gt;&gt;age30_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age30_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age30_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="age20_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age20_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age20_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age20_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 252</value>
+  </data>
+  <data name="age20_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age20_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age20_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;age20_btn.Name" xml:space="preserve">
+    <value>age20_btn</value>
+  </data>
+  <data name="&gt;&gt;age20_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age20_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age20_btn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="age10_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age10_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age10_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age10_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 252</value>
+  </data>
+  <data name="age10_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age10_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age10_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;age10_btn.Name" xml:space="preserve">
+    <value>age10_btn</value>
+  </data>
+  <data name="&gt;&gt;age10_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age10_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age10_btn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ageinfo_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="ageinfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="ageinfo_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ageinfo_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 197</value>
+  </data>
+  <data name="ageinfo_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 35</value>
+  </data>
+  <data name="ageinfo_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="ageinfo_lbl.Text" xml:space="preserve">
+    <value>나이</value>
+  </data>
+  <data name="ageinfo_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;ageinfo_lbl.Name" xml:space="preserve">
+    <value>ageinfo_lbl</value>
+  </data>
+  <data name="&gt;&gt;ageinfo_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ageinfo_lbl.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;ageinfo_lbl.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="age50_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age50_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age50_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age50_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 252</value>
+  </data>
+  <data name="age50_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age50_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age50_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;age50_btn.Name" xml:space="preserve">
+    <value>age50_btn</value>
+  </data>
+  <data name="&gt;&gt;age50_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age50_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age50_btn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="age40_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="age40_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
+        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
+        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
+        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
+        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
+        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
+        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
+        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="age40_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
+  </data>
+  <data name="age40_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 252</value>
+  </data>
+  <data name="age40_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="age40_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 45</value>
+  </data>
+  <data name="age40_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;age40_btn.Name" xml:space="preserve">
+    <value>age40_btn</value>
+  </data>
+  <data name="&gt;&gt;age40_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;age40_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;age40_btn.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="sexinfo_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="sexinfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="sexinfo_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sexinfo_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 91</value>
+  </data>
+  <data name="sexinfo_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 35</value>
+  </data>
+  <data name="sexinfo_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="sexinfo_lbl.Text" xml:space="preserve">
+    <value>성별</value>
+  </data>
+  <data name="sexinfo_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;sexinfo_lbl.Name" xml:space="preserve">
+    <value>sexinfo_lbl</value>
+  </data>
+  <data name="&gt;&gt;sexinfo_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexinfo_lbl.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;sexinfo_lbl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="surveyInfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt</value>
+  </data>
+  <data name="surveyInfo_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="surveyInfo_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="surveyInfo_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 45</value>
+  </data>
+  <data name="surveyInfo_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="surveyInfo_lbl.Text" xml:space="preserve">
+    <value>토퍼 고객 설문 조사</value>
+  </data>
+  <data name="surveyInfo_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;surveyInfo_lbl.Name" xml:space="preserve">
+    <value>surveyInfo_lbl</value>
+  </data>
+  <data name="&gt;&gt;surveyInfo_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;surveyInfo_lbl.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;surveyInfo_lbl.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="sumit_btn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="sumit_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9pt</value>
+  </data>
+  <data name="sumit_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>779, 456</value>
+  </data>
+  <data name="sumit_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 70</value>
+  </data>
+  <data name="sumit_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="sumit_btn.Text" xml:space="preserve">
+    <value>제출하기</value>
+  </data>
+  <data name="&gt;&gt;sumit_btn.Name" xml:space="preserve">
+    <value>sumit_btn</value>
+  </data>
+  <data name="&gt;&gt;sumit_btn.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sumit_btn.Parent" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;sumit_btn.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="survey_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 432</value>
+  </data>
+  <data name="survey_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 541</value>
+  </data>
+  <data name="survey_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;survey_pane.Name" xml:space="preserve">
+    <value>survey_pane</value>
+  </data>
+  <data name="&gt;&gt;survey_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;survey_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;survey_pane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lazercuttingDis.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lazercuttingDis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 150</value>
+  </data>
+  <data name="lazercuttingDis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="lazercuttingDis.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="lazercuttingDis.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;lazercuttingDis.Name" xml:space="preserve">
+    <value>lazercuttingDis</value>
+  </data>
+  <data name="&gt;&gt;lazercuttingDis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lazercuttingDis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lazercuttingDis.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="showingDesign.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 343</value>
+  </data>
+  <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 280</value>
+  </data>
+  <data name="showingDesign.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="showingDesign.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Name" xml:space="preserve">
+    <value>showingDesign</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="thankyou_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt</value>
+  </data>
+  <data name="thankyou_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="thankyou_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="thankyou_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 70</value>
+  </data>
+  <data name="thankyou_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="thankyou_lbl.Text" xml:space="preserve">
+    <value>참여해 주셔서 감사합니다.</value>
+  </data>
+  <data name="thankyou_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;thankyou_lbl.Name" xml:space="preserve">
+    <value>thankyou_lbl</value>
+  </data>
+  <data name="&gt;&gt;thankyou_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thankyou_lbl.Parent" xml:space="preserve">
+    <value>thanks_pane</value>
+  </data>
+  <data name="&gt;&gt;thankyou_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="thanks_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Name" xml:space="preserve">
+    <value>thank_pic</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Parent" xml:space="preserve">
+    <value>thanks_pane</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="thanks_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1100, 420</value>
+  </data>
+  <data name="thanks_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 402</value>
+  </data>
+  <data name="thanks_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Name" xml:space="preserve">
+    <value>thanks_pane</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="thank_pic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 84</value>
+  </data>
+  <data name="thank_pic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 250</value>
+  </data>
+  <data name="thank_pic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="thank_pic.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Name" xml:space="preserve">
+    <value>thank_pic</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.Parent" xml:space="preserve">
+    <value>thanks_pane</value>
+  </data>
+  <data name="&gt;&gt;thank_pic.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>49</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 12</value>
@@ -216,8 +1660,17 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1904, 1064</value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;Icon.Name" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="&gt;&gt;Icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>WatingPage</value>

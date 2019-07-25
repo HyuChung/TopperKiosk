@@ -55,17 +55,11 @@
     <Compile Include="backgroungMain.Designer.cs">
       <DependentUpon>backgroungMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMessageBox.cs">
+    <Compile Include="EndPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMessageBox.Designer.cs">
-      <DependentUpon>FormMessageBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormResultCancel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormResultCancel.Designer.cs">
-      <DependentUpon>FormResultCancel.cs</DependentUpon>
+    <Compile Include="EndPage.Designer.cs">
+      <DependentUpon>EndPage.cs</DependentUpon>
     </Compile>
     <Compile Include="PayPage.cs">
       <SubType>Form</SubType>
@@ -114,11 +108,8 @@
     <EmbeddedResource Include="backgroungMain.resx">
       <DependentUpon>backgroungMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMessageBox.resx">
-      <DependentUpon>FormMessageBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormResultCancel.resx">
-      <DependentUpon>FormResultCancel.cs</DependentUpon>
+    <EmbeddedResource Include="EndPage.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
@@ -176,7 +167,16 @@
     <EmbeddedResource Include="TopperlistPopUp.zh.resx">
       <DependentUpon>TopperlistPopUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.en.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.ja-JP.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WatingPage.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.zh.resx">
       <DependentUpon>WatingPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -218,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\susten-4343542_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gwangan-bridge-806949_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

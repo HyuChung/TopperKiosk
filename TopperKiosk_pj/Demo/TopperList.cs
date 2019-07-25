@@ -961,6 +961,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -976,6 +977,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -991,6 +993,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1006,6 +1009,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1021,6 +1025,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1036,6 +1041,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1051,6 +1057,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1066,6 +1073,7 @@ namespace Demo
 
                 selectedImage();
                 TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
+                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
                 initselectimagemap();
                 popup.ShowDialog();
             }
@@ -1107,6 +1115,11 @@ namespace Demo
                 }
             }
         
+        }
+
+        private void TopperList_Load(object sender, EventArgs e)
+        {
+
         }
         #endregion
 

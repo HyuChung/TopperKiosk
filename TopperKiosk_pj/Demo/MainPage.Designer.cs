@@ -102,7 +102,7 @@
             this.Main_lbl.AutoSize = true;
             this.Main_lbl.BackColor = System.Drawing.Color.Transparent;
             this.Main_lbl.Font = new System.Drawing.Font("AR CHRISTY", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Main_lbl.ForeColor = System.Drawing.Color.Black;
+            this.Main_lbl.ForeColor = System.Drawing.Color.White;
             this.Main_lbl.Location = new System.Drawing.Point(827, 164);
             this.Main_lbl.Name = "Main_lbl";
             this.Main_lbl.Size = new System.Drawing.Size(247, 48);
@@ -196,7 +196,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.BackgroundImage = global::Demo.Properties.Resources.susten_4343542_1920;
+            this.BackgroundImage = global::Demo.Properties.Resources.gwangan_bridge_806949_1920;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1064);
             this.ControlBox = false;

@@ -63,6 +63,16 @@ namespace Demo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _checked {
+            get {
+                object obj = ResourceManager.GetObject("checked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap Beauty_Nature_1_Wallpaper_1080x1920_768x1365 {
             get {
                 object obj = ResourceManager.GetObject("Beauty-Nature-1-Wallpaper-1080x1920-768x1365", resourceCulture);
@@ -76,6 +86,16 @@ namespace Demo.Properties {
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap gwangan_bridge_806949_1920 {
+            get {
+                object obj = ResourceManager.GetObject("gwangan-bridge-806949_1920", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -68,7 +68,7 @@ namespace Demo
         private void roundimagebox()
         {
             System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
-            gp.AddEllipse(0, 0, showingDesign.Width - 3, showingDesign.Height - 3);
+            gp.AddEllipse(0, 0, showingDesign.Width -2 , showingDesign.Height -2);
             Region rg = new Region(gp);
 
             showingDesign.Region = rg;

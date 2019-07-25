@@ -30,6 +30,7 @@ namespace Demo
             this.image_name = image_name;
             this.imageNum = imageNum;
             this.pageNum = pageNum;
+            this.price = price;
             this.textindex_column_1 = textindex_column_1;
             this.textindex_column_2 = textindex_column_2;
 
@@ -42,7 +43,7 @@ namespace Demo
             this.disDesginName_lbl.Text = image_name;
             this.disUserText_lbl.Text = topperText[0,textindex_column_1] +" "+ topperText[1,textindex_column_2];
             this.dismoney_lbl.Text = price.ToString();
-            
+
         }
         #endregion
 
@@ -86,7 +87,7 @@ namespace Demo
         private void next_pane_Click(object sender, EventArgs e)//다음 화면
         {
             this.Visible = false;
-            WatingPage newSettingPage = new WatingPage(imageNum, pageNum);
+            WatingPage newSettingPage = new WatingPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
             newSettingPage.ShowDialog();
         }
 

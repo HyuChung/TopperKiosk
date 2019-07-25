@@ -14,7 +14,6 @@ namespace Demo
     {
         public backgroungMain()
         {
-
             InitializeComponent();
             this.dispane.Left = (this.ClientSize.Width - this.dispane.Width) / 2;
             this.dispane.Top = (this.ClientSize.Height - this.ClientSize.Height) / 2;
