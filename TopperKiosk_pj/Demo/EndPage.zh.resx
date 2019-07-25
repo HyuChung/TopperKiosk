@@ -121,15 +121,15 @@
     <value>15 초 후 처음으로 돌아갑니다</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>제작 완료</value>
+    <value>制作完成</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>밑에서 완성된 토퍼를 수령해주세요 </value>
+    <value>请领取下面完成的托福</value>
   </data>
   <data name="label_PayTypeInfoText.Text" xml:space="preserve">
-    <value>제작이 완료 되었습니다.</value>
+    <value>制作完成</value>
   </data>
   <data name="label_UserInfoText.Text" xml:space="preserve">
-    <value>토퍼 양쪽 비닐을 제거하시면 더 깔끔합니다.</value>
+    <value>去除烤面包片两侧的塑料会更干净</value>
   </data>
 </root>

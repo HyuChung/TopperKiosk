@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.makedimage = new System.Windows.Forms.ImageList(this.components);
             this.textselect_btn_2_4 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_2_2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_1_2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_2_1 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -47,8 +46,13 @@
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
+            this.loading_pane = new System.Windows.Forms.Panel();
+            this.loadingbar_pane = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
+            this.loadingbar_pane.SuspendLayout();
             this.SuspendLayout();
             // 
             // tooltip_lbl
@@ -110,27 +114,6 @@
             this.textselect_btn_2_4.Name = "textselect_btn_2_4";
             this.textselect_btn_2_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.textselect_btn_2_4.Click += new System.EventHandler(this.textselect_btn_2_4_Click);
-            // 
-            // textselect_btn_1_4
-            // 
-            this.textselect_btn_1_4.ActiveBorderThickness = 1;
-            this.textselect_btn_1_4.ActiveCornerRadius = 15;
-            this.textselect_btn_1_4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.textselect_btn_1_4.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.textselect_btn_1_4, "textselect_btn_1_4");
-            this.textselect_btn_1_4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textselect_btn_1_4.ButtonText = "SemmiColon";
-            this.textselect_btn_1_4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textselect_btn_1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.IdleBorderThickness = 1;
-            this.textselect_btn_1_4.IdleCornerRadius = 10;
-            this.textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textselect_btn_1_4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.textselect_btn_1_4.Name = "textselect_btn_1_4";
-            this.textselect_btn_1_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textselect_btn_1_4.Click += new System.EventHandler(this.textselect_btn_1_4_Click);
             // 
             // textselect_btn_2_2
             // 
@@ -261,6 +244,7 @@
             // showingDesign
             // 
             resources.ApplyResources(this.showingDesign, "showingDesign");
+            this.showingDesign.Image = global::Demo.Properties.Resources._checked;
             this.showingDesign.Name = "showingDesign";
             this.showingDesign.TabStop = false;
             // 
@@ -278,12 +262,53 @@
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
+            // loading_pane
+            // 
+            resources.ApplyResources(this.loading_pane, "loading_pane");
+            this.loading_pane.BackColor = System.Drawing.Color.Transparent;
+            this.loading_pane.Name = "loading_pane";
+            // 
+            // loadingbar_pane
+            // 
+            this.loadingbar_pane.Controls.Add(this.label3);
+            this.loadingbar_pane.Controls.Add(this.loading_pane);
+            resources.ApplyResources(this.loadingbar_pane, "loadingbar_pane");
+            this.loadingbar_pane.Name = "loadingbar_pane";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // textselect_btn_1_4
+            // 
+            this.textselect_btn_1_4.ActiveBorderThickness = 1;
+            this.textselect_btn_1_4.ActiveCornerRadius = 15;
+            this.textselect_btn_1_4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.textselect_btn_1_4.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.textselect_btn_1_4, "textselect_btn_1_4");
+            this.textselect_btn_1_4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textselect_btn_1_4.ButtonText = "SemmiColon";
+            this.textselect_btn_1_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textselect_btn_1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.IdleBorderThickness = 1;
+            this.textselect_btn_1_4.IdleCornerRadius = 10;
+            this.textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textselect_btn_1_4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.textselect_btn_1_4.Name = "textselect_btn_1_4";
+            this.textselect_btn_1_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textselect_btn_1_4.Click += new System.EventHandler(this.textselect_btn_1_4_Click);
+            // 
             // SettingPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
+            this.Controls.Add(this.loadingbar_pane);
+            this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textselect_btn_2_4);
@@ -295,13 +320,13 @@
             this.Controls.Add(this.textselect_btn_2_3);
             this.Controls.Add(this.textselect_btn_1_1);
             this.Controls.Add(this.info_lbl);
-            this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
             this.Name = "SettingPage";
             this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
+            this.loadingbar_pane.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -320,10 +345,13 @@
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_2_1;
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_1_2;
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_2_2;
-        private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_1_4;
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_2_4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ImageList makedimage;
+        private System.Windows.Forms.Panel loading_pane;
+        private System.Windows.Forms.Panel loadingbar_pane;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_1_4;
     }
 }

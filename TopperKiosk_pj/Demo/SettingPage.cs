@@ -14,6 +14,7 @@ namespace Demo
     {
 
         #region 'Field'
+        System.Windows.Forms.Timer icontimer = new System.Windows.Forms.Timer();
         string imageName ;
         int imageNum = 0, pageNum = 0, textindex_column_1 =9, textindex_column_2 = 9, price;
 
@@ -39,10 +40,13 @@ namespace Demo
 
             InitializeComponent();
 
+            timerInit();
+            showingimageChage(pageNum, imageNum);
+            insertLoadingImage();
             roundimagebox();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            showingimageChage(pageNum, imageNum);
-            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;  //중앙정렬
+           
+
         }
 
         public SettingPage(string imageName,int price,int imageNum, int pageNum, int textindex_column_1, int textindex_column_2) // 결재창에서 넘어올때
@@ -56,9 +60,12 @@ namespace Demo
 
             InitializeComponent();
 
-            roundimagebox();
+            timerInit();
             showingimageChage(pageNum, imageNum);
-            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;  //중앙정렬
+            insertLoadingImage();
+            roundimagebox();
+            
+
         }
         #endregion
 
@@ -203,6 +210,27 @@ namespace Demo
                 textindex_column_1 = 9;
                 textindex_column_2 = 9;
             }
+        }
+
+        private void insertLoadingImage()
+        {
+            UCCircleLoading loading = new UCCircleLoading();
+            loading_pane.Controls.Add(loading);
+            loading_pane.BackColor = System.Drawing.Color.Transparent;
+            loadingbar_pane.Visible = false;
+        }
+
+        private void timerInit()
+        {
+            icontimer.Tick += new EventHandler(IcontimerHandler);
+            icontimer.Interval = 2000;
+        }
+
+        private void IcontimerHandler(object sender, EventArgs e)
+        {
+            imageDisplayMakeChager();
+            loading_pane.Visible = false;
+            icontimer.Enabled = false;
         }
         #endregion
 
