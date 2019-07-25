@@ -75,8 +75,6 @@ namespace Demo
         {
             this.FormSendEvent(1);
             this.Visible = false;
-            SettingPage newsettingPage = new SettingPage(image_name, price, imageNum, pageNum);
-            newsettingPage.ShowDialog();
         }
 
         private void exit_pane_Click(object sender, EventArgs e)

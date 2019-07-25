@@ -15,6 +15,8 @@ namespace Demo
     {
 
         #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
         string image_name ="None";
         int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price=0;
 
@@ -86,16 +88,16 @@ namespace Demo
         #region 'Next/Exit Setting'
         private void next_pane_Click(object sender, EventArgs e)//다음 화면
         {
+            this.FormSendEvent(1);
             this.Visible = false;
-            WatingPage newSettingPage = new WatingPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
-            newSettingPage.ShowDialog();
+            
         }
 
         private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
+            this.FormSendEvent(0);
             this.Visible = false;
-            SettingPage newSettingPage = new SettingPage(image_name,price,imageNum, pageNum, textindex_column_1, textindex_column_2);
-            newSettingPage.ShowDialog();
+
         }
         #endregion
 

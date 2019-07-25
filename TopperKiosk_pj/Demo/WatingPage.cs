@@ -14,6 +14,9 @@ namespace Demo
     {
 
         #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
+
         System.Windows.Forms.Timer icontimer = new System.Windows.Forms.Timer();
         System.Windows.Forms.Timer Endtimer = new System.Windows.Forms.Timer();
 
@@ -57,6 +60,7 @@ namespace Demo
             icontimer.Enabled = true;
             Endtimer.Enabled = true;
 
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             this.disDesginName_lbl.Text = image_name;
             this.disUserText_lbl.Text = topperText[0, textindex_column_1] + " " + topperText[1, textindex_column_2];
             this.dismoney_lbl.Text = price.ToString();
@@ -327,8 +331,7 @@ namespace Demo
             if(end_time == 0)
             {
                 this.Visible = false;
-                EndPage ep = new EndPage();
-                ep.ShowDialog();
+                this.FormSendEvent(1);
             }
         }
         #endregion

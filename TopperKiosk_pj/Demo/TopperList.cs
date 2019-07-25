@@ -22,7 +22,7 @@ namespace Demo
         int valPage = 1, numpage = 1, listnum = 200;
         int[,] imageMap = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} }; //이미지 위치 확인용 배열
         string selected_image ="None";
-        int price = 10000;
+        int price = 6000;
         #endregion
 
 
@@ -626,9 +626,12 @@ namespace Demo
 
         private void DieaseUpdateEventMethod(object sender)
         {
-
+            ((backgroungMain)(this.Owner)).image_name = selected_image;
+            ((backgroungMain)(this.Owner)).imageNum = listnum;
+            ((backgroungMain)(this.Owner)).pageNum = valPage;
+            ((backgroungMain)(this.Owner)).price= price;
             this.Visible = false;
-
+            this.FormSendEvent(1);
         }
         #endregion
 
@@ -1130,22 +1133,9 @@ namespace Demo
         #region 'Next/Exit Setting'
         private void exit_pane_MouseClick(object sender, MouseEventArgs e)//이전 화면
         {
+            this.FormSendEvent(0);
             this.Visible = false;
-            MainPage newMain = new MainPage();
-            newMain.ShowDialog();
 
-        }
-
-        private void next_pane_Click(object sender, EventArgs e)//다음 화면
-        {
-            selectedImage();
-
-            if (selected_image.Equals("None") && (listnum != 200)) //이미지 선택 확인
-            {
-                this.Visible = false;
-                SettingPage newsettingPage = new SettingPage(selected_image, price, listnum, valPage);
-                newsettingPage.ShowDialog();
-            }
         }
         #endregion
 

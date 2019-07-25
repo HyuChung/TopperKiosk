@@ -14,6 +14,9 @@ namespace Demo
     {
 
         #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
+
         System.Windows.Forms.Timer Endtimer = new System.Windows.Forms.Timer();
         int end_time = 15;
         string endinfo = " 초 후 처음으로 돌아갑니다";
@@ -49,8 +52,7 @@ namespace Demo
             if (end_time == 0)
             {
                 this.Visible = false;
-                MainPage mp = new MainPage();
-                mp.ShowDialog();
+                this.FormSendEvent(1);
             }
         }
         #endregion

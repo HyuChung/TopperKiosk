@@ -13,10 +13,10 @@ namespace Demo
     public partial class backgroungMain : Form
     {
 
-        string image_name = "None";
-        int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price = 0;
+        public string image_name = "None";
+        public int pramiter, imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price = 6000;
 
-        string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
+        public string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
 
 
@@ -47,16 +47,83 @@ namespace Demo
         #region 'Binding Propertise'
         private void mainfromlisner(object sender)
         {
-            int pramiter = (int)sender;
+            this.pramiter = (int)sender;
             TopperList TL = new TopperList(pramiter);
-            TL.FormSendEvent += new TopperList.FormSendDataHandler(Topperlistlisner);
+            TL.FormSendEvent += new TopperList.FormSendDataHandler(topperlistlisner);
             TL.Owner = this;
             AddForms2Panel(TL);
         }
 
-        private void Topperlistlisner(object sender)
+        private void topperlistlisner(object sender)
         {
+            if ((int)sender == 1)
+            {
+                SettingPage SP = new SettingPage(image_name, price, imageNum, pageNum);
+                SP.FormSendEvent += new SettingPage.FormSendDataHandler(settinglisner);
+                SP.Owner = this;
+                AddForms2Panel(SP);
+            }
+            else
+            {
+                MainPage mp = new MainPage();
+                mp.FormSendEvent += new MainPage.FormSendDataHandler(mainfromlisner);
+                mp.Owner = this;
+                AddForms2Panel(mp);
+            }
 
+        }
+
+        private void settinglisner(object sender)
+        {
+            if((int)sender == 1)
+            {
+                PayPage PP = new PayPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
+                PP.FormSendEvent += new PayPage.FormSendDataHandler(paylisner);
+                PP.Owner = this;
+                AddForms2Panel(PP);
+            }
+            else
+            {
+                TopperList TL = new TopperList(9);
+                TL.FormSendEvent += new TopperList.FormSendDataHandler(topperlistlisner);
+                TL.Owner = this;
+                AddForms2Panel(TL);
+            }
+            
+        }
+
+        private void paylisner(object sender)
+        {
+            if ((int)sender == 1)
+            {
+                WatingPage wp = new WatingPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
+                wp.FormSendEvent += new WatingPage.FormSendDataHandler(watinglisner);
+                wp.Owner = this;
+                AddForms2Panel(wp);
+            }
+            else
+            {
+                SettingPage SP = new SettingPage(image_name, price, imageNum, pageNum);
+                SP.FormSendEvent += new SettingPage.FormSendDataHandler(settinglisner);
+                SP.Owner = this;
+                AddForms2Panel(SP);
+            }
+        }
+
+        private void watinglisner(object sender)
+        {
+            EndPage ep = new EndPage();
+            ep.FormSendEvent += new EndPage.FormSendDataHandler(endpagelisner);
+            ep.Owner = this;
+            AddForms2Panel(ep);
+        }
+
+        private void endpagelisner(object sender)
+        {
+            MainPage mp = new MainPage();
+            mp.FormSendEvent += new MainPage.FormSendDataHandler(mainfromlisner);
+            mp.Owner = this;
+            AddForms2Panel(mp);
         }
         #endregion
         private void backgroungMain_Load(object sender, EventArgs e)

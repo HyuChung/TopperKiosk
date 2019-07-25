@@ -14,6 +14,9 @@ namespace Demo
     {
 
         #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
+
         System.Windows.Forms.Timer icontimer = new System.Windows.Forms.Timer();
         string imageName ;
         int imageNum = 0, pageNum = 0, textindex_column_1 =9, textindex_column_2 = 9, price;
@@ -296,18 +299,19 @@ namespace Demo
         #region 'Next/Exit Setting'
         private void exit_pane_Click(object sender, EventArgs e)//이전 화면
         {
+            this.FormSendEvent(0);
             this.Visible = false;
-            TopperList newTopperlist = new TopperList(9);
-            newTopperlist.ShowDialog();
+
         }
 
         private void next_pane_Click(object sender, EventArgs e)//다음화면
         {
             if (textindex_column_1 != 9 && textindex_column_2 != 9)
             {
+                ((backgroungMain)(this.Owner)).textindex_column_1 = textindex_column_1;
+                ((backgroungMain)(this.Owner)).textindex_column_2 = textindex_column_2;
+                this.FormSendEvent(1);
                 this.Visible = false;
-                PayPage newPayPage = new PayPage(imageName, price, imageNum, pageNum,textindex_column_1,textindex_column_2);
-                newPayPage.ShowDialog();
             }
         }
         #endregion
