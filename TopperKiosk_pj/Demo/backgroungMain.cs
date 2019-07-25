@@ -13,17 +13,21 @@ namespace Demo
     public partial class backgroungMain : Form
     {
 
+        #region 'Field'
         public string image_name = "None";
         public int pramiter, imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price = 6000;
 
         public string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
+        #endregion
 
 
 
+        #region 'Init'
         public backgroungMain()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
 
             MainPage mp = new MainPage();
             mp.FormSendEvent += new MainPage.FormSendDataHandler(mainfromlisner);
@@ -33,6 +37,9 @@ namespace Demo
             this.dispane.Left = (this.ClientSize.Width - this.dispane.Width) / 2;
             this.dispane.Top = (this.ClientSize.Height - this.ClientSize.Height) / 2;
         }
+        #endregion
+
+
 
         #region 'Properties'
         private void AddForms2Panel(Form form)
@@ -43,6 +50,8 @@ namespace Demo
             form.Show();
         }
         #endregion
+
+
 
         #region 'Binding Propertise'
         private void mainfromlisner(object sender)
@@ -126,10 +135,7 @@ namespace Demo
             AddForms2Panel(mp);
         }
         #endregion
-        private void backgroungMain_Load(object sender, EventArgs e)
-        {
-            MainPage mp = new MainPage();
-            mp.ShowDialog();
-        }
+
+
     }
 }
