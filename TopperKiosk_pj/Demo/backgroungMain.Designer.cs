@@ -34,6 +34,7 @@
             // dispane
             // 
             this.dispane.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dispane.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dispane.Location = new System.Drawing.Point(1, 2);
             this.dispane.Name = "dispane";
             this.dispane.Size = new System.Drawing.Size(1920, 1080);
@@ -49,8 +50,6 @@
             this.Controls.Add(this.dispane);
             this.Name = "backgroungMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.backgroungMain_Load);
             this.ResumeLayout(false);
 
         }

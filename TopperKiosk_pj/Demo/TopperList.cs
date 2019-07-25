@@ -17,6 +17,8 @@ namespace Demo
     {
 
         #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
         int valPage = 1, numpage = 1, listnum = 200;
         int[,] imageMap = new int[3, 3] { {0,0,0},{0,0,0},{0,0,0} }; //이미지 위치 확인용 배열
         string selected_image ="None";

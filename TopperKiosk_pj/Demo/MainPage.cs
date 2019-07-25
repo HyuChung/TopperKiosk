@@ -13,6 +13,13 @@ namespace Demo
     public partial class MainPage : Form
     {
 
+        #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
+        #endregion
+
+
+
         #region 'init'
         public MainPage()
         {
@@ -51,30 +58,27 @@ namespace Demo
         #region 'Next/Exit Setting'
         private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)//한국어 다음 화면
         {
+            this.FormSendEvent(4);
             this.Visible = false;
-            TopperList newKoForm = new TopperList(4);
-            newKoForm.ShowDialog();
+            
         }
 
         private void translate_paneCH_MouseClick(object sender, MouseEventArgs e)//중국어 다음 화면
         {
+            this.FormSendEvent(1);
             this.Visible = false;
-            TopperList newCHForm = new TopperList(1);
-            newCHForm.ShowDialog();
         }
 
         private void translate_paneJP_MouseClick(object sender, MouseEventArgs e)//일본어 다음 화면
         {
+            this.FormSendEvent(2);
             this.Visible = false;
-            TopperList newJPForm = new TopperList(2);
-            newJPForm.ShowDialog();
         }
 
         private void translate_paneEN_MouseClick(object sender, MouseEventArgs e)//영어 다음 화면
         {
+            this.FormSendEvent(3);
             this.Visible = false;
-            TopperList newENForm = new TopperList(3);
-            newENForm.ShowDialog();
         }
         #endregion
 

@@ -46,13 +46,9 @@
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
-            this.loading_pane = new System.Windows.Forms.Panel();
-            this.loadingbar_pane = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
-            this.loadingbar_pane.SuspendLayout();
             this.SuspendLayout();
             // 
             // tooltip_lbl
@@ -262,24 +258,6 @@
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
             // 
-            // loading_pane
-            // 
-            resources.ApplyResources(this.loading_pane, "loading_pane");
-            this.loading_pane.BackColor = System.Drawing.Color.Transparent;
-            this.loading_pane.Name = "loading_pane";
-            // 
-            // loadingbar_pane
-            // 
-            this.loadingbar_pane.Controls.Add(this.label3);
-            this.loadingbar_pane.Controls.Add(this.loading_pane);
-            resources.ApplyResources(this.loadingbar_pane, "loadingbar_pane");
-            this.loadingbar_pane.Name = "loadingbar_pane";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // textselect_btn_1_4
             // 
             this.textselect_btn_1_4.ActiveBorderThickness = 1;
@@ -307,7 +285,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
-            this.Controls.Add(this.loadingbar_pane);
             this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -326,7 +303,6 @@
             this.Name = "SettingPage";
             this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
-            this.loadingbar_pane.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -349,9 +325,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ImageList makedimage;
-        private System.Windows.Forms.Panel loading_pane;
-        private System.Windows.Forms.Panel loadingbar_pane;
-        private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_1_4;
     }
 }

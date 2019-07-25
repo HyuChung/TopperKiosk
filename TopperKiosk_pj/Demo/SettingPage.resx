@@ -178,7 +178,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="info_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;info_lbl.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -250,7 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -286,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="makedimage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -11422,7 +11422,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_2_4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="textselect_btn_2_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11466,7 +11466,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_2_2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="textselect_btn_1_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11510,7 +11510,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_1_2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="textselect_btn_2_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11554,7 +11554,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_2_1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="textselect_btn_1_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11598,7 +11598,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_1_3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="textselect_btn_2_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11642,7 +11642,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_2_3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="textselect_btn_1_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11686,7 +11686,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_1_1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11716,7 +11716,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11743,7 +11743,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;next_pane.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="exit_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11770,88 +11770,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;exit_pane.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="loading_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="loading_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 17</value>
-  </data>
-  <data name="loading_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="loading_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;loading_pane.Name" xml:space="preserve">
-    <value>loading_pane</value>
-  </data>
-  <data name="&gt;&gt;loading_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loading_pane.Parent" xml:space="preserve">
-    <value>loadingbar_pane</value>
-  </data>
-  <data name="&gt;&gt;loading_pane.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 26.25pt</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 45</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 43</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>이미지 처리중 입니다.</value>
-  </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>loadingbar_pane</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="loadingbar_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>850, 684</value>
-  </data>
-  <data name="loadingbar_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 133</value>
-  </data>
-  <data name="loadingbar_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;loadingbar_pane.Name" xml:space="preserve">
-    <value>loadingbar_pane</value>
-  </data>
-  <data name="&gt;&gt;loadingbar_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loadingbar_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;loadingbar_pane.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>14</value>
   </data>
   <data name="textselect_btn_1_4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -11895,7 +11814,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textselect_btn_1_4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

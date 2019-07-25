@@ -42,7 +42,6 @@ namespace Demo
 
             timerInit();
             showingimageChage(pageNum, imageNum);
-            insertLoadingImage();
             roundimagebox();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
            
@@ -62,7 +61,6 @@ namespace Demo
 
             timerInit();
             showingimageChage(pageNum, imageNum);
-            insertLoadingImage();
             roundimagebox();
             
 
@@ -212,14 +210,6 @@ namespace Demo
             }
         }
 
-        private void insertLoadingImage()
-        {
-            UCCircleLoading loading = new UCCircleLoading();
-            loading_pane.Controls.Add(loading);
-            loading_pane.BackColor = System.Drawing.Color.Transparent;
-            loadingbar_pane.Visible = false;
-        }
-
         private void timerInit()
         {
             icontimer.Tick += new EventHandler(IcontimerHandler);
@@ -229,8 +219,7 @@ namespace Demo
         private void IcontimerHandler(object sender, EventArgs e)
         {
             imageDisplayMakeChager();
-            loading_pane.Visible = false;
-            icontimer.Enabled = false;
+          
         }
         #endregion
 
