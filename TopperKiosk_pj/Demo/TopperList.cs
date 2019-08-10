@@ -28,30 +28,15 @@ namespace Demo
 
 
         #region 'init'
-        public TopperList()//이미지 리스트 블러오기용 초기화
+        public TopperList() // 이미지 리스트 블러오기용 초기화
         {
             InitializeComponent();
        
         }
 
-        public TopperList(int lenguage)//실제 폼 초기화
+        public TopperList(int lenguage) // 실제 폼 초기화
         {
-            if (lenguage == 1) //다국어 처리
-            {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh");
-            }
-            else if(lenguage == 2)
-            {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
-            }
-            else if(lenguage == 3)
-            {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
-            }
-            else if(lenguage == 4)
-            {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ko");
-            }
+            localization(lenguage); // 다국어
             
             InitializeComponent();
 
@@ -68,7 +53,27 @@ namespace Demo
 
 
         #region 'Propertise'
-        private void insertpic(int valPage,int numpage) //이미지 박스 이미지 넣기
+        private void localization(int lenguage) // 다국어 처리
+        {
+            if (lenguage == 1) //다국어 처리
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh");
+            }
+            else if (lenguage == 2)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
+            }
+            else if (lenguage == 3)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            }
+            else if (lenguage == 4)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("ko");
+            }
+        }
+
+        private void insertpic(int valPage,int numpage) // 이미지 박스 이미지 넣기
         {
             switch (valPage)
             {
@@ -87,7 +92,7 @@ namespace Demo
             }
         }
 
-        private void initimagemap() //이미지 맵 초기화
+        private void initimagemap() // 이미지 맵 초기화
         {
             for(int i=0; i<3; i++)
             {
@@ -98,7 +103,7 @@ namespace Demo
             }
         }
 
-        private void initselectimagemap() //이미지 선택 초기화
+        private void initselectimagemap() // 이미지 선택 초기화
         {
             for (int i = 0; i < 3; i++)
             {
@@ -112,7 +117,7 @@ namespace Demo
             }
         }
 
-        private void initimagepic() //이미지 박스 초기화
+        private void initimagepic() // 이미지 박스 초기화
         {
             pic_1_1.Image = null;
             pic_1_2.Image = null;
@@ -125,7 +130,7 @@ namespace Demo
             pic_3_3.Image = null;
         }
 
-        private void initpicteg() //이미지 태그 초기화
+        private void initpicteg() // 이미지 태그 초기화
         {
             pic_1_1.Tag = SystemColors.GradientInactiveCaption;
             pic_1_2.Tag = SystemColors.GradientInactiveCaption;
@@ -138,7 +143,7 @@ namespace Demo
             pic_3_3.Tag = SystemColors.GradientInactiveCaption;
         }
 
-        private void roundPicBox() //이미지 박스 원형 박스변경(태그작동 x)
+        private void roundPicBox() // 이미지 박스 원형 박스변경(태그작동 x)
         {
             System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
             gp.AddEllipse(0, 0, pic_1_1.Width - 3, pic_1_1.Height - 3);
@@ -154,7 +159,7 @@ namespace Demo
             pic_3_3.Region = rg;
         }
 
-        private void selectedImage()//선택되어있는 이미지 번호, 이름 가져오기
+        private void selectedImage() // 선택되어있는 이미지 번호, 이름 가져오기
         {
             for(int i=0; i < 3; i++)
             {
@@ -185,7 +190,7 @@ namespace Demo
             }
         }
 
-        private void imagelistSerchAndChange(int listnum)//이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
+        private void imagelistSerchAndChange(int listnum) // 이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
         {
             int a;
             switch (listnum)
@@ -588,7 +593,7 @@ namespace Demo
             }
         }
 
-        private void allRefrashPic()//모든 이미지 목록 리프레시
+        private void allRefrashPic() // 모든 이미지 목록 리프레시
         {
             pic_1_1.Refresh();
             pic_1_2.Refresh();
@@ -624,7 +629,7 @@ namespace Demo
             }
         }
 
-        private void DieaseUpdateEventMethod(object sender)
+        private void DieaseUpdateEventMethod(object sender) // 백그라운드에 이벤트,변수 전달
         {
             ((backgroungMain)(this.Owner)).image_name = selected_image;
             ((backgroungMain)(this.Owner)).imageNum = listnum;
@@ -690,7 +695,7 @@ namespace Demo
             }
         }
 
-        private void menu1_pane_MouseClick(object sender, MouseEventArgs e)
+        private void menu1_pane_MouseClick(object sender, MouseEventArgs e) // 메뉴1(관광) 클릭
         {
             menuColorChager(1);
             this.valPage = 1;
@@ -699,7 +704,7 @@ namespace Demo
             insertpic(valPage, numpage);
         }
 
-        private void menu2_pane_MouseClick(object sender, MouseEventArgs e)
+        private void menu2_pane_MouseClick(object sender, MouseEventArgs e) // 메뉴2(음식) 클릭
         {
             menuColorChager(2);
             this.valPage = 2;
@@ -708,7 +713,7 @@ namespace Demo
             insertpic(valPage, numpage);
         }
 
-        private void menu3_pane_MouseClick(object sender, MouseEventArgs e)
+        private void menu3_pane_MouseClick(object sender, MouseEventArgs e) // 메뉴3(기념) 클릭
         {
             menuColorChager(3);
             this.valPage = 3;
@@ -717,7 +722,7 @@ namespace Demo
             insertpic(valPage, numpage);
         }
 
-        private void menu4_pane_MouseClick(object sender, MouseEventArgs e)
+        private void menu4_pane_MouseClick(object sender, MouseEventArgs e) // 메뉴4(추천) 클릭
         {
             menuColorChager(4);
             this.valPage = 4;
@@ -763,6 +768,9 @@ namespace Demo
 
         #region 'PicTag Setting'
         /*
+         * README!
+         * 하이라이트를 위한 픽쳐박스 설정이였으나 새창을 띄우는것으로 변경해 코드만 남김
+         * 
         private void pic_1_1_Paint(object sender, PaintEventArgs e)
         {
             if (pic_1_1.Tag == null) { pic_1_1.Tag = SystemColors.GradientInactiveCaption; } //Sets a default color 
@@ -1131,7 +1139,7 @@ namespace Demo
 
 
         #region 'Next/Exit Setting'
-        private void exit_pane_MouseClick(object sender, MouseEventArgs e)//이전 화면
+        private void exit_pane_MouseClick(object sender, MouseEventArgs e) // 이전 화면
         {
             this.FormSendEvent(0);
             this.Visible = false;

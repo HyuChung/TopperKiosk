@@ -40,8 +40,8 @@ namespace Demo
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
 
             imageDisplayMakeChager();
-            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2;//중앙정렬(세로)
-            this.disInfo_pane.Top = (this.ClientSize.Height - disInfo_pane.Height) / 2;//중앙정렬(세로)
+            this.showingDesign.Top = (this.ClientSize.Height - showingDesign.Height) / 2; // 중앙정렬(세로)
+            this.disInfo_pane.Top = (this.ClientSize.Height - disInfo_pane.Height) / 2; // 중앙정렬(세로)
             this.disDesginName_lbl.Text = image_name;
             this.disUserText_lbl.Text = topperText[0,textindex_column_1] +" "+ topperText[1,textindex_column_2];
             this.dismoney_lbl.Text = price.ToString();
@@ -52,7 +52,7 @@ namespace Demo
 
 
         #region 'Propertise'
-        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경(임시)
+        private void imageDisplayMakeChager() // 만들어진 토퍼로 이미지 변경(임시)
         {
             SettingPage sp = new SettingPage();
 
@@ -86,14 +86,14 @@ namespace Demo
 
 
         #region 'Next/Exit Setting'
-        private void next_pane_Click(object sender, EventArgs e)//다음 화면
+        private void next_pane_Click(object sender, EventArgs e) // 다음 화면
         {
             this.FormSendEvent(1);
             this.Visible = false;
             
         }
 
-        private void exit_pane_Click(object sender, EventArgs e)//이전 화면
+        private void exit_pane_Click(object sender, EventArgs e) // 이전 화면
         {
             this.FormSendEvent(0);
             this.Visible = false;

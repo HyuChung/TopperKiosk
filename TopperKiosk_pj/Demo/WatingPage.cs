@@ -23,11 +23,7 @@ namespace Demo
         string image_name = "None", left_time_info = "예상 남은 시간 : ",left_time_min = "분 ", left_time_sec ="초";
         int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price = 0;
 
-        
-
-        int icon_tic =0, end_time =10;//기본 시간 2분
-
-
+        int icon_tic =0, end_time =10; // 기본 시간 2분
 
         string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
@@ -71,7 +67,7 @@ namespace Demo
 
 
         #region 'Propertise'
-        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경(임시)
+        private void imageDisplayMakeChager() // 만들어진 토퍼로 이미지 변경(임시)
         {
             SettingPage sp = new SettingPage();
 
@@ -101,7 +97,7 @@ namespace Demo
             }
         }
 
-        private void expectTime()//예상 대기시간 카운터
+        private void expectTime() // 예상 대기시간 카운터
         {
             int min =0, sec=0; 
 
@@ -117,7 +113,7 @@ namespace Demo
             }
         }
 
-        private void btncolorchanger(int index, int order)
+        private void btncolorchanger(int index, int order) // 버튼 색상 변경(설문)
         {
             if(index == 0)
             {
@@ -233,7 +229,7 @@ namespace Demo
 
 
         #region 'ServeyButton Setting'
-        private void mansex_btn_Click(object sender, EventArgs e)
+        private void mansex_btn_Click(object sender, EventArgs e) 
         {
             btncolorchanger(0, 1);
         }
@@ -309,7 +305,7 @@ namespace Demo
 
 
         #region 'Timer Setting'
-        private void icontimerHandler(object sender, EventArgs e)
+        private void icontimerHandler(object sender, EventArgs e) // 레이져 아이콘 이미지 변경용 타이머
         {
             if (icon_tic == 0)
             {
@@ -324,7 +320,7 @@ namespace Demo
             
         }
 
-        private void endtimerHandler(object sender, EventArgs e)
+        private void endtimerHandler(object sender, EventArgs e) // 예상 대기시간 타이머
         {
             end_time--;
             expectTime();

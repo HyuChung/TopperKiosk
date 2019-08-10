@@ -23,7 +23,7 @@ namespace Demo
 
 
         #region 'Init'
-        public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price)
+        public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price) 
         {
             this.price = price;
             this.image_name = image_name;
@@ -46,11 +46,11 @@ namespace Demo
 
 
         #region 'Propertise'
-        public void showingimageChage(int imageNum, int pageNum)//보여지는 이미지 가져오기
+        public void showingimageChage(int imageNum, int pageNum) // 보여지는 이미지 가져오기
         {
             TopperList topper = new TopperList();
 
-            switch (pageNum)
+            switch (pageNum) 
             {
                 case 1:
                     this.showingDesign.Image = topper.TourImagelist.Images[imageNum];
