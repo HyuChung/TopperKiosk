@@ -50,6 +50,7 @@
             this.Controls.Add(this.dispane);
             this.Name = "backgroungMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
