@@ -33,8 +33,6 @@
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
             this.designName_lbl = new System.Windows.Forms.Label();
-            this.dismoney_lbl = new System.Windows.Forms.Label();
-            this.chargeMoney_lbl = new System.Windows.Forms.Label();
             this.disDesginName_lbl = new System.Windows.Forms.Label();
             this.exit_pane = new System.Windows.Forms.Panel();
             this.next_pane = new System.Windows.Forms.Panel();
@@ -59,8 +57,6 @@
             // 
             resources.ApplyResources(this.disInfo_pane, "disInfo_pane");
             this.disInfo_pane.Controls.Add(this.designName_lbl, 0, 0);
-            this.disInfo_pane.Controls.Add(this.dismoney_lbl, 1, 1);
-            this.disInfo_pane.Controls.Add(this.chargeMoney_lbl, 0, 1);
             this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
             this.disInfo_pane.Name = "disInfo_pane";
             // 
@@ -68,16 +64,6 @@
             // 
             resources.ApplyResources(this.designName_lbl, "designName_lbl");
             this.designName_lbl.Name = "designName_lbl";
-            // 
-            // dismoney_lbl
-            // 
-            resources.ApplyResources(this.dismoney_lbl, "dismoney_lbl");
-            this.dismoney_lbl.Name = "dismoney_lbl";
-            // 
-            // chargeMoney_lbl
-            // 
-            resources.ApplyResources(this.chargeMoney_lbl, "chargeMoney_lbl");
-            this.chargeMoney_lbl.Name = "chargeMoney_lbl";
             // 
             // disDesginName_lbl
             // 
@@ -125,8 +111,6 @@
         private System.Windows.Forms.PictureBox showingDesign;
         private System.Windows.Forms.TableLayoutPanel disInfo_pane;
         private System.Windows.Forms.Label designName_lbl;
-        private System.Windows.Forms.Label dismoney_lbl;
-        private System.Windows.Forms.Label chargeMoney_lbl;
         private System.Windows.Forms.Label disDesginName_lbl;
         private System.Windows.Forms.Panel exit_pane;
         private System.Windows.Forms.Panel next_pane;

@@ -121,9 +121,6 @@
   <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="tooltip_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>나눔고딕, 15.75pt, style=Bold</value>
@@ -160,7 +157,7 @@
     <value>0</value>
   </data>
   <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2</value>
+    <value>0, 10</value>
   </data>
   <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>1920, 40</value>
@@ -219,105 +216,6 @@
   <data name="disInfo_pane.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;designName_lbl.Name" xml:space="preserve">
-    <value>designName_lbl</value>
-  </data>
-  <data name="&gt;&gt;designName_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;designName_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
-    <value>dismoney_lbl</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Name" xml:space="preserve">
-    <value>userTextName_lbl</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;userTextName_lbl.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Name" xml:space="preserve">
-    <value>disUserText_lbl</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;disUserText_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Name" xml:space="preserve">
-    <value>chargeMoney_lbl</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
-    <value>disDesginName_lbl</value>
-  </data>
-  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 678</value>
-  </data>
-  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 180</value>
-  </data>
-  <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dismoney_lbl" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="chargeMoney_lbl" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <data name="designName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -331,7 +229,7 @@
     <value>3, 0</value>
   </data>
   <data name="designName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 59</value>
+    <value>133, 89</value>
   </data>
   <data name="designName_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -354,39 +252,6 @@
   <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dismoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dismoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 16.25pt</value>
-  </data>
-  <data name="dismoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="dismoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 119</value>
-  </data>
-  <data name="dismoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 61</value>
-  </data>
-  <data name="dismoney_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="dismoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Name" xml:space="preserve">
-    <value>dismoney_lbl</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;dismoney_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="userTextName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -397,10 +262,10 @@
     <value>NoControl</value>
   </data>
   <data name="userTextName_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 59</value>
+    <value>3, 89</value>
   </data>
   <data name="userTextName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 60</value>
+    <value>133, 91</value>
   </data>
   <data name="userTextName_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -421,7 +286,7 @@
     <value>disInfo_pane</value>
   </data>
   <data name="&gt;&gt;userTextName_lbl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="disUserText_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -433,10 +298,10 @@
     <value>NoControl</value>
   </data>
   <data name="disUserText_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 59</value>
+    <value>142, 89</value>
   </data>
   <data name="disUserText_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 60</value>
+    <value>275, 91</value>
   </data>
   <data name="disUserText_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -454,43 +319,7 @@
     <value>disInfo_pane</value>
   </data>
   <data name="&gt;&gt;disUserText_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chargeMoney_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="chargeMoney_lbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕, 20.2499981pt</value>
-  </data>
-  <data name="chargeMoney_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chargeMoney_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 119</value>
-  </data>
-  <data name="chargeMoney_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 61</value>
-  </data>
-  <data name="chargeMoney_lbl.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="chargeMoney_lbl.Text" xml:space="preserve">
-    <value>가 격 :</value>
-  </data>
-  <data name="chargeMoney_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Name" xml:space="preserve">
-    <value>chargeMoney_lbl</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.Parent" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;chargeMoney_lbl.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="disDesginName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -505,7 +334,7 @@
     <value>142, 0</value>
   </data>
   <data name="disDesginName_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 59</value>
+    <value>275, 89</value>
   </data>
   <data name="disDesginName_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -523,7 +352,34 @@
     <value>disInfo_pane</value>
   </data>
   <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
+  </data>
+  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 684</value>
+  </data>
+  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 180</value>
+  </data>
+  <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="outputinfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
@@ -566,7 +422,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAA
-        JQAAAk1TRnQBSQFMAgEBAgEAASgBAAEoAQABZAEAAWQBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        JQAAAk1TRnQBSQFMAgEBAgEAAVABAAFQAQABZAEAAWQBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABkAEBAgABZAMAAQEBAAEIBQABQAGcGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHA
         AdwBwAEAAfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANC
         AQADOQEAAYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/
@@ -736,7 +592,7 @@
     <value>NoControl</value>
   </data>
   <data name="lefttime_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1023, 209</value>
+    <value>1023, 217</value>
   </data>
   <data name="lefttime_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 33</value>
@@ -1532,7 +1388,7 @@
     <value>NoControl</value>
   </data>
   <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 343</value>
+    <value>130, 351</value>
   </data>
   <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
     <value>325, 280</value>
@@ -1591,39 +1447,6 @@
   <data name="thanks_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="&gt;&gt;thank_pic.Name" xml:space="preserve">
-    <value>thank_pic</value>
-  </data>
-  <data name="&gt;&gt;thank_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;thank_pic.Parent" xml:space="preserve">
-    <value>thanks_pane</value>
-  </data>
-  <data name="&gt;&gt;thank_pic.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="thanks_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1100, 420</value>
-  </data>
-  <data name="thanks_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 402</value>
-  </data>
-  <data name="thanks_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;thanks_pane.Name" xml:space="preserve">
-    <value>thanks_pane</value>
-  </data>
-  <data name="&gt;&gt;thanks_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;thanks_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;thanks_pane.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="thank_pic.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 84</value>
   </data>
@@ -1648,6 +1471,27 @@
   <data name="&gt;&gt;thank_pic.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="thanks_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1100, 428</value>
+  </data>
+  <data name="thanks_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 402</value>
+  </data>
+  <data name="thanks_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Name" xml:space="preserve">
+    <value>thanks_pane</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;thanks_pane.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1658,10 +1502,7 @@
     <value>7, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1904, 1064</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>1904, 1061</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

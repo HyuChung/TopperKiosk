@@ -631,10 +631,10 @@ namespace Demo
 
         private void DieaseUpdateEventMethod(object sender) // 백그라운드에 이벤트,변수 전달
         {
-            ((backgroungMain)(this.Owner)).image_name = selected_image;
-            ((backgroungMain)(this.Owner)).imageNum = listnum;
-            ((backgroungMain)(this.Owner)).pageNum = valPage;
-            ((backgroungMain)(this.Owner)).price= price;
+            ((BackgroungMain)(this.Owner)).image_name = selected_image;
+            ((BackgroungMain)(this.Owner)).imageNum = listnum;
+            ((BackgroungMain)(this.Owner)).pageNum = valPage;
+            ((BackgroungMain)(this.Owner)).price= price;
             this.Visible = false;
             this.FormSendEvent(1);
         }
@@ -766,7 +766,7 @@ namespace Demo
 
 
 
-        #region 'PicTag Setting'
+        #region 'PicTag Setting(NOT USE)'
         /*
          * README!
          * 하이라이트를 위한 픽쳐박스 설정이였으나 새창을 띄우는것으로 변경해 코드만 남김

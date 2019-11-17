@@ -22,7 +22,7 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class backgroungMain : Form
+    public partial class BackgroungMain : Form
     {
 
         #region 'Field' 
@@ -31,12 +31,14 @@ namespace Demo
 
         public string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
                                                     {"화이팅","선생님","부모님","Team" } };
+
+        public MakingTopperImage ti;
         #endregion
 
 
 
         #region 'Init'
-        public backgroungMain()
+        public BackgroungMain()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
@@ -48,6 +50,8 @@ namespace Demo
 
             this.dispane.Left = (this.ClientSize.Width - this.dispane.Width) / 2;
             this.dispane.Top = (this.ClientSize.Height - this.ClientSize.Height) / 2;
+
+            FormLocationModify();
         }
         #endregion
 
@@ -60,6 +64,20 @@ namespace Demo
             dispane.Controls.Add(form);
             form.Dock = DockStyle.Fill;
             form.Show();
+        }
+
+        private void FormLocationModify() // 듀얼 모니터 사용시 폼 2번에 옮기기
+        {
+            Screen[] sc = Screen.AllScreens;
+            
+            if(sc.Length == 1)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                return;
+            }
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = sc[1].Bounds.Location;
+            this.WindowState = FormWindowState.Maximized;
         }
         #endregion
 
@@ -98,7 +116,7 @@ namespace Demo
         {
             if((int)sender == 1) // 다음-이전 
             {
-                PayPage PP = new PayPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
+                PayPage PP = new PayPage(image_name, price, imageNum, pageNum, ti);
                 PP.FormSendEvent += new PayPage.FormSendDataHandler(paylisner);
                 PP.Owner = this;
                 AddForms2Panel(PP);
@@ -117,14 +135,14 @@ namespace Demo
         {
             if ((int)sender == 1) // 다음-이전
             {
-                WatingPage wp = new WatingPage(image_name, price, imageNum, pageNum, textindex_column_1, textindex_column_2);
+                WatingPage wp = new WatingPage(image_name, price, imageNum, pageNum, ti);
                 wp.FormSendEvent += new WatingPage.FormSendDataHandler(watinglisner);
                 wp.Owner = this;
                 AddForms2Panel(wp);
             }
             else
             {
-                SettingPage SP = new SettingPage(image_name, price, imageNum, pageNum);
+                SettingPage SP = new SettingPage(image_name, price, imageNum, pageNum, ti);
                 SP.FormSendEvent += new SettingPage.FormSendDataHandler(settinglisner);
                 SP.Owner = this;
                 AddForms2Panel(SP);

@@ -41,8 +41,8 @@
             // 
             // tooltip_lbl
             // 
-            resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
             this.tooltip_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
+            resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
             this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
             this.tooltip_lbl.Name = "tooltip_lbl";
             // 

@@ -39,7 +39,7 @@ namespace Demo
             this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;
 
             this.disDesginName_lbl.Text = image_name;
-            this.dismoney_lbl.Text = price.ToString();
+            //this.dismoney_lbl.Text = price.ToString();
         }
         #endregion
 

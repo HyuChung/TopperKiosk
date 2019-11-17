@@ -64,11 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="backgroungMain.cs">
+    <Compile Include="BackgroungMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="backgroungMain.Designer.cs">
-      <DependentUpon>backgroungMain.cs</DependentUpon>
+    <Compile Include="BackgroungMain.Designer.cs">
+      <DependentUpon>BackgroungMain.cs</DependentUpon>
     </Compile>
     <Compile Include="EndPage.cs">
       <SubType>Form</SubType>
@@ -76,6 +76,8 @@
     <Compile Include="EndPage.Designer.cs">
       <DependentUpon>EndPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MakingTopperImage.cs" />
+    <Compile Include="Macro.cs" />
     <Compile Include="PayPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,7 +89,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ScreenKeyBoard.cs" />
     <Compile Include="SettingPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,8 +127,8 @@
     <Compile Include="WatingPage.Designer.cs">
       <DependentUpon>WatingPage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="backgroungMain.resx">
-      <DependentUpon>backgroungMain.cs</DependentUpon>
+    <EmbeddedResource Include="BackgroungMain.resx">
+      <DependentUpon>BackgroungMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EndPage.en.resx">
       <DependentUpon>EndPage.cs</DependentUpon>

@@ -25,21 +25,19 @@ namespace Demo
 
         int icon_tic =0, end_time =10; // 기본 시간 2분
 
-        string[,] topperText = new string[2, 4] { { "세미콜론팀", "감사합니다", "사랑합니다" , "SemmiColon" } ,
-                                                    {"화이팅","선생님","부모님","Team" } };
+        MakingTopperImage ti;
         #endregion
 
 
 
         #region 'Init'
-        public WatingPage(string image_name, int price, int imageNum, int pageNum, int textindex_column_1, int textindex_column_2)
+        public WatingPage(string image_name, int price, int imageNum, int pageNum,  MakingTopperImage ti)
         {
             this.image_name = image_name;
             this.imageNum = imageNum;
             this.pageNum = pageNum;
             this.price = price;
-            this.textindex_column_1 = textindex_column_1;
-            this.textindex_column_2 = textindex_column_2;
+            this.ti = ti;
 
             icontimer.Tick += new EventHandler(icontimerHandler);
             icontimer.Interval = 2000;
@@ -57,10 +55,10 @@ namespace Demo
             Endtimer.Enabled = true;
 
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            this.disDesginName_lbl.Text = image_name;
-            this.disUserText_lbl.Text = topperText[0, textindex_column_1] + " " + topperText[1, textindex_column_2];
-            this.dismoney_lbl.Text = price.ToString();
-
+            this.disDesginName_lbl.Text = ti.getimagename() ; // 이미지 이름
+            this.disUserText_lbl.Text = ti.getImagetext(); // 이미지 텍스트
+            //this.dismoney_lbl.Text = price.ToString();
+            new Macro(ti.getSavedimagename()); // 매크로 시작
         }
         #endregion
 
@@ -69,32 +67,8 @@ namespace Demo
         #region 'Propertise'
         private void imageDisplayMakeChager() // 만들어진 토퍼로 이미지 변경(임시)
         {
-            SettingPage sp = new SettingPage();
-
-            if (textindex_column_1 == 0 && textindex_column_2 == 0)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[0];
-            }
-            else if (textindex_column_1 == 1 && textindex_column_2 == 1)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[1];
-            }
-            else if (textindex_column_1 == 1 && textindex_column_2 == 2)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[2];
-            }
-            else if (textindex_column_1 == 2 && textindex_column_2 == 1)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[3];
-            }
-            else if (textindex_column_1 == 2 && textindex_column_2 == 2)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[4];
-            }
-            else if (textindex_column_1 == 3 && textindex_column_2 == 3)
-            {
-                this.showingDesign.Image = sp.makedimage.Images[5];
-            }
+            ti.setImage2PB(showingDesign);
+            //showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/" + "new" + ".png"); // 상대주소로 변경 필요
         }
 
         private void expectTime() // 예상 대기시간 카운터

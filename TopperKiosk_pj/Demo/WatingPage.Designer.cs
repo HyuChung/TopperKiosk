@@ -35,33 +35,31 @@
             this.info_lbl = new System.Windows.Forms.Label();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
             this.designName_lbl = new System.Windows.Forms.Label();
-            this.dismoney_lbl = new System.Windows.Forms.Label();
             this.userTextName_lbl = new System.Windows.Forms.Label();
             this.disUserText_lbl = new System.Windows.Forms.Label();
-            this.chargeMoney_lbl = new System.Windows.Forms.Label();
             this.disDesginName_lbl = new System.Windows.Forms.Label();
             this.outputinfo_lbl = new System.Windows.Forms.Label();
             this.Icon = new System.Windows.Forms.ImageList(this.components);
             this.lefttime_lbl = new System.Windows.Forms.Label();
             this.survey_pane = new System.Windows.Forms.Panel();
-            this.sumit_btn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.surveyInfo_lbl = new System.Windows.Forms.Label();
-            this.sexinfo_lbl = new System.Windows.Forms.Label();
-            this.ageinfo_lbl = new System.Windows.Forms.Label();
-            this.purpose_lbl = new System.Windows.Forms.Label();
             this.annivercityPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.collectionPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.curiocityPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.monumentalPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.certifiPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.purpose_lbl = new System.Windows.Forms.Label();
             this.girlsex_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.mansex_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.age60_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.age30_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.age20_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.age10_btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ageinfo_lbl = new System.Windows.Forms.Label();
             this.age50_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.age40_btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.sexinfo_lbl = new System.Windows.Forms.Label();
+            this.surveyInfo_lbl = new System.Windows.Forms.Label();
+            this.sumit_btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lazercuttingDis = new System.Windows.Forms.PictureBox();
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.thankyou_lbl = new System.Windows.Forms.Label();
@@ -99,10 +97,8 @@
             // 
             resources.ApplyResources(this.disInfo_pane, "disInfo_pane");
             this.disInfo_pane.Controls.Add(this.designName_lbl, 0, 0);
-            this.disInfo_pane.Controls.Add(this.dismoney_lbl, 1, 2);
             this.disInfo_pane.Controls.Add(this.userTextName_lbl, 0, 1);
             this.disInfo_pane.Controls.Add(this.disUserText_lbl, 1, 1);
-            this.disInfo_pane.Controls.Add(this.chargeMoney_lbl, 0, 2);
             this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
             this.disInfo_pane.Name = "disInfo_pane";
             // 
@@ -110,11 +106,6 @@
             // 
             resources.ApplyResources(this.designName_lbl, "designName_lbl");
             this.designName_lbl.Name = "designName_lbl";
-            // 
-            // dismoney_lbl
-            // 
-            resources.ApplyResources(this.dismoney_lbl, "dismoney_lbl");
-            this.dismoney_lbl.Name = "dismoney_lbl";
             // 
             // userTextName_lbl
             // 
@@ -125,11 +116,6 @@
             // 
             resources.ApplyResources(this.disUserText_lbl, "disUserText_lbl");
             this.disUserText_lbl.Name = "disUserText_lbl";
-            // 
-            // chargeMoney_lbl
-            // 
-            resources.ApplyResources(this.chargeMoney_lbl, "chargeMoney_lbl");
-            this.chargeMoney_lbl.Name = "chargeMoney_lbl";
             // 
             // disDesginName_lbl
             // 
@@ -176,60 +162,6 @@
             this.survey_pane.Controls.Add(this.sumit_btn);
             resources.ApplyResources(this.survey_pane, "survey_pane");
             this.survey_pane.Name = "survey_pane";
-            // 
-            // sumit_btn
-            // 
-            this.sumit_btn.Activecolor = System.Drawing.Color.SkyBlue;
-            this.sumit_btn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            resources.ApplyResources(this.sumit_btn, "sumit_btn");
-            this.sumit_btn.BorderRadius = 7;
-            this.sumit_btn.ButtonText = "제출하기";
-            this.sumit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sumit_btn.DisabledColor = System.Drawing.Color.Gray;
-            this.sumit_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.sumit_btn.Iconimage = null;
-            this.sumit_btn.Iconimage_right = null;
-            this.sumit_btn.Iconimage_right_Selected = null;
-            this.sumit_btn.Iconimage_Selected = null;
-            this.sumit_btn.IconMarginLeft = 0;
-            this.sumit_btn.IconMarginRight = 0;
-            this.sumit_btn.IconRightVisible = true;
-            this.sumit_btn.IconRightZoom = 0D;
-            this.sumit_btn.IconVisible = true;
-            this.sumit_btn.IconZoom = 90D;
-            this.sumit_btn.IsTab = false;
-            this.sumit_btn.Name = "sumit_btn";
-            this.sumit_btn.Normalcolor = System.Drawing.Color.DeepSkyBlue;
-            this.sumit_btn.OnHovercolor = System.Drawing.Color.SkyBlue;
-            this.sumit_btn.OnHoverTextColor = System.Drawing.Color.White;
-            this.sumit_btn.selected = false;
-            this.sumit_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.sumit_btn.Textcolor = System.Drawing.Color.White;
-            this.sumit_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.sumit_btn.Click += new System.EventHandler(this.sumit_btn_Click);
-            // 
-            // surveyInfo_lbl
-            // 
-            resources.ApplyResources(this.surveyInfo_lbl, "surveyInfo_lbl");
-            this.surveyInfo_lbl.Name = "surveyInfo_lbl";
-            // 
-            // sexinfo_lbl
-            // 
-            resources.ApplyResources(this.sexinfo_lbl, "sexinfo_lbl");
-            this.sexinfo_lbl.ForeColor = System.Drawing.Color.SteelBlue;
-            this.sexinfo_lbl.Name = "sexinfo_lbl";
-            // 
-            // ageinfo_lbl
-            // 
-            resources.ApplyResources(this.ageinfo_lbl, "ageinfo_lbl");
-            this.ageinfo_lbl.ForeColor = System.Drawing.Color.SteelBlue;
-            this.ageinfo_lbl.Name = "ageinfo_lbl";
-            // 
-            // purpose_lbl
-            // 
-            resources.ApplyResources(this.purpose_lbl, "purpose_lbl");
-            this.purpose_lbl.ForeColor = System.Drawing.Color.SteelBlue;
-            this.purpose_lbl.Name = "purpose_lbl";
             // 
             // annivercityPurpose_btn
             // 
@@ -335,6 +267,12 @@
             this.certifiPurpose_btn.Name = "certifiPurpose_btn";
             this.certifiPurpose_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.certifiPurpose_btn.Click += new System.EventHandler(this.certifiPurpose_btn_Click);
+            // 
+            // purpose_lbl
+            // 
+            resources.ApplyResources(this.purpose_lbl, "purpose_lbl");
+            this.purpose_lbl.ForeColor = System.Drawing.Color.SteelBlue;
+            this.purpose_lbl.Name = "purpose_lbl";
             // 
             // girlsex_btn
             // 
@@ -462,6 +400,12 @@
             this.age10_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.age10_btn.Click += new System.EventHandler(this.age10_btn_Click);
             // 
+            // ageinfo_lbl
+            // 
+            resources.ApplyResources(this.ageinfo_lbl, "ageinfo_lbl");
+            this.ageinfo_lbl.ForeColor = System.Drawing.Color.SteelBlue;
+            this.ageinfo_lbl.Name = "ageinfo_lbl";
+            // 
             // age50_btn
             // 
             this.age50_btn.ActiveBorderThickness = 1;
@@ -503,6 +447,48 @@
             this.age40_btn.Name = "age40_btn";
             this.age40_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.age40_btn.Click += new System.EventHandler(this.age40_btn_Click);
+            // 
+            // sexinfo_lbl
+            // 
+            resources.ApplyResources(this.sexinfo_lbl, "sexinfo_lbl");
+            this.sexinfo_lbl.ForeColor = System.Drawing.Color.SteelBlue;
+            this.sexinfo_lbl.Name = "sexinfo_lbl";
+            // 
+            // surveyInfo_lbl
+            // 
+            resources.ApplyResources(this.surveyInfo_lbl, "surveyInfo_lbl");
+            this.surveyInfo_lbl.Name = "surveyInfo_lbl";
+            // 
+            // sumit_btn
+            // 
+            this.sumit_btn.Activecolor = System.Drawing.Color.SkyBlue;
+            this.sumit_btn.BackColor = System.Drawing.Color.DeepSkyBlue;
+            resources.ApplyResources(this.sumit_btn, "sumit_btn");
+            this.sumit_btn.BorderRadius = 7;
+            this.sumit_btn.ButtonText = "제출하기";
+            this.sumit_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sumit_btn.DisabledColor = System.Drawing.Color.Gray;
+            this.sumit_btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.sumit_btn.Iconimage = null;
+            this.sumit_btn.Iconimage_right = null;
+            this.sumit_btn.Iconimage_right_Selected = null;
+            this.sumit_btn.Iconimage_Selected = null;
+            this.sumit_btn.IconMarginLeft = 0;
+            this.sumit_btn.IconMarginRight = 0;
+            this.sumit_btn.IconRightVisible = true;
+            this.sumit_btn.IconRightZoom = 0D;
+            this.sumit_btn.IconVisible = true;
+            this.sumit_btn.IconZoom = 90D;
+            this.sumit_btn.IsTab = false;
+            this.sumit_btn.Name = "sumit_btn";
+            this.sumit_btn.Normalcolor = System.Drawing.Color.DeepSkyBlue;
+            this.sumit_btn.OnHovercolor = System.Drawing.Color.SkyBlue;
+            this.sumit_btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.sumit_btn.selected = false;
+            this.sumit_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sumit_btn.Textcolor = System.Drawing.Color.White;
+            this.sumit_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.sumit_btn.Click += new System.EventHandler(this.sumit_btn_Click);
             // 
             // lazercuttingDis
             // 
@@ -570,10 +556,8 @@
         private System.Windows.Forms.Label info_lbl;
         private System.Windows.Forms.TableLayoutPanel disInfo_pane;
         private System.Windows.Forms.Label designName_lbl;
-        private System.Windows.Forms.Label dismoney_lbl;
         private System.Windows.Forms.Label userTextName_lbl;
         private System.Windows.Forms.Label disUserText_lbl;
-        private System.Windows.Forms.Label chargeMoney_lbl;
         private System.Windows.Forms.Label disDesginName_lbl;
         private System.Windows.Forms.Label outputinfo_lbl;
         private System.Windows.Forms.PictureBox lazercuttingDis;

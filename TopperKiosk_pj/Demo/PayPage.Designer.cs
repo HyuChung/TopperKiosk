@@ -33,15 +33,13 @@
             this.tooltip_pane = new System.Windows.Forms.Panel();
             this.designName_lbl = new System.Windows.Forms.Label();
             this.userTextName_lbl = new System.Windows.Forms.Label();
-            this.disDesginName_lbl = new System.Windows.Forms.Label();
-            this.disUserText_lbl = new System.Windows.Forms.Label();
-            this.chargeMoney_lbl = new System.Windows.Forms.Label();
-            this.dismoney_lbl = new System.Windows.Forms.Label();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
             this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
             this.info_lbl = new System.Windows.Forms.Label();
+            this.disDesginName_lbl = new System.Windows.Forms.Label();
+            this.disUserText_lbl = new System.Windows.Forms.Label();
             this.tooltip_pane.SuspendLayout();
             this.disInfo_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
@@ -71,34 +69,12 @@
             resources.ApplyResources(this.userTextName_lbl, "userTextName_lbl");
             this.userTextName_lbl.Name = "userTextName_lbl";
             // 
-            // disDesginName_lbl
-            // 
-            resources.ApplyResources(this.disDesginName_lbl, "disDesginName_lbl");
-            this.disDesginName_lbl.Name = "disDesginName_lbl";
-            // 
-            // disUserText_lbl
-            // 
-            resources.ApplyResources(this.disUserText_lbl, "disUserText_lbl");
-            this.disUserText_lbl.Name = "disUserText_lbl";
-            // 
-            // chargeMoney_lbl
-            // 
-            resources.ApplyResources(this.chargeMoney_lbl, "chargeMoney_lbl");
-            this.chargeMoney_lbl.Name = "chargeMoney_lbl";
-            // 
-            // dismoney_lbl
-            // 
-            resources.ApplyResources(this.dismoney_lbl, "dismoney_lbl");
-            this.dismoney_lbl.Name = "dismoney_lbl";
-            // 
             // disInfo_pane
             // 
             resources.ApplyResources(this.disInfo_pane, "disInfo_pane");
             this.disInfo_pane.Controls.Add(this.designName_lbl, 0, 0);
-            this.disInfo_pane.Controls.Add(this.dismoney_lbl, 1, 2);
             this.disInfo_pane.Controls.Add(this.userTextName_lbl, 0, 1);
             this.disInfo_pane.Controls.Add(this.disUserText_lbl, 1, 1);
-            this.disInfo_pane.Controls.Add(this.chargeMoney_lbl, 0, 2);
             this.disInfo_pane.Controls.Add(this.disDesginName_lbl, 1, 0);
             this.disInfo_pane.Name = "disInfo_pane";
             // 
@@ -127,6 +103,16 @@
             resources.ApplyResources(this.info_lbl, "info_lbl");
             this.info_lbl.Name = "info_lbl";
             // 
+            // disDesginName_lbl
+            // 
+            resources.ApplyResources(this.disDesginName_lbl, "disDesginName_lbl");
+            this.disDesginName_lbl.Name = "disDesginName_lbl";
+            // 
+            // disUserText_lbl
+            // 
+            resources.ApplyResources(this.disUserText_lbl, "disUserText_lbl");
+            this.disUserText_lbl.Name = "disUserText_lbl";
+            // 
             // PayPage
             // 
             resources.ApplyResources(this, "$this");
@@ -139,6 +125,8 @@
             this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PayPage";
             this.tooltip_pane.ResumeLayout(false);
             this.disInfo_pane.ResumeLayout(false);
@@ -156,11 +144,9 @@
         private System.Windows.Forms.PictureBox showingDesign;
         private System.Windows.Forms.Label designName_lbl;
         private System.Windows.Forms.Label userTextName_lbl;
-        private System.Windows.Forms.Label disDesginName_lbl;
-        private System.Windows.Forms.Label disUserText_lbl;
-        private System.Windows.Forms.Label chargeMoney_lbl;
-        private System.Windows.Forms.Label dismoney_lbl;
         private System.Windows.Forms.TableLayoutPanel disInfo_pane;
         private System.Windows.Forms.Label info_lbl;
+        private System.Windows.Forms.Label disUserText_lbl;
+        private System.Windows.Forms.Label disDesginName_lbl;
     }
 }

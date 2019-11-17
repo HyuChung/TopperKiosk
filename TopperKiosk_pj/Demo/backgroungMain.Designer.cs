@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    partial class backgroungMain
+    partial class BackgroungMain
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             // 
             this.dispane.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dispane.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dispane.Location = new System.Drawing.Point(1, 2);
+            this.dispane.Location = new System.Drawing.Point(0, 0);
             this.dispane.Name = "dispane";
             this.dispane.Size = new System.Drawing.Size(1920, 1080);
             this.dispane.TabIndex = 0;

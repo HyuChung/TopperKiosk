@@ -393,6 +393,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TopperList";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TopperList_Load);
             this.picture_layout_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_3_3)).EndInit();
