@@ -140,7 +140,7 @@
             // showingDesign
             // 
             resources.ApplyResources(this.showingDesign, "showingDesign");
-            this.showingDesign.Image = global::Demo.Properties.Resources._checked;
+            this.showingDesign.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.showingDesign.Name = "showingDesign";
             this.showingDesign.TabStop = false;
             // 

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopperList));
             this.picture_layout_pane = new System.Windows.Forms.TableLayoutPanel();
+            this.pic_2_2 = new System.Windows.Forms.PictureBox();
             this.pic_1_1 = new System.Windows.Forms.PictureBox();
             this.pic_1_2 = new System.Windows.Forms.PictureBox();
             this.pic_1_3 = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,7 @@
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.info_lbl = new System.Windows.Forms.Label();
             this.picture_layout_pane.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_3)).BeginInit();
@@ -46,11 +48,20 @@
             // picture_layout_pane
             // 
             resources.ApplyResources(this.picture_layout_pane, "picture_layout_pane");
+            this.picture_layout_pane.Controls.Add(this.pic_2_2, 4, 0);
             this.picture_layout_pane.Controls.Add(this.pic_1_1, 0, 0);
             this.picture_layout_pane.Controls.Add(this.pic_1_2, 1, 0);
             this.picture_layout_pane.Controls.Add(this.pic_1_3, 2, 0);
             this.picture_layout_pane.Controls.Add(this.pic_2_1, 3, 0);
             this.picture_layout_pane.Name = "picture_layout_pane";
+            // 
+            // pic_2_2
+            // 
+            resources.ApplyResources(this.pic_2_2, "pic_2_2");
+            this.pic_2_2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pic_2_2.Name = "pic_2_2";
+            this.pic_2_2.TabStop = false;
+            this.pic_2_2.Click += new System.EventHandler(this.pic_2_2_Click);
             // 
             // pic_1_1
             // 
@@ -109,8 +120,8 @@
             this.MinimizeBox = false;
             this.Name = "TopperList";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.TopperList_Load);
             this.picture_layout_pane.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1_3)).EndInit();
@@ -127,5 +138,6 @@
         private System.Windows.Forms.PictureBox pic_1_1;
         private System.Windows.Forms.Label tooltip_lbl;
         private System.Windows.Forms.Label info_lbl;
+        private System.Windows.Forms.PictureBox pic_2_2;
     }
 }

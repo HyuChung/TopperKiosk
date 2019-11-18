@@ -123,7 +123,38 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="picture_layout_pane.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="pic_2_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pic_2_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pic_2_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1376, 35</value>
+  </data>
+  <data name="pic_2_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 200</value>
+  </data>
+  <data name="pic_2_2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_2_2.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Name" xml:space="preserve">
+    <value>pic_2_2</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.Parent" xml:space="preserve">
+    <value>picture_layout_pane</value>
+  </data>
+  <data name="&gt;&gt;pic_2_2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pic_1_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -131,9 +162,8 @@
   <data name="pic_1_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pic_1_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 35</value>
+    <value>64, 35</value>
   </data>
   <data name="pic_1_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -154,7 +184,7 @@
     <value>picture_layout_pane</value>
   </data>
   <data name="&gt;&gt;pic_1_1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pic_1_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -163,7 +193,7 @@
     <value>NoControl</value>
   </data>
   <data name="pic_1_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 35</value>
+    <value>392, 35</value>
   </data>
   <data name="pic_1_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -184,7 +214,7 @@
     <value>picture_layout_pane</value>
   </data>
   <data name="&gt;&gt;pic_1_2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pic_1_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -193,7 +223,7 @@
     <value>NoControl</value>
   </data>
   <data name="pic_1_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>925, 35</value>
+    <value>720, 35</value>
   </data>
   <data name="pic_1_3.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -214,7 +244,7 @@
     <value>picture_layout_pane</value>
   </data>
   <data name="&gt;&gt;pic_1_3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pic_2_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -223,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="pic_2_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1335, 35</value>
+    <value>1048, 35</value>
   </data>
   <data name="pic_2_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 200</value>
@@ -244,7 +274,7 @@
     <value>picture_layout_pane</value>
   </data>
   <data name="&gt;&gt;pic_2_1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="picture_layout_pane.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 425</value>
@@ -271,7 +301,7 @@
     <value>2</value>
   </data>
   <data name="picture_layout_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pic_1_1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,271" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pic_2_2" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pic_1_3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pic_2_1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>나눔고딕, 15.75pt, style=Bold</value>

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
+using System.Runtime.InteropServices;
 
 namespace Demo
 {
@@ -43,7 +44,8 @@ namespace Demo
             //left_arrow.Visible = false; //처음 패이지 왼쪽화살표 삭제
 
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            roundPicBox(); //원형 이미지 박스 (tag작동안함)
+            roundRectPicBox();
+            //roundPicBox(); //원형 이미지 박스 (tag작동안함)
             //menuIconChanger(1);
             //insertpic(valPage, numpage); //이미지 초기화
             imagedisplay();
@@ -54,6 +56,7 @@ namespace Demo
 
 
         #region 'Propertise'
+
         private void localization(int lenguage) // 다국어 처리
         {
             if (lenguage == 1) //다국어 처리
@@ -137,7 +140,7 @@ namespace Demo
             pic_1_2.Tag = SystemColors.GradientInactiveCaption;
             pic_1_3.Tag = SystemColors.GradientInactiveCaption;
             pic_2_1.Tag = SystemColors.GradientInactiveCaption;
-            //pic_2_2.Tag = SystemColors.GradientInactiveCaption;
+            pic_2_2.Tag = SystemColors.GradientInactiveCaption;
             //pic_2_3.Tag = SystemColors.GradientInactiveCaption;
             //pic_3_1.Tag = SystemColors.GradientInactiveCaption;
             //pic_3_2.Tag = SystemColors.GradientInactiveCaption;
@@ -153,7 +156,33 @@ namespace Demo
             pic_1_2.Region = rg;
             pic_1_3.Region = rg;
             pic_2_1.Region = rg;
-            //pic_2_2.Region = rg;
+            pic_2_2.Region = rg;
+            //pic_2_3.Region = rg;
+            //pic_3_1.Region = rg;
+            //pic_3_2.Region = rg;
+            //pic_3_3.Region = rg;
+        }
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+
+        private void roundRectPicBox() // 이미지 박스 둥근 사각형 박스변경(태그작동 x)
+        {
+
+            Region rg = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, pic_1_1.Width - 3, pic_1_1.Height - 3, 20, 20));
+            pic_1_1.Region = rg;
+            pic_1_2.Region = rg;
+            pic_1_3.Region = rg;
+            pic_2_1.Region = rg;
+            pic_2_2.Region = rg;
             //pic_2_3.Region = rg;
             //pic_3_1.Region = rg;
             //pic_3_2.Region = rg;
@@ -193,10 +222,11 @@ namespace Demo
 
         private void imagedisplay()
         {
-            pic_1_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Cloud.png");
-            pic_1_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Love.png");
-            pic_1_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Movie.png");
-            pic_2_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Think.png");
+            pic_1_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Photo.png");
+            pic_1_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_love.png");
+            pic_1_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_movie.png");
+            pic_2_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_computer.png");
+            pic_2_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/Mytu.png");
         }
 
         /*private void imagelistSerchAndChange(int listnum) // 이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
@@ -608,7 +638,7 @@ namespace Demo
             pic_1_2.Refresh();
             pic_1_3.Refresh();
             pic_2_1.Refresh();
-            //pic_2_2.Refresh();
+            pic_2_2.Refresh();
             //pic_2_3.Refresh();
             //pic_3_1.Refresh();
             //pic_3_2.Refresh();
@@ -960,8 +990,8 @@ namespace Demo
         { 
             allRefrashPic();
             this.listnum = 1;
-            this.selected_image = "동명대_Cloud";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_Cloud", 1, price);
+            this.selected_image = "동명대_Photo";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_Photo", 1, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();               
@@ -971,8 +1001,8 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 2;
-            this.selected_image = "동명대_Love";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_Love", 2, price);
+            this.selected_image = "동명대_love";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_love", 2, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();           
@@ -982,8 +1012,8 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 3;
-            this.selected_image = "동명대_Movie";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_Movie", 3, price);
+            this.selected_image = "동명대_movie";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_movie", 3, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();           
@@ -993,30 +1023,25 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 4;
-            this.selected_image = "동명대_Think";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_Think", 4, price);
+            this.selected_image = "동명대_computer";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_computer", 4, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();
         }
 
-        /*private void pic_2_2_Click(object sender, EventArgs e)
+        private void pic_2_2_Click(object sender, EventArgs e)
         {
-            if (imageMap[1, 1] != 0)
-            {
-                //changePicColor(22);
-                imageMap[1,1]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 5;
+            this.selected_image = "Mytu";
+            TopperlistPopUp popup = new TopperlistPopUp("Mytu", 5, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
         }
 
-        private void pic_2_3_Click(object sender, EventArgs e)
+        /*private void pic_2_3_Click(object sender, EventArgs e)
         {
             if (imageMap[1, 2] != 0)
             {
@@ -1117,11 +1142,6 @@ namespace Demo
             }
         
         }*/
-
-        private void TopperList_Load(object sender, EventArgs e)
-        {
-
-        }
         #endregion
 
 

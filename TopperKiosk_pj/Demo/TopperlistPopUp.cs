@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Demo
 {
@@ -38,6 +39,7 @@ namespace Demo
             this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;
 
             this.disDesginName_lbl.Text = image_name;
+            roundRectPicBox();
             //this.dismoney_lbl.Text = price.ToString();
         }
         #endregion
@@ -48,6 +50,22 @@ namespace Demo
         public void showingimageChage() // 보여지는 이미지 가져오기
         {
             this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/"+image_name+".png");
+        }
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+
+        private void roundRectPicBox() // 이미지 박스 둥근 사각형
+        {
+            showingDesign.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, showingDesign.Width - 3, showingDesign.Height - 3, 30, 30));
         }
         #endregion
 

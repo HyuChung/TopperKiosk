@@ -93,9 +93,9 @@ namespace Demo
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0);
                 SendKeys.SendWait("{ENTER}"); // 디자인 불러오기
-                Thread.Sleep(300);
+                Thread.Sleep(500);
                 SendKeys.SendWait("{ENTER}"); // 디자인 화면에 불러오기
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
 
                 // 너비 설정
                 SetCursorPos(33, 104);// y 위치

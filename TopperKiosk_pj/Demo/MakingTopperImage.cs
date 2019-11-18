@@ -152,7 +152,7 @@ namespace Demo
         {
             try
             {
-                savedimagename = "new_" + inputText + "_" + new Random().Next(1, 1000) +".png";
+                savedimagename = "new_" + inputText + "_" + new Random().Next(1, 10000) +".png";
                 bitmap.Save("D:/Temp Workspace/Kiosk/TopperKiosk_pj/" + savedimagename);
                 //Application.StartupPath
                 bitmap.Dispose();

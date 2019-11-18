@@ -45,7 +45,7 @@ namespace Demo
 
             timerInit();
             showingimageChage(pageNum, imageNum);
-            roundimagebox();
+            //roundimagebox();
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             this.next_pane.Visible = false;
 
@@ -64,7 +64,7 @@ namespace Demo
 
             timerInit();
             showingimageChage(pageNum, imageNum);
-            roundimagebox();
+            //roundimagebox();
 
             imageDisplayMakeChager();
         }
@@ -188,19 +188,23 @@ namespace Demo
             insertText = insertTB.Text;
             if (imageNum == 1)
             {
-                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 590), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 465), 1);
             }
             else if (imageNum == 2)
             {
-                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 500), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(60, 440), 1);
             }
             else if (imageNum == 3)
             {
-                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 585), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(60, 420), 1);
+            }
+            else if(imageNum == 4)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(70, 450), 1);
             }
             else
             {
-                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 570), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 475), 1);
             }
             ti.setImage2PB(showingDesign);
             this.next_pane.Visible = true;
