@@ -21,9 +21,9 @@ namespace Demo
         System.Windows.Forms.Timer Endtimer = new System.Windows.Forms.Timer();
 
         string image_name = "None", left_time_info = "예상 남은 시간 : ",left_time_min = "분 ", left_time_sec ="초";
-        int imageNum = 0, pageNum = 0, textindex_column_1 = 0, textindex_column_2 = 0, price = 0;
+        int imageNum = 0, pageNum = 0, price = 0;
 
-        int icon_tic =0, end_time =10; // 기본 시간 2분
+        int icon_tic =0, end_time = 240; 
 
         MakingTopperImage ti;
         #endregion
@@ -163,37 +163,37 @@ namespace Demo
                     case 1:
                         certifiPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
                         monumentalPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         break;
                     case 2:
                         certifiPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         monumentalPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-                        curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         break;
                     case 3:
                         certifiPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         monumentalPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        curiocityPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-                        collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //curiocityPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        //collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         break;
                     case 4:
                         certifiPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         monumentalPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        collectionPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-                        annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //collectionPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        //annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         break;
                     case 5:
                         certifiPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
                         monumentalPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                        annivercityPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+                        //curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                        //annivercityPurpose_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
                         break;
                 }
             }
@@ -251,6 +251,12 @@ namespace Demo
         private void monumentalPurpose_btn_Click(object sender, EventArgs e)
         {
             btncolorchanger(2, 2);
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            this.FormSendEvent(1);
         }
 
         private void curiocityPurpose_btn_Click(object sender, EventArgs e)

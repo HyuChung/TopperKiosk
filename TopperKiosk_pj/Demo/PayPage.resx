@@ -148,34 +148,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tooltip_lbl.Parent" xml:space="preserve">
-    <value>tooltip_pane</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, -4</value>
-  </data>
-  <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 40</value>
-  </data>
-  <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Name" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="designName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -343,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -376,7 +352,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="next_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -463,7 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;info_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

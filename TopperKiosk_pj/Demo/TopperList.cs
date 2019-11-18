@@ -40,12 +40,13 @@ namespace Demo
             
             InitializeComponent();
 
-            left_arrow.Visible = false; //처음 패이지 왼쪽화살표 삭제
+            //left_arrow.Visible = false; //처음 패이지 왼쪽화살표 삭제
 
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             roundPicBox(); //원형 이미지 박스 (tag작동안함)
-            menuIconChanger(1);
-            insertpic(valPage, numpage); //이미지 초기화
+            //menuIconChanger(1);
+            //insertpic(valPage, numpage); //이미지 초기화
+            imagedisplay();
             
         }
         #endregion
@@ -73,7 +74,7 @@ namespace Demo
             }
         }
 
-        private void insertpic(int valPage,int numpage) // 이미지 박스 이미지 넣기
+        /*private void insertpic(int valPage,int numpage) // 이미지 박스 이미지 넣기
         {
             switch (valPage)
             {
@@ -90,7 +91,7 @@ namespace Demo
                     imagelistSerchAndChange(4);
                     break;
             }
-        }
+        }*/
 
         private void initimagemap() // 이미지 맵 초기화
         {
@@ -123,11 +124,11 @@ namespace Demo
             pic_1_2.Image = null;
             pic_1_3.Image = null;
             pic_2_1.Image = null;
-            pic_2_2.Image = null;
-            pic_2_3.Image = null;
-            pic_3_1.Image = null;
-            pic_3_2.Image = null;
-            pic_3_3.Image = null;
+            //pic_2_2.Image = null;
+            //pic_2_3.Image = null;
+            //pic_3_1.Image = null;
+            //pic_3_2.Image = null;
+            //pic_3_3.Image = null;
         }
 
         private void initpicteg() // 이미지 태그 초기화
@@ -136,11 +137,11 @@ namespace Demo
             pic_1_2.Tag = SystemColors.GradientInactiveCaption;
             pic_1_3.Tag = SystemColors.GradientInactiveCaption;
             pic_2_1.Tag = SystemColors.GradientInactiveCaption;
-            pic_2_2.Tag = SystemColors.GradientInactiveCaption;
-            pic_2_3.Tag = SystemColors.GradientInactiveCaption;
-            pic_3_1.Tag = SystemColors.GradientInactiveCaption;
-            pic_3_2.Tag = SystemColors.GradientInactiveCaption;
-            pic_3_3.Tag = SystemColors.GradientInactiveCaption;
+            //pic_2_2.Tag = SystemColors.GradientInactiveCaption;
+            //pic_2_3.Tag = SystemColors.GradientInactiveCaption;
+            //pic_3_1.Tag = SystemColors.GradientInactiveCaption;
+            //pic_3_2.Tag = SystemColors.GradientInactiveCaption;
+            //pic_3_3.Tag = SystemColors.GradientInactiveCaption;
         }
 
         private void roundPicBox() // 이미지 박스 원형 박스변경(태그작동 x)
@@ -152,14 +153,14 @@ namespace Demo
             pic_1_2.Region = rg;
             pic_1_3.Region = rg;
             pic_2_1.Region = rg;
-            pic_2_2.Region = rg;
-            pic_2_3.Region = rg;
-            pic_3_1.Region = rg;
-            pic_3_2.Region = rg;
-            pic_3_3.Region = rg;
+            //pic_2_2.Region = rg;
+            //pic_2_3.Region = rg;
+            //pic_3_1.Region = rg;
+            //pic_3_2.Region = rg;
+            //pic_3_3.Region = rg;
         }
 
-        private void selectedImage() // 선택되어있는 이미지 번호, 이름 가져오기
+        /*private void selectedImage() // 선택되어있는 이미지 번호, 이름 가져오기
         {
             for(int i=0; i < 3; i++)
             {
@@ -188,9 +189,17 @@ namespace Demo
                     }
                 }
             }
+        }*/
+
+        private void imagedisplay()
+        {
+            pic_1_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Cloud.png");
+            pic_1_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Love.png");
+            pic_1_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Movie.png");
+            pic_2_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Think.png");
         }
 
-        private void imagelistSerchAndChange(int listnum) // 이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
+        /*private void imagelistSerchAndChange(int listnum) // 이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
         {
             int a;
             switch (listnum)
@@ -247,7 +256,7 @@ namespace Demo
                         pic_1_2.Image = TourImagelist.Images[1];
                         pic_1_3.Image = TourImagelist.Images[2];
                         pic_2_1.Image = TourImagelist.Images[3];
-                        pic_2_2.Image = TourImagelist.Images[4];
+                        //pic_2_2.Image = TourImagelist.Images[4];
                     }
                     else if (a < 7)
                     {
@@ -255,8 +264,8 @@ namespace Demo
                         pic_1_2.Image = TourImagelist.Images[1];
                         pic_1_3.Image = TourImagelist.Images[2];
                         pic_2_1.Image = TourImagelist.Images[3];
-                        pic_2_2.Image = TourImagelist.Images[4];
-                        pic_2_3.Image = TourImagelist.Images[5];
+                        //pic_2_2.Image = TourImagelist.Images[4];
+                        //pic_2_3.Image = TourImagelist.Images[5];
                     }
                     else if (a < 8)
                     {
@@ -264,9 +273,9 @@ namespace Demo
                         pic_1_2.Image = TourImagelist.Images[1];
                         pic_1_3.Image = TourImagelist.Images[2];
                         pic_2_1.Image = TourImagelist.Images[3];
-                        pic_2_2.Image = TourImagelist.Images[4];
-                        pic_2_3.Image = TourImagelist.Images[5];
-                        pic_3_1.Image = TourImagelist.Images[6];
+                        //pic_2_2.Image = TourImagelist.Images[4];
+                        //pic_2_3.Image = TourImagelist.Images[5];
+                        //pic_3_1.Image = TourImagelist.Images[6];
                     }
                     else if(a < 9)
                     {
@@ -274,10 +283,10 @@ namespace Demo
                         pic_1_2.Image = TourImagelist.Images[1];
                         pic_1_3.Image = TourImagelist.Images[2];
                         pic_2_1.Image = TourImagelist.Images[3];
-                        pic_2_2.Image = TourImagelist.Images[4];
-                        pic_2_3.Image = TourImagelist.Images[5];
-                        pic_3_1.Image = TourImagelist.Images[6];
-                        pic_3_2.Image = TourImagelist.Images[7];
+                        //pic_2_2.Image = TourImagelist.Images[4];
+                        //pic_2_3.Image = TourImagelist.Images[5];
+                        //pic_3_1.Image = TourImagelist.Images[6];
+                        //pic_3_2.Image = TourImagelist.Images[7];
                     }
                     else
                     {
@@ -285,11 +294,11 @@ namespace Demo
                         pic_1_2.Image = TourImagelist.Images[1];
                         pic_1_3.Image = TourImagelist.Images[2];
                         pic_2_1.Image = TourImagelist.Images[3];
-                        pic_2_2.Image = TourImagelist.Images[4];
-                        pic_2_3.Image = TourImagelist.Images[5];
-                        pic_3_1.Image = TourImagelist.Images[6];
-                        pic_3_2.Image = TourImagelist.Images[7];
-                        pic_3_3.Image = TourImagelist.Images[8];
+                        //pic_2_2.Image = TourImagelist.Images[4];
+                        //pic_2_3.Image = TourImagelist.Images[5];
+                        //pic_3_1.Image = TourImagelist.Images[6];
+                        //pic_3_2.Image = TourImagelist.Images[7];
+                        //pic_3_3.Image = TourImagelist.Images[8];
                     }
                     break;
                 case 2:
@@ -344,7 +353,7 @@ namespace Demo
                         pic_1_2.Image = FoodImagelist.Images[1];
                         pic_1_3.Image = FoodImagelist.Images[2];
                         pic_2_1.Image = FoodImagelist.Images[3];
-                        pic_2_2.Image = FoodImagelist.Images[4];
+                        //pic_2_2.Image = FoodImagelist.Images[4];
                     }
                     else if (a < 7)
                     {
@@ -352,8 +361,8 @@ namespace Demo
                         pic_1_2.Image = FoodImagelist.Images[1];
                         pic_1_3.Image = FoodImagelist.Images[2];
                         pic_2_1.Image = FoodImagelist.Images[3];
-                        pic_2_2.Image = FoodImagelist.Images[4];
-                        pic_2_3.Image = FoodImagelist.Images[5];
+                        //pic_2_2.Image = FoodImagelist.Images[4];
+                        //pic_2_3.Image = FoodImagelist.Images[5];
                     }
                     else if (a < 8)
                     {
@@ -361,9 +370,9 @@ namespace Demo
                         pic_1_2.Image = FoodImagelist.Images[1];
                         pic_1_3.Image = FoodImagelist.Images[2];
                         pic_2_1.Image = FoodImagelist.Images[3];
-                        pic_2_2.Image = FoodImagelist.Images[4];
-                        pic_2_3.Image = FoodImagelist.Images[5];
-                        pic_3_1.Image = FoodImagelist.Images[6];
+                        //pic_2_2.Image = FoodImagelist.Images[4];
+                        //pic_2_3.Image = FoodImagelist.Images[5];
+                        //pic_3_1.Image = FoodImagelist.Images[6];
                     }
                     else if (a < 9)
                     {
@@ -371,10 +380,10 @@ namespace Demo
                         pic_1_2.Image = FoodImagelist.Images[1];
                         pic_1_3.Image = FoodImagelist.Images[2];
                         pic_2_1.Image = FoodImagelist.Images[3];
-                        pic_2_2.Image = FoodImagelist.Images[4];
-                        pic_2_3.Image = FoodImagelist.Images[5];
-                        pic_3_1.Image = FoodImagelist.Images[6];
-                        pic_3_2.Image = FoodImagelist.Images[7];
+                        //pic_2_2.Image = FoodImagelist.Images[4];
+                        //pic_2_3.Image = FoodImagelist.Images[5];
+                        //pic_3_1.Image = FoodImagelist.Images[6];
+                        //pic_3_2.Image = FoodImagelist.Images[7];
                     }
                     else
                     {
@@ -383,10 +392,10 @@ namespace Demo
                         pic_1_3.Image = FoodImagelist.Images[2];
                         pic_2_1.Image = FoodImagelist.Images[3];
                         pic_2_2.Image = FoodImagelist.Images[4];
-                        pic_2_3.Image = FoodImagelist.Images[5];
-                        pic_3_1.Image = FoodImagelist.Images[6];
-                        pic_3_2.Image = FoodImagelist.Images[7];
-                        pic_3_3.Image = FoodImagelist.Images[8];
+                        //pic_2_3.Image = FoodImagelist.Images[5];
+                        //pic_3_1.Image = FoodImagelist.Images[6];
+                        //pic_3_2.Image = FoodImagelist.Images[7];
+                        //pic_3_3.Image = FoodImagelist.Images[8];
                     }
                     break;
                 case 3:
@@ -448,7 +457,7 @@ namespace Demo
                         pic_1_2.Image = MemorialImageList.Images[1];
                         pic_1_3.Image = MemorialImageList.Images[2];
                         pic_2_1.Image = MemorialImageList.Images[3];
-                        pic_2_2.Image = MemorialImageList.Images[4];
+                        //pic_2_2.Image = MemorialImageList.Images[4];
                     }
                     else if (a < 7)
                     {
@@ -456,8 +465,8 @@ namespace Demo
                         pic_1_2.Image = MemorialImageList.Images[1];
                         pic_1_3.Image = MemorialImageList.Images[2];
                         pic_2_1.Image = MemorialImageList.Images[3];
-                        pic_2_2.Image = MemorialImageList.Images[4];
-                        pic_2_3.Image = MemorialImageList.Images[5];
+                        //pic_2_2.Image = MemorialImageList.Images[4];
+                        //pic_2_3.Image = MemorialImageList.Images[5];
                     }
                     else if (a < 8)
                     {
@@ -465,9 +474,9 @@ namespace Demo
                         pic_1_2.Image = MemorialImageList.Images[1];
                         pic_1_3.Image = MemorialImageList.Images[2];
                         pic_2_1.Image = MemorialImageList.Images[3];
-                        pic_2_2.Image = MemorialImageList.Images[4];
-                        pic_2_3.Image = MemorialImageList.Images[5];
-                        pic_3_1.Image = MemorialImageList.Images[6];
+                        //pic_2_2.Image = MemorialImageList.Images[4];
+                        //pic_2_3.Image = MemorialImageList.Images[5];
+                        //pic_3_1.Image = MemorialImageList.Images[6];
                     }
                     else if (a < 9)
                     {
@@ -476,9 +485,9 @@ namespace Demo
                         pic_1_3.Image = MemorialImageList.Images[2];
                         pic_2_1.Image = MemorialImageList.Images[3];
                         pic_2_2.Image = MemorialImageList.Images[4];
-                        pic_2_3.Image = MemorialImageList.Images[5];
-                        pic_3_1.Image = MemorialImageList.Images[6];
-                        pic_3_2.Image = MemorialImageList.Images[7];
+                        //pic_2_3.Image = MemorialImageList.Images[5];
+                        //pic_3_1.Image = MemorialImageList.Images[6];
+                        //pic_3_2.Image = MemorialImageList.Images[7];
                     }
                     else
                     {
@@ -487,10 +496,10 @@ namespace Demo
                         pic_1_3.Image = MemorialImageList.Images[2];
                         pic_2_1.Image = MemorialImageList.Images[3];
                         pic_2_2.Image = MemorialImageList.Images[4];
-                        pic_2_3.Image = MemorialImageList.Images[5];
-                        pic_3_1.Image = MemorialImageList.Images[6];
-                        pic_3_2.Image = MemorialImageList.Images[7];
-                        pic_3_3.Image = MemorialImageList.Images[8];
+                        //pic_2_3.Image = MemorialImageList.Images[5];
+                        //pic_3_1.Image = MemorialImageList.Images[6];
+                        //pic_3_2.Image = MemorialImageList.Images[7];
+                        //pic_3_3.Image = MemorialImageList.Images[8];
                     }
                     break;
                 case 4:
@@ -554,7 +563,7 @@ namespace Demo
                         pic_1_3.Image = RecommendImagelist.Images[2];
                         pic_2_1.Image = RecommendImagelist.Images[3];
                         pic_2_2.Image = RecommendImagelist.Images[4];
-                        pic_2_3.Image = RecommendImagelist.Images[5];
+                        //.Image = RecommendImagelist.Images[5];
                     }
                     else if (a < 8)
                     {
@@ -563,8 +572,8 @@ namespace Demo
                         pic_1_3.Image = RecommendImagelist.Images[2];
                         pic_2_1.Image = RecommendImagelist.Images[3];
                         pic_2_2.Image = RecommendImagelist.Images[4];
-                        pic_2_3.Image = RecommendImagelist.Images[5];
-                        pic_3_1.Image = RecommendImagelist.Images[6];
+                        //pic_2_3.Image = RecommendImagelist.Images[5];
+                        //pic_3_1.Image = RecommendImagelist.Images[6];
                     }
                     else if (a < 9)
                     {
@@ -573,9 +582,9 @@ namespace Demo
                         pic_1_3.Image = RecommendImagelist.Images[2];
                         pic_2_1.Image = RecommendImagelist.Images[3];
                         pic_2_2.Image = RecommendImagelist.Images[4];
-                        pic_2_3.Image = RecommendImagelist.Images[5];
-                        pic_3_1.Image = RecommendImagelist.Images[6];
-                        pic_3_2.Image = RecommendImagelist.Images[7];
+                        //pic_2_3.Image = RecommendImagelist.Images[5];
+                        //pic_3_1.Image = RecommendImagelist.Images[6];
+                        //pic_3_2.Image = RecommendImagelist.Images[7];
                     }
                     else
                     {
@@ -584,14 +593,14 @@ namespace Demo
                         pic_1_3.Image = RecommendImagelist.Images[2];
                         pic_2_1.Image = RecommendImagelist.Images[3];
                         pic_2_2.Image = RecommendImagelist.Images[4];
-                        pic_2_3.Image = RecommendImagelist.Images[5];
-                        pic_3_1.Image = RecommendImagelist.Images[6];
-                        pic_3_2.Image = RecommendImagelist.Images[7];
-                        pic_3_3.Image = RecommendImagelist.Images[8];
+                        //pic_2_3.Image = RecommendImagelist.Images[5];
+                        //pic_3_1.Image = RecommendImagelist.Images[6];
+                        //pic_3_2.Image = RecommendImagelist.Images[7];
+                        //pic_3_3.Image = RecommendImagelist.Images[8];
                     }
                     break;
             }
-        }
+        }*/
 
         private void allRefrashPic() // 모든 이미지 목록 리프레시
         {
@@ -599,14 +608,14 @@ namespace Demo
             pic_1_2.Refresh();
             pic_1_3.Refresh();
             pic_2_1.Refresh();
-            pic_2_2.Refresh();
-            pic_2_3.Refresh();
-            pic_3_1.Refresh();
-            pic_3_2.Refresh();
-            pic_3_3.Refresh();
+            //pic_2_2.Refresh();
+            //pic_2_3.Refresh();
+            //pic_3_1.Refresh();
+            //pic_3_2.Refresh();
+            //pic_3_3.Refresh();
         }
 
-        private void chagearrow(int valPage) // 화살표 전환
+        /*private void chagearrow(int valPage) // 화살표 전환
         {
             switch (valPage)
             {
@@ -627,7 +636,7 @@ namespace Demo
                     left_arrow.Visible = true;
                     break;
             }
-        }
+        }*/
 
         private void DieaseUpdateEventMethod(object sender) // 백그라운드에 이벤트,변수 전달
         {
@@ -643,7 +652,7 @@ namespace Demo
 
 
         #region 'Menu Settting'
-        private void menuColorChager(int menuNum) // 메뉴 색깔 변경
+        /*private void menuColorChager(int menuNum) // 메뉴 색깔 변경
         {
             switch (menuNum)
             {
@@ -700,7 +709,7 @@ namespace Demo
             menuColorChager(1);
             this.valPage = 1;
             menuIconChanger(1);
-            chagearrow(valPage);
+            //chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -709,7 +718,7 @@ namespace Demo
             menuColorChager(2);
             this.valPage = 2;
             menuIconChanger(2);
-            chagearrow(valPage);
+            //chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -718,7 +727,7 @@ namespace Demo
             menuColorChager(3);
             this.valPage = 3;
             menuIconChanger(3);
-            chagearrow(valPage);
+            //chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -727,7 +736,7 @@ namespace Demo
             menuColorChager(4);
             this.valPage = 4;
             menuIconChanger(4);
-            chagearrow(valPage);
+            //chagearrow(valPage);
             insertpic(valPage, numpage);
         }
 
@@ -761,7 +770,7 @@ namespace Demo
                     break;
 
             }
-        }
+        }*/
         #endregion
 
 
@@ -949,70 +958,49 @@ namespace Demo
         #region 'PicClick Setting'
         private void pic_1_1_Click(object sender, EventArgs e)
         { 
-            if (imageMap[0, 0] !=0) {
-
-                //changePicColor(11);
-                imageMap[0, 0]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
-           
+            allRefrashPic();
+            this.listnum = 1;
+            this.selected_image = "동명대_Cloud";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_Cloud", 1, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();               
         }
 
         private void pic_1_2_Click(object sender, EventArgs e)
         {
-            if (imageMap[0, 1] != 0)
-            {
-                //changePicColor(12);
-                imageMap[0, 1]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 2;
+            this.selected_image = "동명대_Love";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_Love", 2, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();           
         }
 
         private void pic_1_3_Click(object sender, EventArgs e)
         {
-            if (imageMap[0, 2] != 0)
-            {
-               // changePicColor(13);
-                imageMap[0, 2]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 3;
+            this.selected_image = "동명대_Movie";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_Movie", 3, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();           
         }
 
         private void pic_2_1_Click(object sender, EventArgs e)
         {
-            if (imageMap[1, 0] != 0)
-            {
-                //changePicColor(21);
-                imageMap[1,0]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 4;
+            this.selected_image = "동명대_Think";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_Think", 4, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
         }
 
-        private void pic_2_2_Click(object sender, EventArgs e)
+        /*private void pic_2_2_Click(object sender, EventArgs e)
         {
             if (imageMap[1, 1] != 0)
             {
@@ -1090,13 +1078,13 @@ namespace Demo
                 initselectimagemap();
                 popup.ShowDialog();
             }
-        }
+        }*/
         #endregion
 
 
 
         #region 'Arrow Setting'
-        private void left_arrow_Click(object sender, EventArgs e)//왼쪽 화살표 동작
+        /*private void left_arrow_Click(object sender, EventArgs e)//왼쪽 화살표 동작
         {
             if(valPage != 1)
             {
@@ -1111,9 +1099,9 @@ namespace Demo
                 }
             }
             
-        }
+        }*/
 
-        private void right_arrow_Click(object sender, EventArgs e)//오른쪽 화살표 동작
+        /*private void right_arrow_Click(object sender, EventArgs e)//오른쪽 화살표 동작
         {
             if (valPage != 4)
             {
@@ -1128,7 +1116,7 @@ namespace Demo
                 }
             }
         
-        }
+        }*/
 
         private void TopperList_Load(object sender, EventArgs e)
         {

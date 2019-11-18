@@ -22,7 +22,8 @@ namespace Demo
 
         #region 'Field'
         string fontName, imageName, inputText, savedimagename;
-        int desineType;
+        int desineType, fontsize;
+        Point location;
         PrivateFontCollection pfcoll;
         FontFamily ff;
         Bitmap bitmap;
@@ -49,16 +50,18 @@ namespace Demo
             init(desineType);
         }
 
-        public MakingTopperImage(string imageName, string inputText, string fontName, int desineType)
+        public MakingTopperImage(string imageName, string inputText, int fontsize, Point location, int desineType)
         {
-            setting(imageName, inputText, fontName);
+            setting(imageName, inputText, fontsize);
+            this.location = location;
             init(desineType);
         }
 
-        void setting(string imageName = "TestTopperImage.png", string inputText = "기본 문구 입니다.", string fontName = "NanumGothic.ttf")
+        void setting(string imageName = "TestTopperImage.png", string inputText = "기본 문구 입니다." ,int fontsize =30 ,string fontName = "NanumGothic.ttf")
         {
             this.imageName = imageName;
             this.inputText = inputText;
+            this.fontsize = fontsize;
             this.fontName = fontName;
         }
 
@@ -85,7 +88,7 @@ namespace Demo
             {
                 using (var ms = new MemoryStream())
                 {
-                    bitmap = (Bitmap)System.Drawing.Image.FromFile("D:/Temp Workspace/Kiosk/TopperKiosk_pj" + "/TopperImage/TestImages/" + imageName);
+                    bitmap = (Bitmap)System.Drawing.Image.FromFile("D:/Temp Workspace/Kiosk/TopperKiosk_pj" + "/TopperImage/TestImages/" + imageName +".png");
                     //"D:/Temp Workspace\Kiosk/TopperKiosk_pj"
                     // Application.StartupPath
                 }
@@ -123,7 +126,6 @@ namespace Demo
                 loadFont();
                 loadImage();
 
-                Point firstLocation = new Point(55, 255);
                 // 1번 위치 (55, 255)
                 // 2번 위치 (,)
                 // 3번 위치(, )
@@ -132,9 +134,9 @@ namespace Demo
 
                 using (Graphics graphics = Graphics.FromImage(bitmap))
                 {
-                    using (Font f = new Font(ff, 20, FontStyle.Bold))
+                    using (Font f = new Font(ff, fontsize, FontStyle.Bold))
                     {
-                        graphics.DrawString(inputText, f, Brushes.White, firstLocation);
+                        graphics.DrawString(inputText, f, Brushes.White, location);
                         //Brushes.White
                     }
                 }
@@ -150,7 +152,7 @@ namespace Demo
         {
             try
             {
-                savedimagename = "new_" + inputText + "_" + new Random().Next(1, 100) +".png";
+                savedimagename = "new_" + inputText + "_" + new Random().Next(1, 1000) +".png";
                 bitmap.Save("D:/Temp Workspace/Kiosk/TopperKiosk_pj/" + savedimagename);
                 //Application.StartupPath
                 bitmap.Dispose();

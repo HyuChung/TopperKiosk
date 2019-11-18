@@ -36,11 +36,12 @@
             this.dispane.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dispane.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dispane.Location = new System.Drawing.Point(0, 0);
+            this.dispane.Margin = new System.Windows.Forms.Padding(0);
             this.dispane.Name = "dispane";
             this.dispane.Size = new System.Drawing.Size(1920, 1080);
             this.dispane.TabIndex = 0;
             // 
-            // backgroungMain
+            // BackgroungMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -48,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1064);
             this.ControlBox = false;
             this.Controls.Add(this.dispane);
-            this.Name = "backgroungMain";
+            this.Name = "BackgroungMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

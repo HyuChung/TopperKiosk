@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ageinfo_lbl.Text" xml:space="preserve">
-    <value>AGE</value>
+    <value>GRADE :</value>
   </data>
   <data name="chargeMoney_lbl.Text" xml:space="preserve">
     <value>Price :</value>
@@ -136,7 +136,7 @@
     <value>Output information</value>
   </data>
   <data name="purpose_lbl.Text" xml:space="preserve">
-    <value>PURPOSE</value>
+    <value>Did you Know Topper?</value>
   </data>
   <data name="sexinfo_lbl.Text" xml:space="preserve">
     <value>SEX</value>

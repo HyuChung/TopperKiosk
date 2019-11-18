@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingPage));
             this.tooltip_lbl = new System.Windows.Forms.Label();
-            this.tooltip_pane = new System.Windows.Forms.Panel();
             this.info_lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.makedimage = new System.Windows.Forms.ImageList(this.components);
@@ -44,22 +43,15 @@
             this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.insertTB = new System.Windows.Forms.TextBox();
             this.insertBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.tooltip_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
             // 
             // tooltip_lbl
             // 
+            this.tooltip_lbl.BackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.tooltip_lbl, "tooltip_lbl");
             this.tooltip_lbl.ForeColor = System.Drawing.SystemColors.Control;
             this.tooltip_lbl.Name = "tooltip_lbl";
-            // 
-            // tooltip_pane
-            // 
-            resources.ApplyResources(this.tooltip_pane, "tooltip_pane");
-            this.tooltip_pane.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.tooltip_pane.Controls.Add(this.tooltip_lbl);
-            this.tooltip_pane.Name = "tooltip_pane";
             // 
             // info_lbl
             // 
@@ -219,6 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
+            this.Controls.Add(this.tooltip_lbl);
             this.Controls.Add(this.insertBtn);
             this.Controls.Add(this.insertTB);
             this.Controls.Add(this.showingDesign);
@@ -228,11 +221,9 @@
             this.Controls.Add(this.textselect_btn_1_3);
             this.Controls.Add(this.textselect_btn_1_1);
             this.Controls.Add(this.info_lbl);
-            this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.next_pane);
             this.Controls.Add(this.exit_pane);
             this.Name = "SettingPage";
-            this.tooltip_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,7 +235,6 @@
         private System.Windows.Forms.Panel next_pane;
         private System.Windows.Forms.Panel exit_pane;
         private System.Windows.Forms.Label tooltip_lbl;
-        private System.Windows.Forms.Panel tooltip_pane;
         private System.Windows.Forms.PictureBox showingDesign;
         private System.Windows.Forms.Label info_lbl;
         private Bunifu.Framework.UI.BunifuThinButton2 textselect_btn_1_1;

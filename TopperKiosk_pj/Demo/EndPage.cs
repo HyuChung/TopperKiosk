@@ -33,6 +33,7 @@ namespace Demo
 
             Endtimer.Enabled = true;
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
+            new Macro();
         }
         #endregion
 

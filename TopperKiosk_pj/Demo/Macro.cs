@@ -47,7 +47,8 @@ namespace Demo
 
         public Macro() // 프린트가 끝났을때
         {
-            macro_end();
+            Thread t1 = new Thread(new ThreadStart(macro_end));
+            t1.Start();
         }
 
         public Macro(string savedimagename) // 프린트 시작
@@ -68,18 +69,32 @@ namespace Demo
             {
                 // 찾았을 경우
                 Debug.WriteLine("Start macro.");
+
+                SetCursorPos(970, 490); // 팝업창 위치
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0);  
+                SendKeys.SendWait("{RIGHT}");
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(200);
+
                 SetFocus(findwindow); // 코렐 드로우 창 활성화
                 
                 // 이미지 세팅
-                SendKeys.Send("^i"); // 다른 형식 불러오기
+                SendKeys.SendWait("^i"); // 다른 형식 불러오기
                 Thread.Sleep(100);
-                SendKeys.Send("n"); // 이름 입력
+                SetCursorPos(970, 320); // 팝업창 위치
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0);
+                SendKeys.SendWait("n"); // 이름 입력
                 Thread.Sleep(100);
-                SendKeys.Send(savedimagename); // 디자인 이름 입력
+                SendKeys.SendWait(savedimagename); // 디자인 이름 입력
                 Thread.Sleep(100);
-                SendKeys.Send("{ENTER}"); // 디자인 불러오기
-                Thread.Sleep(100);
-                SendKeys.Send("{ENTER}"); // 디자인 화면에 불러오기
+                SetCursorPos(970, 320); // 팝업창 위치
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0);
+                SendKeys.SendWait("{ENTER}"); // 디자인 불러오기
+                Thread.Sleep(300);
+                SendKeys.SendWait("{ENTER}"); // 디자인 화면에 불러오기
                 Thread.Sleep(1000);
 
                 // 너비 설정
@@ -87,11 +102,14 @@ namespace Demo
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0);
                 Thread.Sleep(100);
-                SendKeys.Send("{TAB}");
+                SetFocus(findwindow);
+                SendKeys.SendWait("{TAB}");
                 Thread.Sleep(100);
-                SendKeys.Send("190");
+                SetFocus(findwindow);
+                SendKeys.SendWait("190");
                 Thread.Sleep(100);
-                SendKeys.Send("{ENTER}"); // 너비 설정 
+                SetFocus(findwindow);
+                SendKeys.SendWait("{ENTER}"); // 너비 설정 
                 Thread.Sleep(300);
 
                 // 폭 설정
@@ -99,20 +117,27 @@ namespace Demo
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0);
                 Thread.Sleep(100);
-                SendKeys.Send("{TAB}");
-                SendKeys.Send("{TAB}");
+                SetFocus(findwindow);
+                SendKeys.SendWait("{TAB}");
                 Thread.Sleep(100);
-                SendKeys.Send("190");
-                SendKeys.Send("{ENTER}"); // 폭 설정
+                SetFocus(findwindow);
+                SendKeys.SendWait("{TAB}");
+                Thread.Sleep(100);
+                SetFocus(findwindow);
+                SendKeys.SendWait("190");
+                SendKeys.SendWait("{ENTER}"); // 폭 설정
                 Thread.Sleep(100);
 
                 // 레이저 커팅 실행
                 SetCursorPos(1722, 34); // y 위치 
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0); 
                 mouse_event(LBUTTONUP, 0, 0, 0, 0); // 커팅 클릭 
-                Thread.Sleep(3000);
+                Thread.Sleep(2000);
 
-                //SendKeys.Send("s"); // 프린트 시작
+                SetCursorPos(955, 270); // y 위치 
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0); // 커팅 클릭 
+                SendKeys.SendWait("s"); // 프린트 시작
 
                 Process p = Process.GetProcessesByName(AppName2).FirstOrDefault();
                 SetFocus(p.MainWindowHandle); // 다시 키오스크 앱 원상 복귀
@@ -132,15 +157,18 @@ namespace Demo
             {
                 // 찾았을 경우
                 Debug.WriteLine("Start macro.");
-                SetFocus(findwindow);
 
                 // 끝나는 창 제거
-                SendKeys.Send("{RIGHT}");
-                SendKeys.Send("{ENTER}");
-                Thread.Sleep(100);
+                SetCursorPos(970, 490); // 팝업창 위치
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0); 
+                SendKeys.SendWait("{RIGHT}");
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(200);
 
+                SetFocus(findwindow);
                 // 이미지 제거
-                SendKeys.Send("{DEL}");
+                SendKeys.SendWait("{DEL}");
 
             }
             else

@@ -105,9 +105,9 @@
             this.Main_lbl.ForeColor = System.Drawing.Color.White;
             this.Main_lbl.Location = new System.Drawing.Point(827, 164);
             this.Main_lbl.Name = "Main_lbl";
-            this.Main_lbl.Size = new System.Drawing.Size(247, 48);
+            this.Main_lbl.Size = new System.Drawing.Size(243, 48);
             this.Main_lbl.TabIndex = 5;
-            this.Main_lbl.Text = "Topper KIOSK";
+            this.Main_lbl.Text = "Topper Maker";
             this.Main_lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // translate_paneKo

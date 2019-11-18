@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tooltip_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tooltip_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>나눔고딕, 15.75pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tooltip_lbl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -151,31 +148,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tooltip_lbl.Parent" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tooltip_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 10</value>
-  </data>
-  <data name="tooltip_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 40</value>
-  </data>
-  <data name="tooltip_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Name" xml:space="preserve">
-    <value>tooltip_pane</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tooltip_pane.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tooltip_pane.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;tooltip_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="info_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 26.25pt</value>
@@ -208,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;info_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="disInfo_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -355,7 +331,7 @@
     <value>3</value>
   </data>
   <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 684</value>
+    <value>82, 690</value>
   </data>
   <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -376,7 +352,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="userTextName_lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disUserText_lbl" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -412,7 +388,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;outputinfo_lbl.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <metadata name="Icon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -422,7 +398,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAA
-        JQAAAk1TRnQBSQFMAgEBAgEAAVABAAFQAQABZAEAAWQBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        JQAAAk1TRnQBSQFMAgEBAgEAAXABAAFwAQABZAEAAWQBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABkAEBAgABZAMAAQEBAAEIBQABQAGcGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHA
         AdwBwAEAAfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANC
         AQADOQEAAYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/
@@ -592,7 +568,7 @@
     <value>NoControl</value>
   </data>
   <data name="lefttime_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1023, 217</value>
+    <value>1023, 223</value>
   </data>
   <data name="lefttime_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 33</value>
@@ -616,127 +592,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lefttime_lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="annivercityPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
-        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
-        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
-        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
-        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
-        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
-        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
-        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="annivercityPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
-  </data>
-  <data name="annivercityPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>620, 374</value>
-  </data>
-  <data name="annivercityPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="annivercityPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 45</value>
-  </data>
-  <data name="annivercityPurpose_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="&gt;&gt;annivercityPurpose_btn.Name" xml:space="preserve">
-    <value>annivercityPurpose_btn</value>
-  </data>
-  <data name="&gt;&gt;annivercityPurpose_btn.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;annivercityPurpose_btn.Parent" xml:space="preserve">
-    <value>survey_pane</value>
-  </data>
-  <data name="&gt;&gt;annivercityPurpose_btn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="collectionPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
-        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
-        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
-        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
-        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
-        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
-        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
-        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="collectionPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
-  </data>
-  <data name="collectionPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 374</value>
-  </data>
-  <data name="collectionPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="collectionPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 45</value>
-  </data>
-  <data name="collectionPurpose_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="&gt;&gt;collectionPurpose_btn.Name" xml:space="preserve">
-    <value>collectionPurpose_btn</value>
-  </data>
-  <data name="&gt;&gt;collectionPurpose_btn.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;collectionPurpose_btn.Parent" xml:space="preserve">
-    <value>survey_pane</value>
-  </data>
-  <data name="&gt;&gt;collectionPurpose_btn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="curiocityPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAtCAYAAABlJ6+WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGLSURBVHhe7ds9SgNRGIXhdFZ2dnZWdq7Ays4VuAE34AZc
-        gZ0iBEEQEUFQLNIEwUILURBBJCCIIK4gifEnJp+eiTOY6wa8h7d4IENu9zKZKXJqred2wBeBzRHYHIHN
-        Edgcgc39Cbx20YuFw35Mbw+ithHIhHrNH/Rj9fx1rGcV+PKxUxxYPO7H+lUvTu67Ywfxv6lX/boXS42P
-        mNv7rPpVgRVXd295jXzt377E7O4gbp5+Auu2Vvn0IPK1cvoWy833UWDdvbq900PIV6PVjZmd7/coXUzW
-        h8UzOD2EvBUvYOWH9Evkj8DmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghsjsDmCGyOwOYIbI7A5ghs
-        jsDmCGyOwOaqwBObUfwLPj2AvFWBtWXR3CE9gHydPXRiams4CqyJg6YO6SHkSzszDQmLwPp51syBRaGH
-        3z2LwHJ0N9qyaIjGjCVPCqvpr5aF5dasCiwKq5WhtkrFAxpZ0cuyxvsanpVNxwLDD4HNEdgcgc0R2Fo7
-        vgCypzoZ+eSZDQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="curiocityPurpose_btn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
-  </data>
-  <data name="curiocityPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 374</value>
-  </data>
-  <data name="curiocityPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="curiocityPurpose_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 45</value>
-  </data>
-  <data name="curiocityPurpose_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;curiocityPurpose_btn.Name" xml:space="preserve">
-    <value>curiocityPurpose_btn</value>
-  </data>
-  <data name="&gt;&gt;curiocityPurpose_btn.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuThinButton2, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;curiocityPurpose_btn.Parent" xml:space="preserve">
-    <value>survey_pane</value>
-  </data>
-  <data name="&gt;&gt;curiocityPurpose_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="monumentalPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -755,7 +611,7 @@
     <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
   </data>
   <data name="monumentalPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 374</value>
+    <value>570, 374</value>
   </data>
   <data name="monumentalPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -776,7 +632,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;monumentalPurpose_btn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="certifiPurpose_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -795,7 +651,7 @@
     <value>나눔고딕 ExtraBold, 12.749999pt, style=Bold</value>
   </data>
   <data name="certifiPurpose_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 374</value>
+    <value>180, 374</value>
   </data>
   <data name="certifiPurpose_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -816,7 +672,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;certifiPurpose_btn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="purpose_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -831,13 +687,13 @@
     <value>3, 314</value>
   </data>
   <data name="purpose_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 35</value>
+    <value>332, 35</value>
   </data>
   <data name="purpose_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
   </data>
   <data name="purpose_lbl.Text" xml:space="preserve">
-    <value>목적</value>
+    <value>토퍼를 알고 계셨나요?</value>
   </data>
   <data name="purpose_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -852,7 +708,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;purpose_lbl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="girlsex_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -895,7 +751,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;girlsex_btn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="mansex_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -938,7 +794,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;mansex_btn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="age60_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -981,7 +837,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age60_btn.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>5</value>
   </data>
   <data name="age30_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1024,7 +880,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age30_btn.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="age20_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1067,7 +923,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age20_btn.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>7</value>
   </data>
   <data name="age10_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1110,7 +966,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age10_btn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>8</value>
   </data>
   <data name="ageinfo_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1131,7 +987,7 @@
     <value>59</value>
   </data>
   <data name="ageinfo_lbl.Text" xml:space="preserve">
-    <value>나이</value>
+    <value>학년</value>
   </data>
   <data name="ageinfo_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1146,7 +1002,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;ageinfo_lbl.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>9</value>
   </data>
   <data name="age50_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1189,7 +1045,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age50_btn.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>10</value>
   </data>
   <data name="age40_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1232,7 +1088,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;age40_btn.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>11</value>
   </data>
   <data name="sexinfo_lbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1268,7 +1124,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;sexinfo_lbl.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>12</value>
   </data>
   <data name="surveyInfo_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 21.75pt</value>
@@ -1301,7 +1157,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;surveyInfo_lbl.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>13</value>
   </data>
   <data name="sumit_btn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1331,7 +1187,7 @@
     <value>survey_pane</value>
   </data>
   <data name="&gt;&gt;sumit_btn.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>14</value>
   </data>
   <data name="survey_pane.Location" type="System.Drawing.Point, System.Drawing">
     <value>819, 432</value>
@@ -1352,7 +1208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;survey_pane.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="lazercuttingDis.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1379,7 +1235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lazercuttingDis.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="showingDesign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1388,7 +1244,7 @@
     <value>NoControl</value>
   </data>
   <data name="showingDesign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 351</value>
+    <value>130, 357</value>
   </data>
   <data name="showingDesign.Size" type="System.Drawing.Size, System.Drawing">
     <value>325, 280</value>
@@ -1409,7 +1265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;showingDesign.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="thankyou_lbl.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 26.25pt</value>
@@ -1472,7 +1328,7 @@
     <value>0</value>
   </data>
   <data name="thanks_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1100, 428</value>
+    <value>1100, 434</value>
   </data>
   <data name="thanks_pane.Size" type="System.Drawing.Size, System.Drawing">
     <value>477, 402</value>
@@ -1490,7 +1346,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;thanks_pane.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1800, 43</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

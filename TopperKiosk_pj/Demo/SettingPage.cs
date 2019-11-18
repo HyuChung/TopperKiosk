@@ -84,23 +84,7 @@ namespace Demo
 
         private void showingimageChage(int pageNum, int imageNum) // 보여지는 이미지 가져오기
         {
-            TopperList topper = new TopperList();
-
-            switch (pageNum)
-            {
-                case 1:
-                    this.showingDesign.Image = topper.TourImagelist.Images[imageNum];
-                    break;
-                case 2:
-                    this.showingDesign.Image = topper.FoodImagelist.Images[imageNum];
-                    break;
-                case 3:
-                    this.showingDesign.Image = topper.MemorialImageList.Images[imageNum];
-                    break;
-                case 4:
-                    this.showingDesign.Image = topper.RecommendImagelist.Images[imageNum];
-                    break;
-            }
+            this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/" + imageName + ".png");
         }
 
         /*private void transTextselectBtnColorChanger(int row,int textindex_column) //버튼 클릭시 흰색 고정
@@ -202,7 +186,22 @@ namespace Demo
         private void insertBtn_Click(object sender, EventArgs e) // 이미지 생성
         {
             insertText = insertTB.Text;
-            ti = new MakingTopperImage("TestTopperImage.png", insertText, 1);
+            if (imageNum == 1)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 590), 1);
+            }
+            else if (imageNum == 2)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 500), 1);
+            }
+            else if (imageNum == 3)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 585), 1);
+            }
+            else
+            {
+                ti = new MakingTopperImage(imageName, insertText, 40, new Point(230, 570), 1);
+            }
             ti.setImage2PB(showingDesign);
             this.next_pane.Visible = true;
 

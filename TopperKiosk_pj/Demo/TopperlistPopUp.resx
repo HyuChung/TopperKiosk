@@ -189,6 +189,57 @@
   <data name="disInfo_pane.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;designName_lbl.Name" xml:space="preserve">
+    <value>designName_lbl</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;designName_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Name" xml:space="preserve">
+    <value>disDesginName_lbl</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.Parent" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 344</value>
+  </data>
+  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 72</value>
+  </data>
+  <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
+    <value>disInfo_pane</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,49.99999,Absolute,72" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="designName_lbl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -257,33 +308,6 @@
   </data>
   <data name="&gt;&gt;disDesginName_lbl.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="disInfo_pane.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 344</value>
-  </data>
-  <data name="disInfo_pane.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="disInfo_pane.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 72</value>
-  </data>
-  <data name="disInfo_pane.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Name" xml:space="preserve">
-    <value>disInfo_pane</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;disInfo_pane.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="disInfo_pane.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="designName_lbl" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="disDesginName_lbl" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,66.66667" /&gt;&lt;Rows Styles="Percent,49.99999,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="exit_pane.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>

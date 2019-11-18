@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WatingPage));
-            this.tooltip_pane = new System.Windows.Forms.Panel();
             this.tooltip_lbl = new System.Windows.Forms.Label();
             this.info_lbl = new System.Windows.Forms.Label();
             this.disInfo_pane = new System.Windows.Forms.TableLayoutPanel();
@@ -42,9 +41,6 @@
             this.Icon = new System.Windows.Forms.ImageList(this.components);
             this.lefttime_lbl = new System.Windows.Forms.Label();
             this.survey_pane = new System.Windows.Forms.Panel();
-            this.annivercityPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.collectionPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.curiocityPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.monumentalPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.certifiPurpose_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.purpose_lbl = new System.Windows.Forms.Label();
@@ -65,7 +61,7 @@
             this.thankyou_lbl = new System.Windows.Forms.Label();
             this.thanks_pane = new System.Windows.Forms.Panel();
             this.thank_pic = new System.Windows.Forms.PictureBox();
-            this.tooltip_pane.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.disInfo_pane.SuspendLayout();
             this.survey_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lazercuttingDis)).BeginInit();
@@ -73,13 +69,6 @@
             this.thanks_pane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thank_pic)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tooltip_pane
-            // 
-            resources.ApplyResources(this.tooltip_pane, "tooltip_pane");
-            this.tooltip_pane.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tooltip_pane.Controls.Add(this.tooltip_lbl);
-            this.tooltip_pane.Name = "tooltip_pane";
             // 
             // tooltip_lbl
             // 
@@ -142,9 +131,6 @@
             // 
             // survey_pane
             // 
-            this.survey_pane.Controls.Add(this.annivercityPurpose_btn);
-            this.survey_pane.Controls.Add(this.collectionPurpose_btn);
-            this.survey_pane.Controls.Add(this.curiocityPurpose_btn);
             this.survey_pane.Controls.Add(this.monumentalPurpose_btn);
             this.survey_pane.Controls.Add(this.certifiPurpose_btn);
             this.survey_pane.Controls.Add(this.purpose_lbl);
@@ -163,69 +149,6 @@
             resources.ApplyResources(this.survey_pane, "survey_pane");
             this.survey_pane.Name = "survey_pane";
             // 
-            // annivercityPurpose_btn
-            // 
-            this.annivercityPurpose_btn.ActiveBorderThickness = 1;
-            this.annivercityPurpose_btn.ActiveCornerRadius = 15;
-            this.annivercityPurpose_btn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.annivercityPurpose_btn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.annivercityPurpose_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.annivercityPurpose_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            resources.ApplyResources(this.annivercityPurpose_btn, "annivercityPurpose_btn");
-            this.annivercityPurpose_btn.ButtonText = "기념일";
-            this.annivercityPurpose_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.annivercityPurpose_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.annivercityPurpose_btn.IdleBorderThickness = 1;
-            this.annivercityPurpose_btn.IdleCornerRadius = 10;
-            this.annivercityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.annivercityPurpose_btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.annivercityPurpose_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.annivercityPurpose_btn.Name = "annivercityPurpose_btn";
-            this.annivercityPurpose_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.annivercityPurpose_btn.Click += new System.EventHandler(this.annivercityPurpose_btn_Click);
-            // 
-            // collectionPurpose_btn
-            // 
-            this.collectionPurpose_btn.ActiveBorderThickness = 1;
-            this.collectionPurpose_btn.ActiveCornerRadius = 15;
-            this.collectionPurpose_btn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.collectionPurpose_btn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.collectionPurpose_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.collectionPurpose_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            resources.ApplyResources(this.collectionPurpose_btn, "collectionPurpose_btn");
-            this.collectionPurpose_btn.ButtonText = "소장품";
-            this.collectionPurpose_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.collectionPurpose_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.collectionPurpose_btn.IdleBorderThickness = 1;
-            this.collectionPurpose_btn.IdleCornerRadius = 10;
-            this.collectionPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.collectionPurpose_btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.collectionPurpose_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.collectionPurpose_btn.Name = "collectionPurpose_btn";
-            this.collectionPurpose_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.collectionPurpose_btn.Click += new System.EventHandler(this.collectionPurpose_btn_Click);
-            // 
-            // curiocityPurpose_btn
-            // 
-            this.curiocityPurpose_btn.ActiveBorderThickness = 1;
-            this.curiocityPurpose_btn.ActiveCornerRadius = 15;
-            this.curiocityPurpose_btn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.curiocityPurpose_btn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.curiocityPurpose_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.curiocityPurpose_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            resources.ApplyResources(this.curiocityPurpose_btn, "curiocityPurpose_btn");
-            this.curiocityPurpose_btn.ButtonText = "호기심";
-            this.curiocityPurpose_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.curiocityPurpose_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.curiocityPurpose_btn.IdleBorderThickness = 1;
-            this.curiocityPurpose_btn.IdleCornerRadius = 10;
-            this.curiocityPurpose_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.curiocityPurpose_btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.curiocityPurpose_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.curiocityPurpose_btn.Name = "curiocityPurpose_btn";
-            this.curiocityPurpose_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.curiocityPurpose_btn.Click += new System.EventHandler(this.curiocityPurpose_btn_Click);
-            // 
             // monumentalPurpose_btn
             // 
             this.monumentalPurpose_btn.ActiveBorderThickness = 1;
@@ -235,7 +158,7 @@
             this.monumentalPurpose_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.monumentalPurpose_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             resources.ApplyResources(this.monumentalPurpose_btn, "monumentalPurpose_btn");
-            this.monumentalPurpose_btn.ButtonText = "기념품";
+            this.monumentalPurpose_btn.ButtonText = "아니오";
             this.monumentalPurpose_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.monumentalPurpose_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.monumentalPurpose_btn.IdleBorderThickness = 1;
@@ -256,7 +179,7 @@
             this.certifiPurpose_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.certifiPurpose_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             resources.ApplyResources(this.certifiPurpose_btn, "certifiPurpose_btn");
-            this.certifiPurpose_btn.ButtonText = "인증용";
+            this.certifiPurpose_btn.ButtonText = "네";
             this.certifiPurpose_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.certifiPurpose_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.certifiPurpose_btn.IdleBorderThickness = 1;
@@ -325,7 +248,7 @@
             this.age60_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age60_btn, "age60_btn");
             this.age60_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age60_btn.ButtonText = "60~";
+            this.age60_btn.ButtonText = "외부인";
             this.age60_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age60_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age60_btn.IdleBorderThickness = 1;
@@ -346,7 +269,7 @@
             this.age30_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age30_btn, "age30_btn");
             this.age30_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age30_btn.ButtonText = "30~39";
+            this.age30_btn.ButtonText = "3학년";
             this.age30_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age30_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age30_btn.IdleBorderThickness = 1;
@@ -367,7 +290,7 @@
             this.age20_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age20_btn, "age20_btn");
             this.age20_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age20_btn.ButtonText = "20~29";
+            this.age20_btn.ButtonText = "2학년";
             this.age20_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age20_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age20_btn.IdleBorderThickness = 1;
@@ -388,7 +311,7 @@
             this.age10_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age10_btn, "age10_btn");
             this.age10_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age10_btn.ButtonText = "10~19";
+            this.age10_btn.ButtonText = "1학년";
             this.age10_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age10_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age10_btn.IdleBorderThickness = 1;
@@ -415,7 +338,7 @@
             this.age50_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age50_btn, "age50_btn");
             this.age50_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age50_btn.ButtonText = "50~59";
+            this.age50_btn.ButtonText = "교직원";
             this.age50_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age50_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age50_btn.IdleBorderThickness = 1;
@@ -436,7 +359,7 @@
             this.age40_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.age40_btn, "age40_btn");
             this.age40_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.age40_btn.ButtonText = "40~49";
+            this.age40_btn.ButtonText = "4학년";
             this.age40_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.age40_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
             this.age40_btn.IdleBorderThickness = 1;
@@ -521,23 +444,31 @@
             this.thank_pic.Name = "thank_pic";
             this.thank_pic.TabStop = false;
             // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
             // WatingPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tooltip_lbl);
             this.Controls.Add(this.survey_pane);
             this.Controls.Add(this.lefttime_lbl);
             this.Controls.Add(this.lazercuttingDis);
             this.Controls.Add(this.outputinfo_lbl);
             this.Controls.Add(this.disInfo_pane);
             this.Controls.Add(this.info_lbl);
-            this.Controls.Add(this.tooltip_pane);
             this.Controls.Add(this.showingDesign);
             this.Controls.Add(this.thanks_pane);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "WatingPage";
-            this.tooltip_pane.ResumeLayout(false);
             this.disInfo_pane.ResumeLayout(false);
             this.survey_pane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lazercuttingDis)).EndInit();
@@ -551,7 +482,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox showingDesign;
-        private System.Windows.Forms.Panel tooltip_pane;
         private System.Windows.Forms.Label tooltip_lbl;
         private System.Windows.Forms.Label info_lbl;
         private System.Windows.Forms.TableLayoutPanel disInfo_pane;
@@ -577,13 +507,11 @@
         private Bunifu.Framework.UI.BunifuThinButton2 age50_btn;
         private Bunifu.Framework.UI.BunifuThinButton2 age40_btn;
         private System.Windows.Forms.Label purpose_lbl;
-        private Bunifu.Framework.UI.BunifuThinButton2 annivercityPurpose_btn;
-        private Bunifu.Framework.UI.BunifuThinButton2 collectionPurpose_btn;
-        private Bunifu.Framework.UI.BunifuThinButton2 curiocityPurpose_btn;
         private Bunifu.Framework.UI.BunifuThinButton2 monumentalPurpose_btn;
         private Bunifu.Framework.UI.BunifuThinButton2 certifiPurpose_btn;
         private System.Windows.Forms.Panel thanks_pane;
         private System.Windows.Forms.PictureBox thank_pic;
         private System.Windows.Forms.Label thankyou_lbl;
+        private System.Windows.Forms.Panel panel1;
     }
 }

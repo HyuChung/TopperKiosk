@@ -23,18 +23,17 @@ namespace Demo
 
 
         #region 'Init'
-        public TopperlistPopUp(string image_name, int imageNum, int pageNum, int price) 
+        public TopperlistPopUp(string image_name, int imageNum, int price) 
         {
             this.price = price;
             this.image_name = image_name;
             this.imageNum = imageNum;
-            this.pageNum = pageNum;
 
             InitializeComponent();
 
             this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
 
-            showingimageChage(this.imageNum, this.pageNum);
+            showingimageChage();
             this.showingDesign.Left = (this.ClientSize.Width - showingDesign.Width) / 2;
             this.disInfo_pane.Left = (this.ClientSize.Width - disInfo_pane.Width) / 2;
 
@@ -46,25 +45,9 @@ namespace Demo
 
 
         #region 'Propertise'
-        public void showingimageChage(int imageNum, int pageNum) // 보여지는 이미지 가져오기
+        public void showingimageChage() // 보여지는 이미지 가져오기
         {
-            TopperList topper = new TopperList();
-
-            switch (pageNum) 
-            {
-                case 1:
-                    this.showingDesign.Image = topper.TourImagelist.Images[imageNum];
-                    break;
-                case 2:
-                    this.showingDesign.Image = topper.FoodImagelist.Images[imageNum];
-                    break;
-                case 3:
-                    this.showingDesign.Image = topper.MemorialImageList.Images[imageNum];
-                    break;
-                case 4:
-                    this.showingDesign.Image = topper.RecommendImagelist.Images[imageNum];
-                    break;
-            }
+            this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/"+image_name+".png");
         }
         #endregion
 
