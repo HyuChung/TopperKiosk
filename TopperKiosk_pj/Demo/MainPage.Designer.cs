@@ -29,72 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            this.lbl_KO = new System.Windows.Forms.Label();
-            this.lbl_CH = new System.Windows.Forms.Label();
-            this.lbl_JP = new System.Windows.Forms.Label();
-            this.lbl_EN = new System.Windows.Forms.Label();
             this.Main_lbl = new System.Windows.Forms.Label();
-            this.translate_paneKo = new System.Windows.Forms.Panel();
-            this.translate_paneCH = new System.Windows.Forms.Panel();
-            this.translate_paneJP = new System.Windows.Forms.Panel();
-            this.translate_paneEN = new System.Windows.Forms.Panel();
             this.ManInfo_lbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.translate_paneKo.SuspendLayout();
-            this.translate_paneCH.SuspendLayout();
-            this.translate_paneJP.SuspendLayout();
-            this.translate_paneEN.SuspendLayout();
+            this.mansex_btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbl_KO
-            // 
-            this.lbl_KO.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_KO.AutoSize = true;
-            this.lbl_KO.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_KO.Location = new System.Drawing.Point(22, 20);
-            this.lbl_KO.Name = "lbl_KO";
-            this.lbl_KO.Size = new System.Drawing.Size(41, 12);
-            this.lbl_KO.TabIndex = 1;
-            this.lbl_KO.Text = "한국어";
-            this.lbl_KO.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneKO_MouseClick);
-            // 
-            // lbl_CH
-            // 
-            this.lbl_CH.AutoSize = true;
-            this.lbl_CH.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_CH.Location = new System.Drawing.Point(22, 20);
-            this.lbl_CH.Name = "lbl_CH";
-            this.lbl_CH.Size = new System.Drawing.Size(41, 12);
-            this.lbl_CH.TabIndex = 2;
-            this.lbl_CH.Text = "中國語";
-            this.lbl_CH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneCH_MouseClick);
-            // 
-            // lbl_JP
-            // 
-            this.lbl_JP.AutoSize = true;
-            this.lbl_JP.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbl_JP.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_JP.Location = new System.Drawing.Point(22, 20);
-            this.lbl_JP.Name = "lbl_JP";
-            this.lbl_JP.Size = new System.Drawing.Size(41, 12);
-            this.lbl_JP.TabIndex = 3;
-            this.lbl_JP.Text = "日本語";
-            this.lbl_JP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneJP_MouseClick);
-            this.lbl_JP.MouseEnter += new System.EventHandler(this.lbl_JP_MouseEnter);
-            // 
-            // lbl_EN
-            // 
-            this.lbl_EN.AutoSize = true;
-            this.lbl_EN.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_EN.Location = new System.Drawing.Point(25, 20);
-            this.lbl_EN.Name = "lbl_EN";
-            this.lbl_EN.Size = new System.Drawing.Size(31, 12);
-            this.lbl_EN.TabIndex = 4;
-            this.lbl_EN.Text = "ENG";
-            this.lbl_EN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
             // 
             // Main_lbl
             // 
@@ -109,61 +52,6 @@
             this.Main_lbl.TabIndex = 5;
             this.Main_lbl.Text = "Topper Maker";
             this.Main_lbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // translate_paneKo
-            // 
-            this.translate_paneKo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.translate_paneKo.BackColor = System.Drawing.Color.Transparent;
-            this.translate_paneKo.BackgroundImage = global::Demo.Properties.Resources.the_button_859346_1280;
-            this.translate_paneKo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.translate_paneKo.Controls.Add(this.lbl_KO);
-            this.translate_paneKo.Location = new System.Drawing.Point(683, 3);
-            this.translate_paneKo.Name = "translate_paneKo";
-            this.translate_paneKo.Size = new System.Drawing.Size(86, 50);
-            this.translate_paneKo.TabIndex = 6;
-            this.translate_paneKo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneKO_MouseClick);
-            this.translate_paneKo.MouseEnter += new System.EventHandler(this.translate_paneKo_MouseEnter);
-            // 
-            // translate_paneCH
-            // 
-            this.translate_paneCH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.translate_paneCH.BackColor = System.Drawing.Color.Transparent;
-            this.translate_paneCH.BackgroundImage = global::Demo.Properties.Resources.the_button_859346_1280;
-            this.translate_paneCH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.translate_paneCH.Controls.Add(this.lbl_CH);
-            this.translate_paneCH.Location = new System.Drawing.Point(833, 3);
-            this.translate_paneCH.Name = "translate_paneCH";
-            this.translate_paneCH.Size = new System.Drawing.Size(86, 50);
-            this.translate_paneCH.TabIndex = 7;
-            this.translate_paneCH.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneCH_MouseClick);
-            this.translate_paneCH.MouseEnter += new System.EventHandler(this.translate_paneCH_MouseEnter);
-            // 
-            // translate_paneJP
-            // 
-            this.translate_paneJP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.translate_paneJP.BackColor = System.Drawing.Color.Transparent;
-            this.translate_paneJP.BackgroundImage = global::Demo.Properties.Resources.the_button_859346_1280;
-            this.translate_paneJP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.translate_paneJP.Controls.Add(this.lbl_JP);
-            this.translate_paneJP.Location = new System.Drawing.Point(983, 3);
-            this.translate_paneJP.Name = "translate_paneJP";
-            this.translate_paneJP.Size = new System.Drawing.Size(86, 50);
-            this.translate_paneJP.TabIndex = 8;
-            this.translate_paneJP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneJP_MouseClick);
-            // 
-            // translate_paneEN
-            // 
-            this.translate_paneEN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.translate_paneEN.BackColor = System.Drawing.Color.Transparent;
-            this.translate_paneEN.BackgroundImage = global::Demo.Properties.Resources.the_button_859346_1280;
-            this.translate_paneEN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.translate_paneEN.Controls.Add(this.lbl_EN);
-            this.translate_paneEN.Location = new System.Drawing.Point(1133, 3);
-            this.translate_paneEN.Name = "translate_paneEN";
-            this.translate_paneEN.Size = new System.Drawing.Size(86, 50);
-            this.translate_paneEN.TabIndex = 9;
-            this.translate_paneEN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
-            this.translate_paneEN.MouseEnter += new System.EventHandler(this.translate_paneEN_MouseEnter);
             // 
             // ManInfo_lbl
             // 
@@ -181,15 +69,131 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.bunifuThinButton23);
+            this.panel1.Controls.Add(this.bunifuThinButton22);
+            this.panel1.Controls.Add(this.bunifuThinButton21);
+            this.panel1.Controls.Add(this.mansex_btn);
             this.panel1.Controls.Add(this.ManInfo_lbl);
-            this.panel1.Controls.Add(this.translate_paneEN);
-            this.panel1.Controls.Add(this.translate_paneKo);
-            this.panel1.Controls.Add(this.translate_paneJP);
-            this.panel1.Controls.Add(this.translate_paneCH);
             this.panel1.Location = new System.Drawing.Point(0, 765);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1905, 104);
             this.panel1.TabIndex = 11;
+            // 
+            // mansex_btn
+            // 
+            this.mansex_btn.ActiveBorderThickness = 1;
+            this.mansex_btn.ActiveCornerRadius = 15;
+            this.mansex_btn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.mansex_btn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.mansex_btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.mansex_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mansex_btn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.mansex_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mansex_btn.BackgroundImage")));
+            this.mansex_btn.ButtonText = "한국어";
+            this.mansex_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mansex_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold);
+            this.mansex_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.mansex_btn.IdleBorderThickness = 2;
+            this.mansex_btn.IdleCornerRadius = 10;
+            this.mansex_btn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.mansex_btn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.mansex_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.mansex_btn.Location = new System.Drawing.Point(646, 10);
+            this.mansex_btn.Margin = new System.Windows.Forms.Padding(5);
+            this.mansex_btn.Name = "mansex_btn";
+            this.mansex_btn.Size = new System.Drawing.Size(120, 45);
+            this.mansex_btn.TabIndex = 65;
+            this.mansex_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mansex_btn.Click += new System.EventHandler(this.translate_paneKO_MouseClick);
+            this.mansex_btn.MouseEnter += new System.EventHandler(this.translate_paneKo_MouseEnter);
+            this.mansex_btn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneKO_MouseClick);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 15;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "日本語";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton21.IdleBorderThickness = 2;
+            this.bunifuThinButton21.IdleCornerRadius = 10;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(806, 10);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(120, 45);
+            this.bunifuThinButton21.TabIndex = 66;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.translate_paneJP_MouseClick);
+            this.bunifuThinButton21.MouseEnter += new System.EventHandler(this.lbl_JP_MouseEnter);
+            this.bunifuThinButton21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneJP_MouseClick);
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 15;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "中國語";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton22.IdleBorderThickness = 2;
+            this.bunifuThinButton22.IdleCornerRadius = 10;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(966, 10);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(120, 45);
+            this.bunifuThinButton22.TabIndex = 67;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.translate_paneCH_MouseClick);
+            this.bunifuThinButton22.MouseEnter += new System.EventHandler(this.translate_paneCH_MouseEnter);
+            this.bunifuThinButton22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneCH_MouseClick);
+            // 
+            // bunifuThinButton23
+            // 
+            this.bunifuThinButton23.ActiveBorderThickness = 1;
+            this.bunifuThinButton23.ActiveCornerRadius = 15;
+            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
+            this.bunifuThinButton23.ButtonText = "ENG";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuThinButton23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton23.IdleBorderThickness = 2;
+            this.bunifuThinButton23.IdleCornerRadius = 10;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.bunifuThinButton23.Location = new System.Drawing.Point(1126, 10);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Name = "bunifuThinButton23";
+            this.bunifuThinButton23.Size = new System.Drawing.Size(120, 45);
+            this.bunifuThinButton23.TabIndex = 67;
+            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.translate_paneEN_MouseClick);
+            this.bunifuThinButton23.MouseEnter += new System.EventHandler(this.translate_paneEN_MouseEnter);
+            this.bunifuThinButton23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.translate_paneEN_MouseClick);
             // 
             // MainPage
             // 
@@ -206,14 +210,6 @@
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.translate_paneKo.ResumeLayout(false);
-            this.translate_paneKo.PerformLayout();
-            this.translate_paneCH.ResumeLayout(false);
-            this.translate_paneCH.PerformLayout();
-            this.translate_paneJP.ResumeLayout(false);
-            this.translate_paneJP.PerformLayout();
-            this.translate_paneEN.ResumeLayout(false);
-            this.translate_paneEN.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,18 +217,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_KO;
-        private System.Windows.Forms.Label lbl_CH;
-        private System.Windows.Forms.Label lbl_JP;
-        private System.Windows.Forms.Label lbl_EN;
         private System.Windows.Forms.Label Main_lbl;
-        private System.Windows.Forms.Panel translate_paneKo;
-        private System.Windows.Forms.Panel translate_paneCH;
-        private System.Windows.Forms.Panel translate_paneJP;
-        private System.Windows.Forms.Panel translate_paneEN;
         private System.Windows.Forms.Label ManInfo_lbl;
         private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 mansex_btn;
     }
 }
 

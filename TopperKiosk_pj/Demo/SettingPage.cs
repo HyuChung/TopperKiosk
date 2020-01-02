@@ -84,6 +84,7 @@ namespace Demo
 
         private void showingimageChage(int pageNum, int imageNum) // 보여지는 이미지 가져오기
         {
+            
             this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/" + imageName + ".png");
         }
 
@@ -121,7 +122,7 @@ namespace Demo
             }
         }*/
 
-        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경(임시)  ==> 변결 필요 
+        private void imageDisplayMakeChager() //만들어진 토퍼로 이미지 변경 
         {
             ti.setImage2PB(showingDesign);
         }
@@ -188,21 +189,37 @@ namespace Demo
             insertText = insertTB.Text;
             if (imageNum == 1)
             {
-                ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 465), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(70, 505), 1);
             }
             else if (imageNum == 2)
             {
-                ti = new MakingTopperImage(imageName, insertText, 35, new Point(60, 440), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(120, 480), 1);
             }
             else if (imageNum == 3)
             {
-                ti = new MakingTopperImage(imageName, insertText, 35, new Point(60, 420), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(75, 465), 1);
             }
             else if(imageNum == 4)
             {
-                ti = new MakingTopperImage(imageName, insertText, 35, new Point(70, 450), 1);
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 520), 1);
             }
-            else
+            else if (imageNum == 5)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 520), 1);
+            }
+            else if (imageNum == 6)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(70, 495), 1);
+            }
+            else if (imageNum == 7)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(65, 450), 1);
+            }
+            else if (imageNum == 8)
+            {
+                ti = new MakingTopperImage(imageName, insertText, 35, new Point(60, 440), 1);
+            }
+            else 
             {
                 ti = new MakingTopperImage(imageName, insertText, 35, new Point(80, 475), 1);
             }

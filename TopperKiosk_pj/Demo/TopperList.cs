@@ -127,11 +127,11 @@ namespace Demo
             pic_1_2.Image = null;
             pic_1_3.Image = null;
             pic_2_1.Image = null;
-            //pic_2_2.Image = null;
-            //pic_2_3.Image = null;
-            //pic_3_1.Image = null;
-            //pic_3_2.Image = null;
-            //pic_3_3.Image = null;
+            pic_2_2.Image = null;
+            pic_2_3.Image = null;
+            pic_3_1.Image = null;
+            pic_3_2.Image = null;
+            pic_3_3.Image = null;
         }
 
         private void initpicteg() // 이미지 태그 초기화
@@ -141,10 +141,10 @@ namespace Demo
             pic_1_3.Tag = SystemColors.GradientInactiveCaption;
             pic_2_1.Tag = SystemColors.GradientInactiveCaption;
             pic_2_2.Tag = SystemColors.GradientInactiveCaption;
-            //pic_2_3.Tag = SystemColors.GradientInactiveCaption;
-            //pic_3_1.Tag = SystemColors.GradientInactiveCaption;
-            //pic_3_2.Tag = SystemColors.GradientInactiveCaption;
-            //pic_3_3.Tag = SystemColors.GradientInactiveCaption;
+            pic_2_3.Tag = SystemColors.GradientInactiveCaption;
+            pic_3_1.Tag = SystemColors.GradientInactiveCaption;
+            pic_3_2.Tag = SystemColors.GradientInactiveCaption;
+            pic_3_3.Tag = SystemColors.GradientInactiveCaption;
         }
 
         private void roundPicBox() // 이미지 박스 원형 박스변경(태그작동 x)
@@ -157,10 +157,10 @@ namespace Demo
             pic_1_3.Region = rg;
             pic_2_1.Region = rg;
             pic_2_2.Region = rg;
-            //pic_2_3.Region = rg;
-            //pic_3_1.Region = rg;
-            //pic_3_2.Region = rg;
-            //pic_3_3.Region = rg;
+            pic_2_3.Region = rg;
+            pic_3_1.Region = rg;
+            pic_3_2.Region = rg;
+            pic_3_3.Region = rg;
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -183,10 +183,10 @@ namespace Demo
             pic_1_3.Region = rg;
             pic_2_1.Region = rg;
             pic_2_2.Region = rg;
-            //pic_2_3.Region = rg;
-            //pic_3_1.Region = rg;
-            //pic_3_2.Region = rg;
-            //pic_3_3.Region = rg;
+            pic_2_3.Region = rg;
+            pic_3_1.Region = rg;
+            pic_3_2.Region = rg;
+            pic_3_3.Region = rg;
         }
 
         /*private void selectedImage() // 선택되어있는 이미지 번호, 이름 가져오기
@@ -222,11 +222,15 @@ namespace Demo
 
         private void imagedisplay()
         {
-            pic_1_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_Photo.png");
-            pic_1_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_love.png");
-            pic_1_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_movie.png");
-            pic_2_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_computer.png");
-            pic_2_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/Mytu.png");
+            pic_1_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/더불어민주당.png");
+            pic_1_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/자유한국당.png");
+            pic_1_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/바른미래당.png");
+            pic_2_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/정의당.png");
+            pic_2_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/민주평화당.png");
+            pic_2_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/대한애국당.png");
+            pic_3_1.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/민중당.png");
+            pic_3_2.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/동명대_love.png");
+            pic_3_3.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/Mytu.png");
         }
 
         /*private void imagelistSerchAndChange(int listnum) // 이미지 박스에 넣을 이미지 찾고 넣기 (이미지 리스트 사용)
@@ -639,10 +643,10 @@ namespace Demo
             pic_1_3.Refresh();
             pic_2_1.Refresh();
             pic_2_2.Refresh();
-            //pic_2_3.Refresh();
-            //pic_3_1.Refresh();
-            //pic_3_2.Refresh();
-            //pic_3_3.Refresh();
+            pic_2_3.Refresh();
+            pic_3_1.Refresh();
+            pic_3_2.Refresh();
+            pic_3_3.Refresh();
         }
 
         /*private void chagearrow(int valPage) // 화살표 전환
@@ -990,8 +994,8 @@ namespace Demo
         { 
             allRefrashPic();
             this.listnum = 1;
-            this.selected_image = "동명대_Photo";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_Photo", 1, price);
+            this.selected_image = "더불어민주당";
+            TopperlistPopUp popup = new TopperlistPopUp("더불어민주당", 1, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();               
@@ -1001,8 +1005,8 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 2;
-            this.selected_image = "동명대_love";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_love", 2, price);
+            this.selected_image = "자유한국당";
+            TopperlistPopUp popup = new TopperlistPopUp("자유한국당", 2, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();           
@@ -1012,8 +1016,8 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 3;
-            this.selected_image = "동명대_movie";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_movie", 3, price);
+            this.selected_image = "바른미래당";
+            TopperlistPopUp popup = new TopperlistPopUp("바른미래당", 3, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();           
@@ -1023,87 +1027,72 @@ namespace Demo
         {
             allRefrashPic();
             this.listnum = 4;
-            this.selected_image = "동명대_computer";
-            TopperlistPopUp popup = new TopperlistPopUp("동명대_computer", 4, price);
+            this.selected_image = "민주평화당";
+            TopperlistPopUp popup = new TopperlistPopUp("정의당", 4, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();
+        }
+
+        private void TopperList_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void pic_2_2_Click(object sender, EventArgs e)
         {
             allRefrashPic();
             this.listnum = 5;
-            this.selected_image = "Mytu";
-            TopperlistPopUp popup = new TopperlistPopUp("Mytu", 5, price);
+            this.selected_image = "민주평화당";
+            TopperlistPopUp popup = new TopperlistPopUp("민주평화당", 5, price);
             popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
             initselectimagemap();
             popup.ShowDialog();
         }
 
-        /*private void pic_2_3_Click(object sender, EventArgs e)
+        private void pic_2_3_Click(object sender, EventArgs e)
         {
-            if (imageMap[1, 2] != 0)
-            {
-                //changePicColor(23);
-                imageMap[1, 2]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 6;
+            this.selected_image = "대한애국당";
+            TopperlistPopUp popup = new TopperlistPopUp("대한애국당", 6, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
         }
 
         private void pic_3_1_Click(object sender, EventArgs e)
         {
-            if (imageMap[2, 0] != 0)
-            {
-                //changePicColor(31);
-                imageMap[2,0]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 7;
+            this.selected_image = "민중당";
+            TopperlistPopUp popup = new TopperlistPopUp("민중당", 7, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
         }
 
         private void pic_3_2_Click(object sender, EventArgs e)
         {
-            if (imageMap[2, 1] != 0)
-            {
-                //changePicColor(32);
-                imageMap[2,1]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
+            allRefrashPic();
+            this.listnum = 8;
+            this.selected_image = "동명대_love";
+            TopperlistPopUp popup = new TopperlistPopUp("동명대_love", 8, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
         }
         
         private void pic_3_3_Click(object sender, EventArgs e)
         {
-            if (imageMap[2, 2] != 0)
-            {
-                //changePicColor(33);
-                imageMap[2,2]=2;
-                allRefrashPic();
-
-                selectedImage();
-                TopperlistPopUp popup = new TopperlistPopUp(selected_image, listnum, valPage, price);
-                popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
-                initselectimagemap();
-                popup.ShowDialog();
-            }
-        }*/
+            allRefrashPic();
+            this.listnum = 9;
+            this.selected_image = "Mytu";
+            TopperlistPopUp popup = new TopperlistPopUp("Mytu", 9, price);
+            popup.FormSendEvent += new TopperlistPopUp.FormSendDataHandler(DieaseUpdateEventMethod);
+            initselectimagemap();
+            popup.ShowDialog();
+        }
         #endregion
 
 

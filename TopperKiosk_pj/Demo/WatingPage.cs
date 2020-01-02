@@ -23,7 +23,7 @@ namespace Demo
         string image_name = "None", left_time_info = "예상 남은 시간 : ",left_time_min = "분 ", left_time_sec ="초";
         int imageNum = 0, pageNum = 0, price = 0;
 
-        int icon_tic =0, end_time = 240; 
+        int icon_tic =0, end_time = 210; 
 
         MakingTopperImage ti;
         #endregion
@@ -39,6 +39,7 @@ namespace Demo
             this.price = price;
             this.ti = ti;
 
+            timetodesinesetting();
             icontimer.Tick += new EventHandler(icontimerHandler);
             icontimer.Interval = 2000;
             Endtimer.Tick += new EventHandler(endtimerHandler);
@@ -58,7 +59,6 @@ namespace Demo
             this.disDesginName_lbl.Text = ti.getimagename() ; // 이미지 이름
             this.disUserText_lbl.Text = ti.getImagetext(); // 이미지 텍스트
             //this.dismoney_lbl.Text = price.ToString();
-            new Macro(ti.getSavedimagename()); // 매크로 시작
         }
         #endregion
 
@@ -255,8 +255,8 @@ namespace Demo
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            this.FormSendEvent(1);
+            end_time = 3;
+            expectTime();
         }
 
         private void curiocityPurpose_btn_Click(object sender, EventArgs e)
@@ -285,6 +285,31 @@ namespace Demo
 
 
         #region 'Timer Setting'
+        private void timetodesinesetting()
+        {
+            if(imageNum == 1)
+            {
+                end_time = 160;
+            }
+            else if(imageNum == 2)
+            {
+                end_time = 210;
+            }
+            else if(imageNum == 3)
+            {
+                end_time = 180;
+            }
+            else if(imageNum == 4)
+            {
+                end_time = 160;
+            }
+            else
+            {
+                end_time = 160;
+            }
+        }
+
+
         private void icontimerHandler(object sender, EventArgs e) // 레이져 아이콘 이미지 변경용 타이머
         {
             if (icon_tic == 0)

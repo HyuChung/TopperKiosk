@@ -34,15 +34,15 @@
             this.info_lbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.makedimage = new System.Windows.Forms.ImageList(this.components);
+            this.insertTB = new System.Windows.Forms.TextBox();
+            this.insertBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.showingDesign = new System.Windows.Forms.PictureBox();
+            this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_1_2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_1_3 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textselect_btn_1_1 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.showingDesign = new System.Windows.Forms.PictureBox();
             this.next_pane = new System.Windows.Forms.Panel();
             this.exit_pane = new System.Windows.Forms.Panel();
-            this.textselect_btn_1_4 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.insertTB = new System.Windows.Forms.TextBox();
-            this.insertBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.showingDesign)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +73,60 @@
             this.makedimage.Images.SetKeyName(3, "32.JPG");
             this.makedimage.Images.SetKeyName(4, "33.JPG");
             this.makedimage.Images.SetKeyName(5, "44.png");
+            // 
+            // insertTB
+            // 
+            resources.ApplyResources(this.insertTB, "insertTB");
+            this.insertTB.Name = "insertTB";
+            // 
+            // insertBtn
+            // 
+            this.insertBtn.ActiveBorderThickness = 1;
+            this.insertBtn.ActiveCornerRadius = 15;
+            this.insertBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.insertBtn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.insertBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.insertBtn, "insertBtn");
+            this.insertBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.insertBtn.ButtonText = "입력";
+            this.insertBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.insertBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.insertBtn.IdleBorderThickness = 1;
+            this.insertBtn.IdleCornerRadius = 10;
+            this.insertBtn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.insertBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.insertBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.insertBtn.Name = "insertBtn";
+            this.insertBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.insertBtn.Click += new System.EventHandler(this.insertBtn_Click);
+            // 
+            // showingDesign
+            // 
+            resources.ApplyResources(this.showingDesign, "showingDesign");
+            this.showingDesign.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.showingDesign.Name = "showingDesign";
+            this.showingDesign.TabStop = false;
+            // 
+            // textselect_btn_1_4
+            // 
+            this.textselect_btn_1_4.ActiveBorderThickness = 1;
+            this.textselect_btn_1_4.ActiveCornerRadius = 15;
+            this.textselect_btn_1_4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.textselect_btn_1_4.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.textselect_btn_1_4, "textselect_btn_1_4");
+            this.textselect_btn_1_4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textselect_btn_1_4.ButtonText = "Think Creative";
+            this.textselect_btn_1_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textselect_btn_1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.IdleBorderThickness = 1;
+            this.textselect_btn_1_4.IdleCornerRadius = 10;
+            this.textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textselect_btn_1_4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
+            this.textselect_btn_1_4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.textselect_btn_1_4.Name = "textselect_btn_1_4";
+            this.textselect_btn_1_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textselect_btn_1_4.Click += new System.EventHandler(this.textselect_btn_1_4_Click);
             // 
             // textselect_btn_1_2
             // 
@@ -137,13 +191,6 @@
             this.textselect_btn_1_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.textselect_btn_1_1.Click += new System.EventHandler(this.textselect_btn_1_1_Click);
             // 
-            // showingDesign
-            // 
-            resources.ApplyResources(this.showingDesign, "showingDesign");
-            this.showingDesign.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.showingDesign.Name = "showingDesign";
-            this.showingDesign.TabStop = false;
-            // 
             // next_pane
             // 
             resources.ApplyResources(this.next_pane, "next_pane");
@@ -157,53 +204,6 @@
             this.exit_pane.BackgroundImage = global::Demo.Properties.Resources.cancel;
             this.exit_pane.Name = "exit_pane";
             this.exit_pane.Click += new System.EventHandler(this.exit_pane_Click);
-            // 
-            // textselect_btn_1_4
-            // 
-            this.textselect_btn_1_4.ActiveBorderThickness = 1;
-            this.textselect_btn_1_4.ActiveCornerRadius = 15;
-            this.textselect_btn_1_4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.textselect_btn_1_4.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.textselect_btn_1_4, "textselect_btn_1_4");
-            this.textselect_btn_1_4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textselect_btn_1_4.ButtonText = "Think Creative";
-            this.textselect_btn_1_4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textselect_btn_1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.IdleBorderThickness = 1;
-            this.textselect_btn_1_4.IdleCornerRadius = 10;
-            this.textselect_btn_1_4.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textselect_btn_1_4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.textselect_btn_1_4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.textselect_btn_1_4.Name = "textselect_btn_1_4";
-            this.textselect_btn_1_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textselect_btn_1_4.Click += new System.EventHandler(this.textselect_btn_1_4_Click);
-            // 
-            // insertTB
-            // 
-            resources.ApplyResources(this.insertTB, "insertTB");
-            this.insertTB.Name = "insertTB";
-            // 
-            // insertBtn
-            // 
-            this.insertBtn.ActiveBorderThickness = 1;
-            this.insertBtn.ActiveCornerRadius = 15;
-            this.insertBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
-            this.insertBtn.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.insertBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.insertBtn, "insertBtn");
-            this.insertBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.insertBtn.ButtonText = "입력";
-            this.insertBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.insertBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.insertBtn.IdleBorderThickness = 1;
-            this.insertBtn.IdleCornerRadius = 10;
-            this.insertBtn.IdleFillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.insertBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(134)))), ((int)(((byte)(206)))));
-            this.insertBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            this.insertBtn.Name = "insertBtn";
-            this.insertBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.insertBtn.Click += new System.EventHandler(this.insertBtn_Click);
             // 
             // SettingPage
             // 

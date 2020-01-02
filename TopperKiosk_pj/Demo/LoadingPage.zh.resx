@@ -117,43 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ageinfo_lbl.Text" xml:space="preserve">
-    <value>年级</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>稍微等一下。</value>
   </data>
-  <data name="chargeMoney_lbl.Text" xml:space="preserve">
-    <value>去格 :</value>
-  </data>
-  <data name="designName_lbl.Text" xml:space="preserve">
-    <value>设计 :</value>
-  </data>
-  <data name="info_lbl.Text" xml:space="preserve">
-    <value>正在做汤圆。 请稍等。</value>
-  </data>
-  <data name="lefttime_lbl.Text" xml:space="preserve">
-    <value>预计剩下的等待时间:</value>
-  </data>
-  <data name="outputinfo_lbl.Text" xml:space="preserve">
-    <value>输出信息</value>
-  </data>
-  <data name="purpose_lbl.Text" xml:space="preserve">
-    <value>你知道托福吗?</value>
-  </data>
-  <data name="sexinfo_lbl.Text" xml:space="preserve">
-    <value>性别</value>
-  </data>
-  <data name="sumit_btn.Text" xml:space="preserve">
-    <value>提交</value>
-  </data>
-  <data name="surveyInfo_lbl.Text" xml:space="preserve">
-    <value>托福顾客调查问卷</value>
-  </data>
-  <data name="thankyou_lbl.Text" xml:space="preserve">
-    <value>谢谢你的参与。</value>
-  </data>
-  <data name="tooltip_lbl.Text" xml:space="preserve">
-    <value>TopperKiosk (做)</value>
-  </data>
-  <data name="userTextName_lbl.Text" xml:space="preserve">
-    <value>字 :</value>
+  <data name="label_UserInfoText.Text" xml:space="preserve">
+    <value>请勿触摸画面</value>
   </data>
 </root>

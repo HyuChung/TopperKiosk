@@ -8,6 +8,12 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
 
+/*
+ * 
+ * README!
+ * 현재 매크로는 더블 모니터에 맞춰져 있음
+ *
+ */
 
 namespace Demo
 {
@@ -53,8 +59,11 @@ namespace Demo
 
         public Macro(string savedimagename) // 프린트 시작
         {
+
             this.savedimagename = savedimagename;
-            macro_start();
+            Thread t2 = new Thread(new ThreadStart(macro_start));
+            t2.Start();
+ 
         }
 
         public static void SetFocus(IntPtr handle)
@@ -62,7 +71,7 @@ namespace Demo
             SetForegroundWindow(handle);
         }
 
-        public void macro_start() // 메크로 시작 ( 디자인 만들기 시작 ) ==>  관리자 권환 실행 필요
+        public void macro_start() // 메크로 시작 ( 디자인 만들기 시작 ) ==>  관리자 권환 실행 필요 
         {
             IntPtr findwindow = FindWindow(null, AppName);
             if (findwindow != IntPtr.Zero)
@@ -70,12 +79,12 @@ namespace Demo
                 // 찾았을 경우
                 Debug.WriteLine("Start macro.");
 
-                SetCursorPos(970, 490); // 팝업창 위치
+                /*SetCursorPos(970, 490); // 팝업창 위치
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0);  
                 SendKeys.SendWait("{RIGHT}");
                 SendKeys.SendWait("{ENTER}");
-                Thread.Sleep(200);
+                Thread.Sleep(200); */
 
                 SetFocus(findwindow); // 코렐 드로우 창 활성화
                 
@@ -93,9 +102,9 @@ namespace Demo
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0);
                 SendKeys.SendWait("{ENTER}"); // 디자인 불러오기
-                Thread.Sleep(500);
+                Thread.Sleep(800);
                 SendKeys.SendWait("{ENTER}"); // 디자인 화면에 불러오기
-                Thread.Sleep(500);
+                Thread.Sleep(1000);
 
                 // 너비 설정
                 SetCursorPos(33, 104);// y 위치
@@ -149,7 +158,6 @@ namespace Demo
             }
         }
 
-
         public void macro_end()
         {
             IntPtr findwindow = FindWindow(null, AppName);
@@ -158,13 +166,19 @@ namespace Demo
                 // 찾았을 경우
                 Debug.WriteLine("Start macro.");
 
-                // 끝나는 창 제거
+                /* 끝나는 창 제거
                 SetCursorPos(970, 490); // 팝업창 위치
                 mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
                 mouse_event(LBUTTONUP, 0, 0, 0, 0); 
                 SendKeys.SendWait("{RIGHT}");
                 SendKeys.SendWait("{ENTER}");
                 Thread.Sleep(200);
+
+                SetFocus(findwindow);
+                SetCursorPos(1796, 32); // 팝업창 위치
+                mouse_event(LBUTTONDOWN, 0, 0, 0, 0);
+                mouse_event(LBUTTONUP, 0, 0, 0, 0);
+                Thread.Sleep(200);*/
 
                 SetFocus(findwindow);
                 // 이미지 제거

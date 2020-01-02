@@ -135,10 +135,10 @@ namespace Demo
         {
             if ((int)sender == 1) // 다음-이전
             {
-                WatingPage wp = new WatingPage(image_name, price, imageNum, pageNum, ti);
-                wp.FormSendEvent += new WatingPage.FormSendDataHandler(watinglisner);
-                wp.Owner = this;
-                AddForms2Panel(wp);
+                LoadingPage lp = new LoadingPage(ti);
+                lp.FormSendEvent += new LoadingPage.FormSendDataHandler(loadinglisner);
+                lp.Owner = this;
+                AddForms2Panel(lp);
             }
             else
             {
@@ -147,6 +147,14 @@ namespace Demo
                 SP.Owner = this;
                 AddForms2Panel(SP);
             }
+        }
+
+        private void loadinglisner(object sender) // 대기 이동 (대기->끝)
+        {
+            WatingPage wp = new WatingPage(image_name, price, imageNum, pageNum, ti);
+            wp.FormSendEvent += new WatingPage.FormSendDataHandler(watinglisner);
+            wp.Owner = this;
+            AddForms2Panel(wp);
         }
 
         private void watinglisner(object sender) // 대기 이동 (대기->끝)

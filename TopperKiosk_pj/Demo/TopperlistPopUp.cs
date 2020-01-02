@@ -49,7 +49,8 @@ namespace Demo
         #region 'Propertise'
         public void showingimageChage() // 보여지는 이미지 가져오기
         {
-            this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/"+image_name+".png");
+                this.showingDesign.Load("D:/Temp Workspace/Kiosk/TopperKiosk_pj/TopperImage/TestImages/" + image_name + ".png");
+
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]

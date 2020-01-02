@@ -99,7 +99,6 @@ namespace Demo
             }
         }
 
-
         private void loadFont() // 폰트 불러오기
         {
             try
@@ -118,19 +117,12 @@ namespace Demo
           
         }
 
-
         private void makingTopper_Desine_1() // 디자인 패턴 1 만들기
         {
             try
             {
                 loadFont();
                 loadImage();
-
-                // 1번 위치 (55, 255)
-                // 2번 위치 (,)
-                // 3번 위치(, )
-                // 4번 위치(, )
-                // 5번 위치(, )
 
                 using (Graphics graphics = Graphics.FromImage(bitmap))
                 {
@@ -146,7 +138,6 @@ namespace Demo
                 throw new System.Exception("Fail to making Image (Desine1)", e);
             }
         }
-
         
         private void saveImage() // 이미지 저장
         {
@@ -165,6 +156,7 @@ namespace Demo
             }
             
         }
+
         public string getimagename() // 이미지 이름
         {
             return imageName;
@@ -174,7 +166,6 @@ namespace Demo
         {
             return savedimagename;
         }
-
 
         public string getImagetext() // 이미지에 들어간 텍스트 
         {

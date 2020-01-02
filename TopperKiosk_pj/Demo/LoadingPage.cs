@@ -10,46 +10,38 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class EndPage : Form
+    public partial class LoadingPage : Form
     {
-
         #region 'Field'
         public delegate void FormSendDataHandler(object obj);
         public event FormSendDataHandler FormSendEvent;
 
         System.Windows.Forms.Timer Endtimer = new System.Windows.Forms.Timer();
-        int end_time = 10;
-        string endinfo = " 초 후 처음으로 돌아갑니다";
+        int end_time = 7;
         #endregion
 
 
-
         #region 'Init'
-        public EndPage()
+        public LoadingPage(MakingTopperImage ti)
         {
+            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
             Endtimer.Tick += new EventHandler(endtimerHandler);
             Endtimer.Interval = 1000;
             InitializeComponent();
 
             Endtimer.Enabled = true;
-            this.FormBorderStyle = FormBorderStyle.None; //폼 태두리 제거
-            new Macro();
+            //new Macro(ti.getSavedimagename()); // 매크로 시작 (임시로 막아둠 ==> 주석문 풀면 해제)
         }
         #endregion
 
 
 
         #region 'Propertise'
-        private void countdown()
-        {
-            exitinfo_lbl.Text = end_time + endinfo;
-        }
-
-
+    
         private void endtimerHandler(object sender, EventArgs e)
         {
             end_time--;
-            countdown();
+
             if (end_time == 0)
             {
                 this.Visible = false;
@@ -57,6 +49,5 @@ namespace Demo
             }
         }
         #endregion
-
     }
 }

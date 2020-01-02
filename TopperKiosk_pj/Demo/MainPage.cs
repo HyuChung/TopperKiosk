@@ -80,7 +80,32 @@ namespace Demo
             this.FormSendEvent(3);
             this.Visible = false;
         }
-        #endregion
 
+        private void translate_paneKO_MouseClick(object sender, EventArgs e)
+        {
+            this.FormSendEvent(4);
+            this.Visible = false;
+        }
+
+        private void translate_paneJP_MouseClick(object sender, EventArgs e)
+        {
+            this.FormSendEvent(2);
+            this.Visible = false;
+        }
+
+        private void translate_paneCH_MouseClick(object sender, EventArgs e)
+        {
+            this.FormSendEvent(1);
+            this.Visible = false;
+        }
+
+        private void translate_paneEN_MouseClick(object sender, EventArgs e)
+        {
+            this.FormSendEvent(3);
+            this.Visible = false;
+        }
+    
+        #endregion
     }
+       
 }
