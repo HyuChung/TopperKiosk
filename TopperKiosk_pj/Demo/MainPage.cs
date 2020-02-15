@@ -10,62 +10,77 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class ToperKiosk_Sys : Form
+    public partial class MainPage : Form
     {
-        public ToperKiosk_Sys()
+
+        #region 'Field'
+        public delegate void FormSendDataHandler(object obj);
+        public event FormSendDataHandler FormSendEvent;
+        #endregion
+
+
+
+        #region 'init'
+        public MainPage()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None; // 폼 태두리 제거
+            this.ManInfo_lbl.Left = (this.ClientSize.Width - ManInfo_lbl.Width) / 2;  // 중앙정렬
         }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        #region 'Propertise'
+        private void translate_paneKo_MouseEnter(object sender, EventArgs e) // 팁 텍스트 변환(한국어)
         {
-
+            ManInfo_lbl.Text = "언어를 선택하여 다음으로 넘어가기";
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void translate_paneCH_MouseEnter(object sender, EventArgs e) // 팁 텍스트 변환(중국어)
         {
-
+            ManInfo_lbl.Text = "选择语言向后过渡";
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void lbl_JP_MouseEnter(object sender, EventArgs e) // 팁 텍스트 변환(일본어)
         {
-
+            ManInfo_lbl.Text = "語を選んで次に移る";
         }
 
-        private void ToperKiosk_Sys_Load(object sender, EventArgs e)
+        private void translate_paneEN_MouseEnter(object sender, EventArgs e) // 팁 텍스트 변환(영어)
         {
-
+            ManInfo_lbl.Text = "Select a language to move next page";
         }
+        #endregion
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+
+
+        #region 'Next/Exit Setting' 
+        private void translate_paneKO_MouseClick(object sender, MouseEventArgs e) // 한국어 다음 화면
         {
-
+            this.FormSendEvent(4);
+            this.Visible = false;
+            
         }
 
-        private void translate_paneKO_MouseClick(object sender, MouseEventArgs e)
+        private void translate_paneCH_MouseClick(object sender, MouseEventArgs e) // 중국어 다음 화면
         {
-            TopperList newKoForm = new TopperList();
-            newKoForm.ShowDialog();
+            this.FormSendEvent(1);
+            this.Visible = false;
         }
 
-        private void translate_paneCH_MouseClick(object sender, MouseEventArgs e)
+        private void translate_paneJP_MouseClick(object sender, MouseEventArgs e) // 일본어 다음 화면
         {
-            TopperList newCHForm = new TopperList();
-            newCHForm.ShowDialog();
+            this.FormSendEvent(2);
+            this.Visible = false;
         }
 
-        private void translate_paneJP_MouseClick(object sender, MouseEventArgs e)
+        private void translate_paneEN_MouseClick(object sender, MouseEventArgs e) // 영어 다음 화면
         {
-            TopperList newJPForm = new TopperList();
-            newJPForm.ShowDialog();
+            this.FormSendEvent(3);
+            this.Visible = false;
         }
+        #endregion
 
-        private void translate_paneEN_MouseClick(object sender, MouseEventArgs e)
-        {
-            TopperList newENForm = new TopperList();
-            newENForm.ShowDialog();
-        }
-
-    
     }
 }

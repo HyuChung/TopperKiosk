@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>Resources\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +49,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailSetting.cs">
+    <Compile Include="backgroungMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailSetting.Designer.cs">
-      <DependentUpon>DetailSetting.cs</DependentUpon>
+    <Compile Include="backgroungMain.Designer.cs">
+      <DependentUpon>backgroungMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndPage.Designer.cs">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayPage.Designer.cs">
+      <DependentUpon>PayPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenKeyBoard.cs" />
+    <Compile Include="SettingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPage.Designer.cs">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopperlistPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopperlistPopUp.Designer.cs">
+      <DependentUpon>TopperlistPopUp.cs</DependentUpon>
     </Compile>
     <Compile Include="TopperList.cs">
       <SubType>Form</SubType>
@@ -71,16 +99,103 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCCircleLoading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCircleLoading.Designer.cs">
+      <DependentUpon>UCCircleLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WatingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WatingPage.Designer.cs">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="backgroungMain.resx">
+      <DependentUpon>backgroungMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.en.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.ja-JP.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndPage.zh.resx">
+      <DependentUpon>EndPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayPage.en.resx">
+      <DependentUpon>PayPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayPage.ja-JP.resx">
+      <DependentUpon>PayPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayPage.resx">
+      <DependentUpon>PayPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayPage.zh.resx">
+      <DependentUpon>PayPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.en.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.ja-JP.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingPage.zh.resx">
+      <DependentUpon>SettingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperlistPopUp.en.resx">
+      <DependentUpon>TopperlistPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperlistPopUp.ja-JP.resx">
+      <DependentUpon>TopperlistPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperlistPopUp.resx">
+      <DependentUpon>TopperlistPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.en.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.ja-JP.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopperList.resx">
       <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperList.zh.resx">
+      <DependentUpon>TopperList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopperlistPopUp.zh.resx">
+      <DependentUpon>TopperlistPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCircleLoading.resx">
+      <DependentUpon>UCCircleLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.en.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.ja-JP.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatingPage.zh.resx">
+      <DependentUpon>WatingPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,21 +209,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\common[5].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\common[10].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1[1].png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\_SAM1098c[1].jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\다운로드.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Beauty-Nature-1-Wallpaper-1080x1920-768x1365.jpg" />
@@ -129,34 +229,19 @@
     <None Include="Resources\next.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\예시 1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\the-button-859346_1280.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\999A4C3359EECFBC25.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6383_shop1_812327.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9321_shop1_297733.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DGtwTZUVoAAJYF7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\right-arrow %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\susten-4343542_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gwangan-bridge-806949_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
